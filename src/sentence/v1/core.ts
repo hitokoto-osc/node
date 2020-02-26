@@ -5,14 +5,13 @@ export interface sentenceApiResponse {
   hitokoto: string
   type: string
   from: string
-  from_who: string | null
+  fromWho: string | null
   creator: string
-  creator_uid: number
+  creatorUid: number
   reviewer: number
   uuid: string
-  created_at: number
+  createdAt: number
 }
-
 
 export async function getSentence (categroy: string[] | string | null = null): Promise<sentenceApiResponse> {
   let qs = ''
