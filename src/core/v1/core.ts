@@ -66,7 +66,7 @@ export interface CoreApi extends AuthApi, UserApi, LikeApi, SentenceApi {}
 applyMixins(CoreApi, [AuthApi, UserApi, LikeApi, SentenceApi])
 
 /**
- * * 应用 Mixins
+ * 应用 Mixins
  * 来自：https://www.typescriptlang.org/docs/handbook/mixins.html
  * @param derivedCtor
  * @param baseCtors
