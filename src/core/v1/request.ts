@@ -158,3 +158,9 @@ export class ApiRequest {
     }
   }
 }
+
+export function checkStatusCode (responseData: ResponseStruct<any>) {
+  if (responseData.status !== 200) {
+    throw new Error('请求时发生错误，错误代码：' + responseData.status + '，错误信息：' + responseData.message)
+  }
+}

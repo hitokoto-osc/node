@@ -1,19 +1,10 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
 import { ApiRequest, ResponseStruct } from './request'
-import { AuthApi, LoginApi, RegisterApi } from './auth'
-export interface UserApi {
-  id: number;
-  name: string;
-  email: string;
-  is_suspended: number;
-  is_admin: number;
-  is_reviewer: number;
-  email_verified_at: string;
-  created_from: string;
-  created_at: string;
-  updated_at: string;
-}
+import { AuthApi } from './auth'
+import { SentenceApi } from './sentence'
+import { LikeApi } from './like'
+import { UserApi, GetUserInformationApi } from './user'
 
 export class CoreApi {
   request = new ApiRequest()
@@ -71,9 +62,15 @@ export class CoreApi {
   }
 }
 
-export interface CoreApi extends AuthApi {}
-applyMixins(CoreApi, [AuthApi])
+export interface CoreApi extends AuthApi, UserApi, LikeApi, SentenceApi {}
+applyMixins(CoreApi, [AuthApi, UserApi, LikeApi, SentenceApi])
 
+/**
+ * * 应用 Mixins
+ * 来自：https://www.typescriptlang.org/docs/handbook/mixins.html
+ * @param derivedCtor
+ * @param baseCtors
+ */
 function applyMixins (derivedCtor: any, baseCtors: any[]) {
   baseCtors.forEach(baseCtor => {
     Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {

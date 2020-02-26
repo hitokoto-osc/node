@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
-import { ResponseStruct, ApiRequest } from './request'
+import { ResponseStruct, ApiRequest, checkStatusCode } from './request'
 
 export interface LoginApi {
   id: number;
@@ -35,9 +35,7 @@ export class AuthApi {
       email,
       password
     })
-    if (data.status !== 200) { // 处理响应错误
-      throw new Error('请求时发生错误，错误代码：' + data.status + '，错误信息：' + data.message)
-    }
+    checkStatusCode(data)
     this.isValid = true
     return data.data[0]
   }
@@ -48,18 +46,14 @@ export class AuthApi {
       email,
       password
     })
-    if (data.status !== 200) { // 处理响应错误
-      throw new Error('请求时发生错误，错误代码：' + data.status + '，错误信息：' + data.message)
-    }
+    checkStatusCode(data)
     return data.data[0]
   }
 
   async passwordReset (email: string): Promise<void> {
-    const data: ResponseStruct<RegisterApi> = await this.request.post('/auth/password/reset', {
+    const data: ResponseStruct<void> = await this.request.post('/auth/password/reset', {
       email
     })
-    if (data.status !== 200) { // 处理响应错误
-      throw new Error('请求时发生错误，错误代码：' + data.status + '，错误信息：' + data.message)
-    }
+    checkStatusCode(data)
   }
 }
