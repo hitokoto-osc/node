@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import got from 'got'
 
 export interface sentenceApiResponse {
@@ -5,15 +6,15 @@ export interface sentenceApiResponse {
   hitokoto: string
   type: string
   from: string
-  fromWho: string | null
+  from_who: string | null
   creator: string
-  creatorUid: number
+  creator_uid: number
   reviewer: number
   uuid: string
-  createdAt: number
+  created_at: number
 }
 
-export async function getSentence (categroy: string[] | string | null = null): Promise<sentenceApiResponse> {
+export async function getSentence (categroy?: string[] | string): Promise<sentenceApiResponse> {
   let qs = ''
   if (!categroy) {
     qs = ''
