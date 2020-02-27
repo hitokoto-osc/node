@@ -1,5 +1,5 @@
 {
-  "name": "@hitokoto/node",
+  "name": "@hitokoto/node-sdk",
   "version": "1.0.0",
   "description": "hitokoto.cn official node.js sdk.",
   "main": "dist/core.js",
@@ -20,6 +20,9 @@
     "node.js",
     "hitokoto"
   ],
+  "engines": {
+    "node": ">=8"
+  },
   "author": "a632079 <a632079@qq.com>",
   "license": "MIT",
   "bugs": {
