@@ -366,9 +366,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hitokoto/node@workspace:.":
+"@hitokoto/node-sdk@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@hitokoto/node@workspace:."
+  resolution: "@hitokoto/node-sdk@workspace:."
   dependencies:
     "@commitlint/cli": ^8.3.5
     "@commitlint/config-conventional": ^8.3.4
