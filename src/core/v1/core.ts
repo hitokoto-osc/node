@@ -55,6 +55,7 @@ export class CoreApi {
   set token (token: string) {
     if (token && token.length === 40) {
       this.request.token = token
+      this.request.isValid = false
     } else {
       throw new Error('令牌长度不正确')
     }
