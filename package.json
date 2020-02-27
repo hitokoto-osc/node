@@ -2,7 +2,7 @@
   "name": "@hitokoto/node",
   "version": "1.0.0",
   "description": "hitokoto.cn official node.js sdk.",
-  "main": "build/core.js",
+  "main": "dist/core.js",
   "scripts": {
     "watch": "tsc -w",
     "build": "tsc",
