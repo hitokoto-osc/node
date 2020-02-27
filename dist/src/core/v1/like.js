@@ -13,27 +13,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable camelcase */
 const request_1 = require("./request");
 const decorator_1 = require("./decorator");
+const request = new request_1.ApiRequest();
 class LikeApi {
-    constructor() {
-        this.request = new request_1.ApiRequest();
-        this.isValid = false;
-    }
     async getSentenceLike(sentenceUuid) {
-        const data = await this.request.get('/like', {
+        const data = await request.get('/like', {
             sentence_uuid: sentenceUuid
         });
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async likeSentence(sentenceUuid) {
-        const data = await this.request.post('/like', {
+        const data = await request.post('/like', {
             sentence_uuid: sentenceUuid
         });
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async cancalSentenceLike(sentenceUuid) {
-        const data = await this.request.post('/like', {
+        const data = await request.post('/like', {
             sentence_uuid: sentenceUuid
         });
         request_1.checkStatusCode(data);

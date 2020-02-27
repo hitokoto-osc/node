@@ -8,7 +8,6 @@ import { UserApi, GetUserInformationApi } from './user'
 
 export class CoreApi {
   request = new ApiRequest()
-  isValid = false
 
   /**
    * 创建接口 SDK
@@ -20,7 +19,7 @@ export class CoreApi {
       if (token.length !== 40) {
         throw new Error('令牌的长度不正确')
       }
-      this.request.Token = token
+      this.request.token = token
     }
   }
 
@@ -29,14 +28,14 @@ export class CoreApi {
    * @returns {Promise<boolean>}
    */
   async verifyToken () {
-    if (!this.request.Token) {
+    if (!this.request.token) {
       return false
-    } else if (this.request.Token.length !== 40) {
+    } else if (this.request.token.length !== 40) {
       return false
     }
     const data: ResponseStruct<UserApi> = await this.request.get('/user')
     if (data.status === 200) {
-      this.isValid = true
+      this.request.isValid = true
     }
     return data.status === 200
   }
@@ -46,7 +45,7 @@ export class CoreApi {
    * @returns {string} 令牌
    */
   get token () {
-    return this.request.Token
+    return this.request.token
   }
 
   /**
@@ -55,7 +54,7 @@ export class CoreApi {
    */
   set token (token: string) {
     if (token && token.length === 40) {
-      this.request.Token = token
+      this.request.token = token
     } else {
       throw new Error('令牌长度不正确')
     }

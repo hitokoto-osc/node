@@ -1,4 +1,3 @@
-import { ApiRequest } from './request';
 export interface LoginApi {
     id: number;
     name: string;
@@ -22,10 +21,18 @@ export interface RegisterApi {
     updated_at: string;
 }
 export declare class AuthApi {
-    request: ApiRequest;
-    isValid: boolean;
     login(email: string, password: string): Promise<LoginApi>;
     register(name: string, email: string, password: string): Promise<RegisterApi>;
     passwordReset(email: string): Promise<void>;
+    /**
+     * 获得令牌
+     * @returns {string} 令牌
+     */
+    get Token(): string;
+    /**
+     * 设置令牌
+     * @param {string} token
+     */
+    set Token(token: string);
 }
 //# sourceMappingURL=auth.d.ts.map

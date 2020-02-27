@@ -3,23 +3,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const got_1 = __importDefault(require("got"));
+const node_fetch_1 = __importDefault(require("node-fetch"));
 const query_string_1 = __importDefault(require("query-string"));
 const form_data_1 = __importDefault(require("form-data"));
+exports.Token = '';
+// eslint-disable-next-line prefer-const
+exports.IsValid = false;
 class ApiRequest {
-    /**
-     * 创建请求
-     * @param {string} [token] 令牌
-     * @returns {ApiRequest}
-     */
-    constructor(token) {
+    constructor() {
         this.endpoint = 'https://hitokoto.cn/api/restful/v1';
-        if (token) {
-            if (token.length !== 40) {
-                throw new Error('令牌的长度不正确');
-            }
-            this.token = token;
-        }
     }
     /**
      * 发起 GET 请求
@@ -31,18 +23,17 @@ class ApiRequest {
         const headers = {
             Accept: 'application/json' // 要求接口一定返回 JSON 对象
         };
-        if (this.Token) {
-            headers.Authorization = 'Bearer ' + this.Token;
+        if (this.token) {
+            headers.Authorization = 'Bearer ' + this.token;
         }
-        const { body, statusCode } = await got_1.default(this.endpoint + path, {
-            headers,
-            searchParams: query ? query_string_1.default.stringify(query) : ''
+        const response = await node_fetch_1.default(this.endpoint + path + '?' + (query ? query_string_1.default.stringify(query) : ''), {
+            headers
         });
-        if (statusCode !== 200) {
-            throw new Error('无法成功请求，HTTP 状态码: ' + statusCode);
+        if (response.status !== 200) {
+            throw new Error('无法成功请求，HTTP 状态码: ' + response.status);
         }
         try {
-            const data = JSON.parse(body);
+            const data = await response.json();
             return data;
         }
         catch (e) {
@@ -58,11 +49,10 @@ class ApiRequest {
      */
     async post(path, formParams, query) {
         const headers = {
-            Accept: 'application/json',
-            'Content-Type': 'application/x-www-form-urlencoded' // 以表单方式提交
+            Accept: 'application/json' // 要求接口一定要返回 JSON
         };
-        if (this.Token) {
-            headers.Authorization = 'Bearer ' + this.Token;
+        if (this.token) {
+            headers.Authorization = 'Bearer ' + this.token;
         }
         // 生成 Post 参数
         const formData = new form_data_1.default();
@@ -71,16 +61,16 @@ class ApiRequest {
                 formData.append(param, formParams[param]);
             }
         }
-        const { body, statusCode } = await got_1.default.post(this.endpoint + path, {
+        const response = await node_fetch_1.default(this.endpoint + path + '?' + (query ? query_string_1.default.stringify(query) : ''), {
             headers,
             body: formData,
-            searchParams: query ? query_string_1.default.stringify(query) : ''
+            method: 'POST'
         });
-        if (statusCode !== 200) {
-            throw new Error('无法成功请求，HTTP 状态码: ' + statusCode);
+        if (response.status !== 200) {
+            throw new Error('无法成功请求，HTTP 状态码: ' + status);
         }
         try {
-            const data = JSON.parse(body);
+            const data = await response.json();
             return data;
         }
         catch (e) {
@@ -96,11 +86,10 @@ class ApiRequest {
      */
     async put(path, formParams, query) {
         const headers = {
-            Accept: 'application/json',
-            'Content-Type': 'application/x-www-form-urlencoded' // 以表单方式提交
+            Accept: 'application/json' // 要求接口一定要返回 JSON
         };
-        if (this.Token) {
-            headers.Authorization = 'Bearer ' + this.Token;
+        if (this.token) {
+            headers.Authorization = 'Bearer ' + this.token;
         }
         // 生成 Post 参数
         const formData = new form_data_1.default();
@@ -110,16 +99,16 @@ class ApiRequest {
                 formData.append(param, formParams[param]);
             }
         }
-        const { body, statusCode } = await got_1.default.post(this.endpoint + path, {
+        const response = await node_fetch_1.default(this.endpoint + path + '?' + (query ? query_string_1.default.stringify(query) : ''), {
             headers,
             body: formData,
-            searchParams: query ? query_string_1.default.stringify(query) : ''
+            method: 'POST'
         });
-        if (statusCode !== 200) {
-            throw new Error('无法成功请求，HTTP 状态码: ' + statusCode);
+        if (response.status !== 200) {
+            throw new Error('无法成功请求，HTTP 状态码: ' + response.status);
         }
         try {
-            const data = JSON.parse(body);
+            const data = await response.json();
             return data;
         }
         catch (e) {
@@ -130,22 +119,39 @@ class ApiRequest {
      * 获得令牌
      * @returns {string} 令牌
      */
-    get Token() {
-        return this.token || '';
+    get token() {
+        return exports.Token || '';
     }
     /**
      * 设置令牌
      * @param {string} token
      */
-    set Token(token) {
+    set token(token) {
         if (token && token.length === 40) {
-            this.token = token;
+            exports.Token = token;
         }
+    }
+    /**
+     * 获得令牌
+     * @returns {boolean} 令牌
+     */
+    get isValid() {
+        return exports.IsValid;
+    }
+    /**
+     * 设置令牌
+     * @param {string} token
+     */
+    set isValid(isValid) {
+        exports.IsValid = isValid;
     }
 }
 exports.ApiRequest = ApiRequest;
 function checkStatusCode(responseData) {
     if (responseData.status !== 200) {
+        if (responseData.status === 400) {
+            console.error(responseData.data[0].validator);
+        }
         throw new Error('请求时发生错误，错误代码：' + responseData.status + '，错误信息：' + responseData.message);
     }
 }

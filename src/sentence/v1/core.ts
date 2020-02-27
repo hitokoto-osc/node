@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import got from 'got'
+import fetch from 'node-fetch'
 
 export interface sentenceApiResponse {
   id: number
@@ -23,9 +23,12 @@ export async function getSentence (categroy?: string[] | string): Promise<senten
   } else {
     qs = '?c=' + categroy
   }
-  const { body } = await got.get('https://v1.hitokoto.cn/' + qs)
+  const response = await fetch('https://v1.hitokoto.cn/' + qs)
+  if (response.status !== 200) {
+    throw new Error('无法成功请求，HTTP 状态码: ' + response.status)
+  }
   try {
-    const data = JSON.parse(body)
+    const data = await response.json()
     data.created_at = Number.parseInt(data.created_at + '000') // 转换成 JavaScript 毫秒时间戳
     return data
   } catch (e) {

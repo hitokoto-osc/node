@@ -4,18 +4,13 @@ export interface ResponseStruct<T> {
     data: T[];
     ts: number;
 }
+export declare let Token: string;
+export declare let IsValid: boolean;
 export interface Params<T> {
     [index: string]: T;
 }
 export declare class ApiRequest {
-    token?: string;
     endpoint: string;
-    /**
-     * 创建请求
-     * @param {string} [token] 令牌
-     * @returns {ApiRequest}
-     */
-    constructor(token?: string);
     /**
      * 发起 GET 请求
      * @param {string} path API 路径
@@ -43,12 +38,22 @@ export declare class ApiRequest {
      * 获得令牌
      * @returns {string} 令牌
      */
-    get Token(): string;
+    get token(): string;
     /**
      * 设置令牌
      * @param {string} token
      */
-    set Token(token: string);
+    set token(token: string);
+    /**
+     * 获得令牌
+     * @returns {boolean} 令牌
+     */
+    get isValid(): boolean;
+    /**
+     * 设置令牌
+     * @param {string} token
+     */
+    set isValid(isValid: boolean);
 }
 export declare function checkStatusCode(responseData: ResponseStruct<any>): void;
 //# sourceMappingURL=request.d.ts.map

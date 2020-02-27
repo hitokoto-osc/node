@@ -25,23 +25,21 @@ export interface RegisterApi {
   created_at: string;
   updated_at: string;
 }
+const request = new ApiRequest()
 
 export class AuthApi {
-  request = new ApiRequest()
-  isValid = false
-
   async login (email: string, password: string): Promise<LoginApi> {
-    const data: ResponseStruct<LoginApi> = await this.request.post('/auth/login', {
+    const data: ResponseStruct<LoginApi> = await request.post('/auth/login', {
       email,
       password
     })
     checkStatusCode(data)
-    this.isValid = true
+    request.isValid = true
     return data.data[0]
   }
 
   async register (name: string, email: string, password: string): Promise<RegisterApi> {
-    const data: ResponseStruct<RegisterApi> = await this.request.post('/auth/register', {
+    const data: ResponseStruct<RegisterApi> = await request.post('/auth/register', {
       name,
       email,
       password
@@ -51,9 +49,27 @@ export class AuthApi {
   }
 
   async passwordReset (email: string): Promise<void> {
-    const data: ResponseStruct<void> = await this.request.post('/auth/password/reset', {
+    const data: ResponseStruct<void> = await request.post('/auth/password/reset', {
       email
     })
     checkStatusCode(data)
+  }
+
+  /**
+   * 获得令牌
+   * @returns {string} 令牌
+   */
+  get Token (): string {
+    return request.token || ''
+  }
+
+  /**
+   * 设置令牌
+   * @param {string} token
+   */
+  set Token (token: string) {
+    if (token && token.length === 40) {
+      request.token = token
+    }
   }
 }

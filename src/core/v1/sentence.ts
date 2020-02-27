@@ -84,27 +84,26 @@ export interface AppendSentenceParams {
   type: string
 }
 
-export class SentenceApi {
-  request = new ApiRequest()
-  isValid = false
+const request = new ApiRequest()
 
+export class SentenceApi {
   @checkValid()
   async getSentence (sentenceUuid: string): Promise<CommonSentence> {
-    const data: ResponseStruct<CommonSentence> = await this.request.get('/hitokoto/' + sentenceUuid)
+    const data: ResponseStruct<CommonSentence> = await request.get('/hitokoto/' + sentenceUuid)
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async appendSentence (params: AppendSentenceParams): Promise<AppendSentenceApi> {
-    const data: ResponseStruct<AppendSentenceApi> = await this.request.post('/hitokoto/append', params)
+    const data: ResponseStruct<AppendSentenceApi> = await request.post('/hitokoto/append', params)
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async submitSentenceScore (sentenceUuid: string, score: number, comment?: string): Promise<SubmitSentenceScoreApi> {
-    const data: ResponseStruct<SubmitSentenceScoreApi> = await this.request.post('/hitokoto/' + sentenceUuid + '/score', {
+    const data: ResponseStruct<SubmitSentenceScoreApi> = await request.post('/hitokoto/' + sentenceUuid + '/score', {
       score,
       comment
     })
@@ -114,14 +113,14 @@ export class SentenceApi {
 
   @checkValid()
   async getSentenceScore (sentenceUuid: string): Promise<GetSentenceScoreApi> {
-    const data: ResponseStruct<GetSentenceScoreApi> = await this.request.get('/hitokoto/' + sentenceUuid + '/score')
+    const data: ResponseStruct<GetSentenceScoreApi> = await request.get('/hitokoto/' + sentenceUuid + '/score')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async reportSentence (sentenceUuid: string, comment: string): Promise<ReportSentenceApi> {
-    const data: ResponseStruct<ReportSentenceApi> = await this.request.post('/hitokoto/' + sentenceUuid + '/report', {
+    const data: ResponseStruct<ReportSentenceApi> = await request.post('/hitokoto/' + sentenceUuid + '/report', {
       comment
     })
     checkStatusCode(data)

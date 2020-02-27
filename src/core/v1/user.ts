@@ -87,33 +87,32 @@ export interface NotificationSettingsParams {
   email_poll_report_daily: boolean
 }
 
-export class UserApi {
-  request = new ApiRequest()
-  isValid = false
+const request = new ApiRequest()
 
+export class UserApi {
   @checkValid()
   async getUserInformation (): Promise<GetUserInformationApi> {
-    const data: ResponseStruct<GetUserInformationApi> = await this.request.get('/user')
+    const data: ResponseStruct<GetUserInformationApi> = await request.get('/user')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async getUserToken (): Promise<UserTokenApi> {
-    const data: ResponseStruct<UserTokenApi> = await this.request.get('/user/token')
+    const data: ResponseStruct<UserTokenApi> = await request.get('/user/token')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async sendVerifyEmail (): Promise<void> {
-    const data: ResponseStruct<void> = await this.request.post('/user/email/verify')
+    const data: ResponseStruct<void> = await request.post('/user/email/verify')
     checkStatusCode(data)
   }
 
   @checkValid()
   async changeUserPassword (password: string, newPassword: string): Promise<void> {
-    const data: ResponseStruct<void> = await this.request.put('/user/password', {
+    const data: ResponseStruct<void> = await request.put('/user/password', {
       password,
       new_password: newPassword
     })
@@ -122,7 +121,7 @@ export class UserApi {
 
   @checkValid()
   async changeUserEmail (password: string, email: string): Promise<void> {
-    const data: ResponseStruct<UserTokenApi> = await this.request.put('/user/email', {
+    const data: ResponseStruct<UserTokenApi> = await request.put('/user/email', {
       email,
       password
     })
@@ -131,35 +130,35 @@ export class UserApi {
 
   @checkValid()
   async getUserNotificationSettings (): Promise<NotificationSettingsApi> {
-    const data: ResponseStruct<NotificationSettingsApi> = await this.request.get('/user/notification/settings')
+    const data: ResponseStruct<NotificationSettingsApi> = await request.get('/user/notification/settings')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async setUserNotificationSettings (settings: NotificationSettingsParams): Promise<NotificationSettingsApi> {
-    const data: ResponseStruct<NotificationSettingsApi> = await this.request.put('/user/notification/settings', settings)
+    const data: ResponseStruct<NotificationSettingsApi> = await request.put('/user/notification/settings', settings)
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async getUserLikedSentences (): Promise<UserHitokotoLikeApi> {
-    const data: ResponseStruct<UserHitokotoLikeApi> = await this.request.get('/user/hitokoto/like')
+    const data: ResponseStruct<UserHitokotoLikeApi> = await request.get('/user/hitokoto/like')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async getUserHitokotoSummary (): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await this.request.get('/user/hitokoto/summary')
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/summary')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
   async getUserHitokotoHistory (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await this.request.get('/user/hitokoto/history', {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history', {
       limit,
       offset
     })
@@ -169,7 +168,7 @@ export class UserApi {
 
   @checkValid()
   async getUserHitokotoHistoryRufuse (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await this.request.get('/user/hitokoto/history/refuse', {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history/refuse', {
       limit,
       offset
     })
@@ -179,7 +178,7 @@ export class UserApi {
 
   @checkValid()
   async getUserHitokotoHistoryPending (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await this.request.get('/user/hitokoto/history/pending', {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history/pending', {
       limit,
       offset
     })
@@ -189,7 +188,7 @@ export class UserApi {
 
   @checkValid()
   async getUserHitokotoHistoryAccept (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await this.request.get('/user/hitokoto/history/accept', {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history/accept', {
       limit,
       offset
     })

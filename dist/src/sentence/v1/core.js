@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable camelcase */
-const got_1 = __importDefault(require("got"));
+const node_fetch_1 = __importDefault(require("node-fetch"));
 async function getSentence(categroy) {
     let qs = '';
     if (!categroy) {
@@ -16,9 +16,12 @@ async function getSentence(categroy) {
     else {
         qs = '?c=' + categroy;
     }
-    const { body } = await got_1.default.get('https://v1.hitokoto.cn/' + qs);
+    const response = await node_fetch_1.default('https://v1.hitokoto.cn/' + qs);
+    if (response.status !== 200) {
+        throw new Error('无法成功请求，HTTP 状态码: ' + response.status);
+    }
     try {
-        const data = JSON.parse(body);
+        const data = await response.json();
         data.created_at = Number.parseInt(data.created_at + '000'); // 转换成 JavaScript 毫秒时间戳
         return data;
     }

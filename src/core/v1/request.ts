@@ -1,4 +1,4 @@
-import got from 'got'
+import fetch from 'node-fetch'
 import qs from 'query-string'
 import FormData from 'form-data'
 
@@ -9,27 +9,16 @@ export interface ResponseStruct<T> {
   ts: number
 }
 
+export let Token = ''
+// eslint-disable-next-line prefer-const
+export let IsValid = false
+
 export interface Params<T> {
   [index: string]: T
 }
 
 export class ApiRequest {
-  token?: string
   endpoint = 'https://hitokoto.cn/api/restful/v1'
-
-  /**
-   * 创建请求
-   * @param {string} [token] 令牌
-   * @returns {ApiRequest}
-   */
-  constructor (token?: string) {
-    if (token) {
-      if (token.length !== 40) {
-        throw new Error('令牌的长度不正确')
-      }
-      this.token = token
-    }
-  }
 
   /**
    * 发起 GET 请求
@@ -42,19 +31,18 @@ export class ApiRequest {
       Accept: 'application/json' // 要求接口一定返回 JSON 对象
     }
 
-    if (this.Token) {
-      headers.Authorization = 'Bearer ' + this.Token
+    if (this.token) {
+      headers.Authorization = 'Bearer ' + this.token
     }
 
-    const { body, statusCode } = await got(this.endpoint + path, {
-      headers,
-      searchParams: query ? qs.stringify(query) : ''
+    const response = await fetch(this.endpoint + path + '?' + (query ? qs.stringify(query) : ''), {
+      headers
     })
-    if (statusCode !== 200) {
-      throw new Error('无法成功请求，HTTP 状态码: ' + statusCode)
+    if (response.status !== 200) {
+      throw new Error('无法成功请求，HTTP 状态码: ' + response.status)
     }
     try {
-      const data = JSON.parse(body)
+      const data = await response.json()
       return data
     } catch (e) {
       throw new Error('无法解析响应')
@@ -70,12 +58,11 @@ export class ApiRequest {
    */
   async post (path: string, formParams?: Params<any>, query?: Params<any>): Promise<ResponseStruct<any>> {
     const headers: any = {
-      Accept: 'application/json', // 要求接口一定要返回 JSON
-      'Content-Type': 'application/x-www-form-urlencoded' // 以表单方式提交
+      Accept: 'application/json' // 要求接口一定要返回 JSON
     }
 
-    if (this.Token) {
-      headers.Authorization = 'Bearer ' + this.Token
+    if (this.token) {
+      headers.Authorization = 'Bearer ' + this.token
     }
     // 生成 Post 参数
     const formData = new FormData()
@@ -84,16 +71,16 @@ export class ApiRequest {
         formData.append(param, formParams[param])
       }
     }
-    const { body, statusCode } = await got.post(this.endpoint + path, {
+    const response = await fetch(this.endpoint + path + '?' + (query ? qs.stringify(query) : ''), {
       headers,
       body: formData,
-      searchParams: query ? qs.stringify(query) : ''
+      method: 'POST'
     })
-    if (statusCode !== 200) {
-      throw new Error('无法成功请求，HTTP 状态码: ' + statusCode)
+    if (response.status !== 200) {
+      throw new Error('无法成功请求，HTTP 状态码: ' + status)
     }
     try {
-      const data = JSON.parse(body)
+      const data = await response.json()
       return data
     } catch (e) {
       throw new Error('无法解析响应')
@@ -109,12 +96,11 @@ export class ApiRequest {
    */
   async put (path: string, formParams?: Params<any>, query?: Params<any>): Promise<ResponseStruct<any>> {
     const headers: any = {
-      Accept: 'application/json', // 要求接口一定要返回 JSON
-      'Content-Type': 'application/x-www-form-urlencoded' // 以表单方式提交
+      Accept: 'application/json' // 要求接口一定要返回 JSON
     }
 
-    if (this.Token) {
-      headers.Authorization = 'Bearer ' + this.Token
+    if (this.token) {
+      headers.Authorization = 'Bearer ' + this.token
     }
     // 生成 Post 参数
     const formData = new FormData()
@@ -124,16 +110,16 @@ export class ApiRequest {
         formData.append(param, formParams[param])
       }
     }
-    const { body, statusCode } = await got.post(this.endpoint + path, {
+    const response = await fetch(this.endpoint + path + '?' + (query ? qs.stringify(query) : ''), {
       headers,
       body: formData,
-      searchParams: query ? qs.stringify(query) : ''
+      method: 'POST'
     })
-    if (statusCode !== 200) {
-      throw new Error('无法成功请求，HTTP 状态码: ' + statusCode)
+    if (response.status !== 200) {
+      throw new Error('无法成功请求，HTTP 状态码: ' + response.status)
     }
     try {
-      const data = JSON.parse(body)
+      const data = await response.json()
       return data
     } catch (e) {
       throw new Error('无法解析响应')
@@ -144,23 +130,42 @@ export class ApiRequest {
    * 获得令牌
    * @returns {string} 令牌
    */
-  get Token (): string {
-    return this.token || ''
+  get token (): string {
+    return Token || ''
   }
 
   /**
    * 设置令牌
    * @param {string} token
    */
-  set Token (token: string) {
+  set token (token: string) {
     if (token && token.length === 40) {
-      this.token = token
+      Token = token
     }
+  }
+
+  /**
+   * 获得令牌
+   * @returns {boolean} 令牌
+   */
+  get isValid (): boolean {
+    return IsValid
+  }
+
+  /**
+   * 设置令牌
+   * @param {string} token
+   */
+  set isValid (isValid: boolean) {
+    IsValid = isValid
   }
 }
 
 export function checkStatusCode (responseData: ResponseStruct<any>) {
   if (responseData.status !== 200) {
+    if (responseData.status === 400) {
+      console.error(responseData.data[0].validator)
+    }
     throw new Error('请求时发生错误，错误代码：' + responseData.status + '，错误信息：' + responseData.message)
   }
 }

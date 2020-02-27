@@ -13,61 +13,58 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable camelcase */
 const request_1 = require("./request");
 const decorator_1 = require("./decorator");
+const request = new request_1.ApiRequest();
 class UserApi {
-    constructor() {
-        this.request = new request_1.ApiRequest();
-        this.isValid = false;
-    }
     async getUserInformation() {
-        const data = await this.request.get('/user');
+        const data = await request.get('/user');
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async getUserToken() {
-        const data = await this.request.get('/user/token');
+        const data = await request.get('/user/token');
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async sendVerifyEmail() {
-        const data = await this.request.post('/user/email/verify');
+        const data = await request.post('/user/email/verify');
         request_1.checkStatusCode(data);
     }
     async changeUserPassword(password, newPassword) {
-        const data = await this.request.put('/user/password', {
+        const data = await request.put('/user/password', {
             password,
             new_password: newPassword
         });
         request_1.checkStatusCode(data);
     }
     async changeUserEmail(password, email) {
-        const data = await this.request.put('/user/email', {
+        const data = await request.put('/user/email', {
             email,
             password
         });
         request_1.checkStatusCode(data);
     }
     async getUserNotificationSettings() {
-        const data = await this.request.get('/user/notification/settings');
+        const data = await request.get('/user/notification/settings');
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async setUserNotificationSettings(settings) {
-        const data = await this.request.put('/user/notification/settings', settings);
+        const data = await request.put('/user/notification/settings', settings);
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async getUserLikedSentences() {
-        const data = await this.request.get('/user/hitokoto/like');
+        const data = await request.get('/user/hitokoto/like');
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async getUserHitokotoSummary() {
-        const data = await this.request.get('/user/hitokoto/summary');
+        const data = await request.get('/user/hitokoto/summary');
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async getUserHitokotoHistory(offset, limit) {
-        const data = await this.request.get('/user/hitokoto/history', {
+        const data = await request.get('/user/hitokoto/history', {
             limit,
             offset
         });
@@ -75,7 +72,7 @@ class UserApi {
         return data.data[0];
     }
     async getUserHitokotoHistoryRufuse(offset, limit) {
-        const data = await this.request.get('/user/hitokoto/history/refuse', {
+        const data = await request.get('/user/hitokoto/history/refuse', {
             limit,
             offset
         });
@@ -83,7 +80,7 @@ class UserApi {
         return data.data[0];
     }
     async getUserHitokotoHistoryPending(offset, limit) {
-        const data = await this.request.get('/user/hitokoto/history/pending', {
+        const data = await request.get('/user/hitokoto/history/pending', {
             limit,
             offset
         });
@@ -91,7 +88,7 @@ class UserApi {
         return data.data[0];
     }
     async getUserHitokotoHistoryAccept(offset, limit) {
-        const data = await this.request.get('/user/hitokoto/history/accept', {
+        const data = await request.get('/user/hitokoto/history/accept', {
             limit,
             offset
         });

@@ -15,12 +15,11 @@ class CoreApi {
      */
     constructor(token) {
         this.request = new request_1.ApiRequest();
-        this.isValid = false;
         if (token) {
             if (token.length !== 40) {
                 throw new Error('令牌的长度不正确');
             }
-            this.request.Token = token;
+            this.request.token = token;
         }
     }
     /**
@@ -28,15 +27,15 @@ class CoreApi {
      * @returns {Promise<boolean>}
      */
     async verifyToken() {
-        if (!this.request.Token) {
+        if (!this.request.token) {
             return false;
         }
-        else if (this.request.Token.length !== 40) {
+        else if (this.request.token.length !== 40) {
             return false;
         }
         const data = await this.request.get('/user');
         if (data.status === 200) {
-            this.isValid = true;
+            this.request.isValid = true;
         }
         return data.status === 200;
     }
@@ -45,7 +44,7 @@ class CoreApi {
      * @returns {string} 令牌
      */
     get token() {
-        return this.request.Token;
+        return this.request.token;
     }
     /**
      * 设置令牌
@@ -53,7 +52,7 @@ class CoreApi {
      */
     set token(token) {
         if (token && token.length === 40) {
-            this.request.Token = token;
+            this.request.token = token;
         }
         else {
             throw new Error('令牌长度不正确');

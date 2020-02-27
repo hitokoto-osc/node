@@ -5,7 +5,6 @@ import { LikeApi } from './like';
 import { UserApi } from './user';
 export declare class CoreApi {
     request: ApiRequest;
-    isValid: boolean;
     /**
      * 创建接口 SDK
      * @param {string} [token] 令牌

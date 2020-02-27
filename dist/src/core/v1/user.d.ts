@@ -1,4 +1,3 @@
-import { ApiRequest } from './request';
 import { CommonSentence } from './sentence';
 export interface GetUserInformationApi {
     id: number;
@@ -74,8 +73,6 @@ export interface NotificationSettingsParams {
     email_poll_report_daily: boolean;
 }
 export declare class UserApi {
-    request: ApiRequest;
-    isValid: boolean;
     getUserInformation(): Promise<GetUserInformationApi>;
     getUserToken(): Promise<UserTokenApi>;
     sendVerifyEmail(): Promise<void>;

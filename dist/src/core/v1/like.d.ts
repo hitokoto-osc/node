@@ -1,4 +1,3 @@
-import { ApiRequest } from './request';
 export interface GetSentenceLikeApi {
     sets: Set[];
     total: number;
@@ -12,8 +11,6 @@ export interface LikeSentenceApi {
     user_id: number;
 }
 export declare class LikeApi {
-    request: ApiRequest;
-    isValid: boolean;
     getSentenceLike(sentenceUuid: string): Promise<GetSentenceLikeApi>;
     likeSentence(sentenceUuid: string): Promise<LikeSentenceApi>;
     cancalSentenceLike(sentenceUuid: string): Promise<void>;

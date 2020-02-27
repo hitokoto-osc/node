@@ -3,22 +3,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 const request_1 = require("./request");
+const request = new request_1.ApiRequest();
 class AuthApi {
-    constructor() {
-        this.request = new request_1.ApiRequest();
-        this.isValid = false;
-    }
     async login(email, password) {
-        const data = await this.request.post('/auth/login', {
+        const data = await request.post('/auth/login', {
             email,
             password
         });
         request_1.checkStatusCode(data);
-        this.isValid = true;
+        request.isValid = true;
         return data.data[0];
     }
     async register(name, email, password) {
-        const data = await this.request.post('/auth/register', {
+        const data = await request.post('/auth/register', {
             name,
             email,
             password
@@ -27,10 +24,26 @@ class AuthApi {
         return data.data[0];
     }
     async passwordReset(email) {
-        const data = await this.request.post('/auth/password/reset', {
+        const data = await request.post('/auth/password/reset', {
             email
         });
         request_1.checkStatusCode(data);
+    }
+    /**
+     * 获得令牌
+     * @returns {string} 令牌
+     */
+    get Token() {
+        return request.token || '';
+    }
+    /**
+     * 设置令牌
+     * @param {string} token
+     */
+    set Token(token) {
+        if (token && token.length === 40) {
+            request.token = token;
+        }
     }
 }
 exports.AuthApi = AuthApi;

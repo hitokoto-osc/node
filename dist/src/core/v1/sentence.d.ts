@@ -1,4 +1,3 @@
-import { ApiRequest } from './request';
 export interface AppendSentenceApi {
     uuid: string;
     hitokoto: string;
@@ -72,8 +71,6 @@ export interface AppendSentenceParams {
     type: string;
 }
 export declare class SentenceApi {
-    request: ApiRequest;
-    isValid: boolean;
     getSentence(sentenceUuid: string): Promise<CommonSentence>;
     appendSentence(params: AppendSentenceParams): Promise<AppendSentenceApi>;
     submitSentenceScore(sentenceUuid: string, score: number, comment?: string): Promise<SubmitSentenceScoreApi>;

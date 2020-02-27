@@ -18,12 +18,11 @@ export interface LikeSentenceApi {
   user_id: number
 }
 
-export class LikeApi {
-  request = new ApiRequest()
-  isValid = false
+const request = new ApiRequest()
 
+export class LikeApi {
   async getSentenceLike (sentenceUuid: string): Promise<GetSentenceLikeApi> {
-    const data: ResponseStruct<GetSentenceLikeApi> = await this.request.get('/like', {
+    const data: ResponseStruct<GetSentenceLikeApi> = await request.get('/like', {
       sentence_uuid: sentenceUuid
     })
     checkStatusCode(data)
@@ -31,7 +30,7 @@ export class LikeApi {
   }
 
   async likeSentence (sentenceUuid: string): Promise<LikeSentenceApi> {
-    const data: ResponseStruct<LikeSentenceApi> = await this.request.post('/like', {
+    const data: ResponseStruct<LikeSentenceApi> = await request.post('/like', {
       sentence_uuid: sentenceUuid
     })
     checkStatusCode(data)
@@ -40,7 +39,7 @@ export class LikeApi {
 
   @checkValid()
   async cancalSentenceLike (sentenceUuid: string): Promise<void> {
-    const data: ResponseStruct<void> = await this.request.post('/like', {
+    const data: ResponseStruct<void> = await request.post('/like', {
       sentence_uuid: sentenceUuid
     })
     checkStatusCode(data)

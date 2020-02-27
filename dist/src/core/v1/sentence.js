@@ -13,23 +13,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable camelcase */
 const request_1 = require("./request");
 const decorator_1 = require("./decorator");
+const request = new request_1.ApiRequest();
 class SentenceApi {
-    constructor() {
-        this.request = new request_1.ApiRequest();
-        this.isValid = false;
-    }
     async getSentence(sentenceUuid) {
-        const data = await this.request.get('/hitokoto/' + sentenceUuid);
+        const data = await request.get('/hitokoto/' + sentenceUuid);
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async appendSentence(params) {
-        const data = await this.request.post('/hitokoto/append', params);
+        const data = await request.post('/hitokoto/append', params);
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async submitSentenceScore(sentenceUuid, score, comment) {
-        const data = await this.request.post('/hitokoto/' + sentenceUuid + '/score', {
+        const data = await request.post('/hitokoto/' + sentenceUuid + '/score', {
             score,
             comment
         });
@@ -37,12 +34,12 @@ class SentenceApi {
         return data.data[0];
     }
     async getSentenceScore(sentenceUuid) {
-        const data = await this.request.get('/hitokoto/' + sentenceUuid + '/score');
+        const data = await request.get('/hitokoto/' + sentenceUuid + '/score');
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async reportSentence(sentenceUuid, comment) {
-        const data = await this.request.post('/hitokoto/' + sentenceUuid + '/report', {
+        const data = await request.post('/hitokoto/' + sentenceUuid + '/report', {
             comment
         });
         request_1.checkStatusCode(data);
