@@ -1,6 +1,6 @@
 {
   "name": "@hitokoto/node-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "hitokoto.cn official node.js sdk.",
   "main": "dist/core.js",
   "scripts": {

@@ -56,4 +56,3 @@ export declare class ApiRequest {
     set isValid(isValid: boolean);
 }
 export declare function checkStatusCode(responseData: ResponseStruct<any>): void;
-//# sourceMappingURL=request.d.ts.map

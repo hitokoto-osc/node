@@ -175,4 +175,3 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], UserApi.prototype, "getUserHitokotoHistoryAccept", null);
 exports.UserApi = UserApi;
-//# sourceMappingURL=user.js.map

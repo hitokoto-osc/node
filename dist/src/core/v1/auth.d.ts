@@ -35,4 +35,3 @@ export declare class AuthApi {
      */
     set Token(token: string);
 }
-//# sourceMappingURL=auth.d.ts.map

@@ -8,4 +8,3 @@ class SentenceApiV1 {
 }
 exports.SentenceApiV1 = SentenceApiV1;
 SentenceApiV1.prototype.getSentence = core_1.getSentence;
-//# sourceMappingURL=core.js.map

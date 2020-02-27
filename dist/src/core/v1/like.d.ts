@@ -16,4 +16,3 @@ export declare class LikeApi {
     cancalSentenceLike(sentenceUuid: string): Promise<void>;
 }
 export {};
-//# sourceMappingURL=like.d.ts.map

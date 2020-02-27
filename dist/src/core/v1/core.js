@@ -24,20 +24,19 @@ class CoreApi {
     }
     /**
      * 检验 Token 是否有效，如果有效才能进行其他的接口请求
-     * @returns {Promise<boolean>}
+     * @returns {Promise<CoreApi>}
      */
     async verifyToken() {
         if (!this.request.token) {
-            return false;
+            throw new Error('令牌无效');
         }
         else if (this.request.token.length !== 40) {
-            return false;
+            throw new Error('令牌长度不符合');
         }
         const data = await this.request.get('/user');
-        if (data.status === 200) {
-            this.request.isValid = true;
-        }
-        return data.status === 200;
+        request_1.checkStatusCode(data);
+        this.request.isValid = true;
+        return this;
     }
     /**
      * 获得令牌
@@ -78,4 +77,3 @@ function applyMixins(derivedCtor, baseCtors) {
         });
     });
 }
-//# sourceMappingURL=core.js.map

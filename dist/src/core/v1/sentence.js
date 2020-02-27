@@ -77,4 +77,3 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SentenceApi.prototype, "reportSentence", null);
 exports.SentenceApi = SentenceApi;
-//# sourceMappingURL=sentence.js.map

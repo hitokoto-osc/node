@@ -6,7 +6,7 @@
 
 在终端中输入：
 ```shell
-$ yarn add @hitokoto/node # 如果你使用 npm 的话： npm install @hitokoto/node
+$ yarn add @hitokoto/node-sdk # 如果你使用 npm 的话： npm install @hitokoto/node-sdk
 ```
 
 ## 使用
@@ -34,6 +34,8 @@ try {
         .then(userData) => {
             console.log(userData)
         })
+} catch (err) {
+    console.error(err)
 }
 
 // 使用语句接口
@@ -70,6 +72,8 @@ try {
         .then(userData) => {
             console.log(userData)
         })
+} catch(err) {
+    console.error(err)
 }
 
 // 使用语句接口

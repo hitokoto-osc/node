@@ -11,4 +11,3 @@ export interface sentenceApiResponse {
     created_at: number;
 }
 export declare function getSentence(categroy?: string[] | string): Promise<sentenceApiResponse>;
-//# sourceMappingURL=core.d.ts.map

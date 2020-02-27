@@ -2,3 +2,5 @@ node_modules
 .yarn
 .vscode
 src
+.pnp.js
+.yarnrc

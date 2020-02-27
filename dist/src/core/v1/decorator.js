@@ -15,4 +15,3 @@ function checkValid() {
     };
 }
 exports.checkValid = checkValid;
-//# sourceMappingURL=decorator.js.map

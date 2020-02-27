@@ -13,9 +13,9 @@ export declare class CoreApi {
     constructor(token?: string);
     /**
      * 检验 Token 是否有效，如果有效才能进行其他的接口请求
-     * @returns {Promise<boolean>}
+     * @returns {Promise<CoreApi>}
      */
-    verifyToken(): Promise<boolean>;
+    verifyToken(): Promise<CoreApi>;
     /**
      * 获得令牌
      * @returns {string} 令牌
@@ -29,4 +29,3 @@ export declare class CoreApi {
 }
 export interface CoreApi extends AuthApi, UserApi, LikeApi, SentenceApi {
 }
-//# sourceMappingURL=core.d.ts.map

@@ -30,4 +30,3 @@ async function getSentence(categroy) {
     }
 }
 exports.getSentence = getSentence;
-//# sourceMappingURL=core.js.map

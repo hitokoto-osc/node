@@ -6,4 +6,3 @@ export interface SentenceApiV1 {
 }
 export declare class SentenceApiV1 {
 }
-//# sourceMappingURL=core.d.ts.map

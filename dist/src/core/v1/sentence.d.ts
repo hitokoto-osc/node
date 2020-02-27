@@ -78,4 +78,3 @@ export declare class SentenceApi {
     reportSentence(sentenceUuid: string, comment: string): Promise<ReportSentenceApi>;
 }
 export {};
-//# sourceMappingURL=sentence.d.ts.map

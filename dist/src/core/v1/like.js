@@ -43,4 +43,3 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], LikeApi.prototype, "cancalSentenceLike", null);
 exports.LikeApi = LikeApi;
-//# sourceMappingURL=like.js.map

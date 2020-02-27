@@ -47,4 +47,3 @@ class AuthApi {
     }
 }
 exports.AuthApi = AuthApi;
-//# sourceMappingURL=auth.js.map

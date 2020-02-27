@@ -88,4 +88,3 @@ export declare class UserApi {
     getUserHitokotoHistoryAccept(offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary>;
 }
 export {};
-//# sourceMappingURL=user.d.ts.map
