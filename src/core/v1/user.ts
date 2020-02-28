@@ -47,18 +47,15 @@ export interface UserHitokotoLikeApi {
 }
 
 interface Sentence {
-  id: number
   uuid: string
   hitokoto: string
   type: string
   from: string
-  from_who: string
+  from_who: string | null
   creator: string
   creator_uid: number
   reviewer: number
   commit_from: string
-  assessor?: any
-  owner: string
   created_at: string
 }
 

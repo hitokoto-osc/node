@@ -21,7 +21,7 @@ export interface CommonSentence {
   uuid: string
   type: string
   from: string
-  from_who?: any
+  from_who: string | null
   creator: string
   creator_uid: number
   reviewer: number
