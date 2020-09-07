@@ -375,7 +375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:8.3.5":
+"@commitlint/cli@npm:^8.3.5":
   version: 8.3.5
   resolution: "@commitlint/cli@npm:8.3.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40commitlint%2Fcli%2Fdownload%2F%40commitlint%2Fcli-8.3.5.tgz"
   dependencies:
@@ -396,7 +396,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:8.3.4":
+"@commitlint/config-conventional@npm:^8.3.4":
   version: 8.3.4
   resolution: "@commitlint/config-conventional@npm:8.3.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40commitlint%2Fconfig-conventional%2Fdownload%2F%40commitlint%2Fconfig-conventional-8.3.4.tgz"
   dependencies:
@@ -537,40 +537,59 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/eslintrc@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "@eslint/eslintrc@npm:0.1.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40eslint%2Feslintrc%2Fdownload%2F%40eslint%2Feslintrc-0.1.3.tgz"
+  dependencies:
+    ajv: ^6.12.4
+    debug: ^4.1.1
+    espree: ^7.3.0
+    globals: ^12.1.0
+    ignore: ^4.0.6
+    import-fresh: ^3.2.1
+    js-yaml: ^3.13.1
+    lodash: ^4.17.19
+    minimatch: ^3.0.4
+    strip-json-comments: ^3.1.1
+  checksum: e9c5eaa5e706bcedbba6e7e1a2bc85faa7e3a9edbe71375e07240d1b6540fbb88d907bd5e5841b42c2a7a9683dcf031ea052c447c3c9d81ba4d0b74f0dd67e5f
+  languageName: node
+  linkType: hard
+
 "@hitokoto/node-sdk@workspace:.":
   version: 0.0.0-use.local
   resolution: "@hitokoto/node-sdk@workspace:."
   dependencies:
-    "@commitlint/cli": 8.3.5
-    "@commitlint/config-conventional": 8.3.4
-    "@types/form-data": 2.5.0
-    "@types/jest": 25.2.3
-    "@types/node": 13.13.15
-    "@types/node-fetch": 2.5.7
-    "@types/query-string": 6.3.0
-    "@typescript-eslint/eslint-plugin": 2.34.0
-    "@typescript-eslint/parser": 2.34.0
-    "@yarnpkg/pnpify": 2.1.0
-    conventional-changelog-cli: 2.0.34
-    eslint: 6.8.0
-    eslint-config-standard: 14.1.1
-    eslint-import-resolver-node: 0.3.4
-    eslint-plugin-html: 6.0.2
-    eslint-plugin-import: 2.22.0
-    eslint-plugin-node: 11.1.0
-    eslint-plugin-promise: 4.2.1
-    eslint-plugin-standard: 4.0.1
+    "@commitlint/cli": ^8.3.5
+    "@commitlint/config-conventional": ^8.3.4
+    "@types/jest": ^25.2.3
+    "@types/node": ^13.13.15
+    "@types/node-fetch": ^2.5.7
+    "@typescript-eslint/eslint-plugin": ^4.0.1
+    "@typescript-eslint/parser": ^4.0.1
+    "@yarnpkg/pnpify": ^2.1.0
+    conventional-changelog-cli: ^2.0.34
+    eslint: ^7.8.1
+    eslint-config-prettier: ^6.11.0
+    eslint-config-standard: ^14.1.1
+    eslint-import-resolver-node: ^0.3.4
+    eslint-plugin-html: ^6.0.2
+    eslint-plugin-import: ^2.22.0
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-prettier: ^3.1.4
+    eslint-plugin-promise: ^4.2.1
+    eslint-plugin-standard: ^4.0.1
     form-data: ^3.0.0
-    husky: 4.2.5
-    jest: 25.5.4
-    jest-config: 25.5.4
-    jest-pnp-resolver: 1.2.2
-    lint-staged: 10.2.11
+    husky: ^4.2.5
+    jest: ^25.5.4
+    jest-config: ^25.5.4
+    jest-pnp-resolver: ^1.2.2
+    lint-staged: ^10.2.11
     node-fetch: ^2.6.0
+    prettier: ^2.1.1
     query-string: ^6.11.0
-    ts-jest: 25.5.1
-    ts-node: 8.10.2
-    typescript: 3.9.7
+    ts-jest: ^25.5.1
+    ts-node: ^8.10.2
+    typescript: ^3.9.7
   languageName: unknown
   linkType: soft
 
@@ -916,22 +935,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint-visitor-keys@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@types/eslint-visitor-keys@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Feslint-visitor-keys%2Fdownload%2F%40types%2Feslint-visitor-keys-1.0.0.tgz"
-  checksum: 48d1f3263148ac822afbc1e54358b423851a2a28c41aef4d7803b052b4f6c3ebfb219daed419b8a4f2b6ac34b545dab4def916d15e69d2bf3f128f7abc0e6132
-  languageName: node
-  linkType: hard
-
-"@types/form-data@npm:2.5.0":
-  version: 2.5.0
-  resolution: "@types/form-data@npm:2.5.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fform-data%2Fdownload%2F%40types%2Fform-data-2.5.0.tgz"
-  dependencies:
-    form-data: "*"
-  checksum: c44b41e642061049f28807f579f4742c18d73fed98859de07651a6fc4e6c555e925c6b2041f0beef74f4613e430a09cc67d552fe95da8cd8cc757f92d4d70e2d
-  languageName: node
-  linkType: hard
-
 "@types/graceful-fs@npm:^4.1.2":
   version: 4.1.3
   resolution: "@types/graceful-fs@npm:4.1.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fgraceful-fs%2Fdownload%2F%40types%2Fgraceful-fs-4.1.3.tgz"
@@ -974,7 +977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:25.2.3":
+"@types/jest@npm:^25.2.3":
   version: 25.2.3
   resolution: "@types/jest@npm:25.2.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-25.2.3.tgz"
   dependencies:
@@ -1014,7 +1017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:2.5.7":
+"@types/node-fetch@npm:^2.5.7":
   version: 2.5.7
   resolution: "@types/node-fetch@npm:2.5.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode-fetch%2Fdownload%2F%40types%2Fnode-fetch-2.5.7.tgz"
   dependencies:
@@ -1024,10 +1027,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:13.13.15, @types/node@npm:^13.7.0":
-  version: 13.13.15
-  resolution: "@types/node@npm:13.13.15::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.13.15.tgz"
-  checksum: 767eefa7024d560b663b2c9ccd0ce0408ba45e7ce75f8010e8f7954ed14eb9fdf97f7ee4392183a4177dcca99fce088706c43b9bbc5d3adac194fa52a9c3f73f
+"@types/node@npm:*, @types/node@npm:^13.13.15, @types/node@npm:^13.7.0":
+  version: 13.13.16
+  resolution: "@types/node@npm:13.13.16::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.13.16.tgz"
+  checksum: a56b4666f3bc3408185ca8c32d939297bebed949efde4bf304542f445453b7dfb15c82367a3383b4619a982e639b58b09de453e982217cf9d6ae81292c4d3379
   languageName: node
   linkType: hard
 
@@ -1049,15 +1052,6 @@ __metadata:
   version: 1.19.1
   resolution: "@types/prettier@npm:1.19.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fprettier%2Fdownload%2F%40types%2Fprettier-1.19.1.tgz"
   checksum: 394a4364ce5e3364bd230eaeed16cfa816b686bb05fc71968188f6a29b1f69abc235ccd4fd0aef4c4eec124480a6e3420962e99406e2bf2f552c9aae46073546
-  languageName: node
-  linkType: hard
-
-"@types/query-string@npm:6.3.0":
-  version: 6.3.0
-  resolution: "@types/query-string@npm:6.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fquery-string%2Fdownload%2F%40types%2Fquery-string-6.3.0.tgz"
-  dependencies:
-    query-string: "*"
-  checksum: 29c8001780b04c8c9a61098b68f9389aaa4b1948d5a8a4dddca22a67ad133746c796623823fdcf1b88038612ef0dedf19e5f9423f796b5fcdb6f52e1d415ea0d
   languageName: node
   linkType: hard
 
@@ -1093,62 +1087,85 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:2.34.0":
-  version: 2.34.0
-  resolution: "@typescript-eslint/eslint-plugin@npm:2.34.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.34.0.tgz"
+"@typescript-eslint/eslint-plugin@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/eslint-plugin@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-4.0.1.tgz"
   dependencies:
-    "@typescript-eslint/experimental-utils": 2.34.0
+    "@typescript-eslint/experimental-utils": 4.0.1
+    "@typescript-eslint/scope-manager": 4.0.1
+    debug: ^4.1.1
     functional-red-black-tree: ^1.0.1
     regexpp: ^3.0.0
+    semver: ^7.3.2
     tsutils: ^3.17.1
   peerDependencies:
-    "@typescript-eslint/parser": ^2.0.0
-    eslint: ^5.0.0 || ^6.0.0
+    "@typescript-eslint/parser": ^4.0.0
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 8d800f4726487df5ce4d573e62effa250f168658759e32a976eae355cc3130d82e3a918542df273fec428b608d9d50e65ad02d596ba0c24de7fbb4ddb7897dee
+  checksum: aef4bd116db58cfcb98b2a0794b616a3f30e1a548c49aa5ffae04354b4496cef0f5d0162a2bd72af191c603d73a226b066234b2548a19e8b00500853cf209f3e
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:2.34.0":
-  version: 2.34.0
-  resolution: "@typescript-eslint/experimental-utils@npm:2.34.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.34.0.tgz"
+"@typescript-eslint/experimental-utils@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/experimental-utils@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-4.0.1.tgz"
   dependencies:
     "@types/json-schema": ^7.0.3
-    "@typescript-eslint/typescript-estree": 2.34.0
+    "@typescript-eslint/scope-manager": 4.0.1
+    "@typescript-eslint/types": 4.0.1
+    "@typescript-eslint/typescript-estree": 4.0.1
     eslint-scope: ^5.0.0
     eslint-utils: ^2.0.0
   peerDependencies:
     eslint: "*"
-  checksum: 53cbbcfe67ddc53b4bc23f78b3726b0c2de5ea04ee849ca8b619f1fcad16f644d9d72bb3ea9a08aabfc605ea4a9769fe1b81931af09ce2223ec49de749cde2d4
+  checksum: 6af430c0d5dbaea5ae26a27697d38a51e8708d090793855d18732aff95ff1d007048dee5564907a938c0c7b0b1d67c5c04a30625c6651cf4bcec6aa03c454ac7
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:2.34.0":
-  version: 2.34.0
-  resolution: "@typescript-eslint/parser@npm:2.34.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.34.0.tgz"
+"@typescript-eslint/parser@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/parser@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-4.0.1.tgz"
   dependencies:
-    "@types/eslint-visitor-keys": ^1.0.0
-    "@typescript-eslint/experimental-utils": 2.34.0
-    "@typescript-eslint/typescript-estree": 2.34.0
-    eslint-visitor-keys: ^1.1.0
+    "@typescript-eslint/scope-manager": 4.0.1
+    "@typescript-eslint/types": 4.0.1
+    "@typescript-eslint/typescript-estree": 4.0.1
+    debug: ^4.1.1
   peerDependencies:
-    eslint: ^5.0.0 || ^6.0.0
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a3fe33d422d5cfe97e36c983253d33d2f5907657f9bb61a129c58656441acf9e90ec525a5273239cc876bc43e031056b2796924f3e64e8ca1295674fb30a2eec
+  checksum: 9d6e73e588d3ad63dbfccfe74a8e4ddf601667f8d3947b7fff381548237303342b3b5195968dd56dae7ae7c91d54a5f35e8294a6343913d66000d56ccd28d878
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:2.34.0":
-  version: 2.34.0
-  resolution: "@typescript-eslint/typescript-estree@npm:2.34.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.34.0.tgz"
+"@typescript-eslint/scope-manager@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/scope-manager@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fscope-manager%2Fdownload%2F%40typescript-eslint%2Fscope-manager-4.0.1.tgz"
   dependencies:
+    "@typescript-eslint/types": 4.0.1
+    "@typescript-eslint/visitor-keys": 4.0.1
+  checksum: 5c407cd12300c5ff8296a61d50a7d2d83439f46926b5edd72d3eaf62ee7640114174b8f798ae73187b513c02d0cb1777d51275117760a161382f6d576a14d042
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/types@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/types@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypes%2Fdownload%2F%40typescript-eslint%2Ftypes-4.0.1.tgz"
+  checksum: 13593fe24e19c821ea82e855881c1c7d7704709f0fd023d16b135f01462ff81c1abc6dafcb53d4f858fd3156b5603dd33b37c5481b71edc0686ef2ca04b5bd0b
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/typescript-estree@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/typescript-estree@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-4.0.1.tgz"
+  dependencies:
+    "@typescript-eslint/types": 4.0.1
+    "@typescript-eslint/visitor-keys": 4.0.1
     debug: ^4.1.1
-    eslint-visitor-keys: ^1.1.0
-    glob: ^7.1.6
+    globby: ^11.0.1
     is-glob: ^4.0.1
     lodash: ^4.17.15
     semver: ^7.3.2
@@ -1156,11 +1173,21 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 77d1a758dfd4a2813fb51d6102aa79d7eccb006c66db8cff49a10706c8cf64cae6b256b8ec6694058c1c333775e1dbc6ca7501769138fc89165b9c10f8201e40
+  checksum: 65746bb2a863f9dc5c82f003ffb39d69f1a3b56f145646ce48ffc4ceba61919aef34ea2a6f7ab0e4632d1b4e2c8d4edc0862d705ebb6b833a374e231f3865349
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^2.1.0":
+"@typescript-eslint/visitor-keys@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@typescript-eslint/visitor-keys@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fvisitor-keys%2Fdownload%2F%40typescript-eslint%2Fvisitor-keys-4.0.1.tgz"
+  dependencies:
+    "@typescript-eslint/types": 4.0.1
+    eslint-visitor-keys: ^2.0.0
+  checksum: fe1b5e186e560f2d1eac02adb6513633157c01ef301266c4eba26a4eb331811d6e90ea6c7ab40ef7a253119042edac8d2200e753bec6c8b4bb2d041db33f8983
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/core@npm:^2.2.1":
   version: 2.2.2
   resolution: "@yarnpkg/core@npm:2.2.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40yarnpkg%2Fcore%2Fdownload%2F%40yarnpkg%2Fcore-2.2.2.tgz"
   dependencies:
@@ -1226,7 +1253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/parsers@npm:^2.1.0, @yarnpkg/parsers@npm:^2.2.0":
+"@yarnpkg/parsers@npm:^2.2.0":
   version: 2.2.0
   resolution: "@yarnpkg/parsers@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40yarnpkg%2Fparsers%2Fdownload%2F%40yarnpkg%2Fparsers-2.2.0.tgz"
   dependencies:
@@ -1247,15 +1274,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnpify@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@yarnpkg/pnpify@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40yarnpkg%2Fpnpify%2Fdownload%2F%40yarnpkg%2Fpnpify-2.1.0.tgz"
+"@yarnpkg/pnpify@npm:^2.1.0":
+  version: 2.2.1
+  resolution: "@yarnpkg/pnpify@npm:2.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40yarnpkg%2Fpnpify%2Fdownload%2F%40yarnpkg%2Fpnpify-2.2.1.tgz"
   dependencies:
-    "@yarnpkg/core": ^2.1.0
-    "@yarnpkg/fslib": ^2.1.0
-    "@yarnpkg/parsers": ^2.1.0
+    "@yarnpkg/core": ^2.2.1
+    "@yarnpkg/fslib": ^2.2.1
+    "@yarnpkg/parsers": ^2.2.0
     chalk: ^3.0.0
-    clipanion: ^2.4.2
+    clipanion: ^2.4.4
     comment-json: ^2.2.0
     lodash: ^4.17.15
     tslib: ^1.13.0
@@ -1269,7 +1296,7 @@ __metadata:
       optional: true
   bin:
     pnpify: ./lib/cli.js
-  checksum: 334ce4cc6c6c154fb5aa4f6b4847bb5d7869596d295cc429dedecaa9b4865cbaf104855d856fbbf5f186da09dd7e63bf7d774665f2ce5439c2664c13ef142cf0
+  checksum: 47a6fd0c11403d1dffdac76765ba995bdc8b5430666997e15c70ca285747e01fe831fd875a13fb1118d22458c019bbe1fab60945f9cb0a6ef46d291a5759b244
   languageName: node
   linkType: hard
 
@@ -1351,7 +1378,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^7.1.0, acorn@npm:^7.1.1":
+"acorn@npm:^7.1.0, acorn@npm:^7.4.0":
   version: 7.4.0
   resolution: "acorn@npm:7.4.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Facorn%2Fdownload%2Facorn-7.4.0.tgz"
   bin:
@@ -1377,7 +1404,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3":
+"ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
   version: 6.12.4
   resolution: "ajv@npm:6.12.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fajv%2Fdownload%2Fajv-6.12.4.tgz"
   dependencies:
@@ -2036,7 +2063,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:2.4.2, chalk@npm:^2.0.0, chalk@npm:^2.0.1, chalk@npm:^2.1.0":
+"chalk@npm:2.4.2, chalk@npm:^2.0.0, chalk@npm:^2.0.1":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fchalk%2Fdownload%2Fchalk-2.4.2.tgz"
   dependencies:
@@ -2064,13 +2091,6 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: f860285b419f9e925c2db0f45ffa88aa8794c14b80cc5d01ff30930bcfc384996606362706f0829cf557f6d36152a5fb2d227ad63c4bc90e2ec9e9dbed4a3c07
-  languageName: node
-  linkType: hard
-
-"chardet@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "chardet@npm:0.7.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fchardet%2Fdownload%2Fchardet-0.7.0.tgz"
-  checksum: b71a4ee4648489291af86418b96247824a8c1ee4f4f95d6268967fb40e9fbf70500e72fb737d5186a23cf98c8a02b91d68cb2f426d7428e92883af9d31a037ec
   languageName: node
   linkType: hard
 
@@ -2116,7 +2136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:2.1.0, cli-truncate@npm:^2.1.0":
+"cli-truncate@npm:^2.1.0":
   version: 2.1.0
   resolution: "cli-truncate@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcli-truncate%2Fdownload%2Fcli-truncate-2.1.0.tgz"
   dependencies:
@@ -2126,14 +2146,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-width@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "cli-width@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcli-width%2Fdownload%2Fcli-width-3.0.0.tgz"
-  checksum: 6e5bc71774e202bfd3782d0be56eacee9462bfc7dc4a601dad10636163ab9c8abe625e760b0f28e590f9044bc23df3927ee3406f8c961fd2e4a51ef3f67fab2f
-  languageName: node
-  linkType: hard
-
-"clipanion@npm:^2.4.2, clipanion@npm:^2.4.4":
+"clipanion@npm:^2.4.4":
   version: 2.5.0
   resolution: "clipanion@npm:2.5.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fclipanion%2Fdownload%2Fclipanion-2.5.0.tgz"
   checksum: 700ff428c971413f4c88e40a47047f98e84e7ce53dd00f9a2f44e603038645f673319a1fb17a27b3dda5c4314f79ef6b2bf7cbbcdc5b94827e377c43f72fa4c3
@@ -2232,10 +2245,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "commander@npm:5.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-5.1.0.tgz"
-  checksum: d16141ea7f580945156fb8a06de2834c4647c7d9d3732ebd4534ab8e0b7c64747db301e18f2b840f28ea8fef51f7a8d6178e674b45a21931f0b65ff1c7f476b3
+"commander@npm:^6.0.0":
+  version: 6.1.0
+  resolution: "commander@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-6.1.0.tgz"
+  checksum: ef1e310c3f430b84f8818ec9c6e5ce1b84909616eb2c1b1a79f646bc25fbca156eccf2ecf19f07e77a08dc519728d53d1300f94f3b2ad93de65add66044dfce6
   languageName: node
   linkType: hard
 
@@ -2335,18 +2348,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-cli@npm:2.0.34":
-  version: 2.0.34
-  resolution: "conventional-changelog-cli@npm:2.0.34::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-cli%2Fdownload%2Fconventional-changelog-cli-2.0.34.tgz"
+"conventional-changelog-cli@npm:^2.0.34":
+  version: 2.1.0
+  resolution: "conventional-changelog-cli@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-cli%2Fdownload%2Fconventional-changelog-cli-2.1.0.tgz"
   dependencies:
     add-stream: ^1.0.0
-    conventional-changelog: ^3.1.21
+    conventional-changelog: ^3.1.23
     lodash: ^4.17.15
     meow: ^7.0.0
     tempfile: ^3.0.0
   bin:
     conventional-changelog: cli.js
-  checksum: 4ca4bf2d7f814a250580f4e59209c253fdfffe130ef83a7c2a6481b5505a66fa91ce95cbe7a1680b6ca4aad41f6471b4fe430aafec48a7201e5a56ae89e3eaab
+  checksum: 864599e276294aab4fbeaaf3ac000dac49cd4b0f2bc241dd7fafcce14a925ef0279d62d743390c95608c63486d80412a712949126fcbeb5e3f78943ae00a92b4
   languageName: node
   linkType: hard
 
@@ -2477,7 +2490,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog@npm:^3.1.21":
+"conventional-changelog@npm:^3.1.23":
   version: 3.1.23
   resolution: "conventional-changelog@npm:3.1.23::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog%2Fdownload%2Fconventional-changelog-3.1.23.tgz"
   dependencies:
@@ -2565,20 +2578,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "cosmiconfig@npm:6.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcosmiconfig%2Fdownload%2Fcosmiconfig-6.0.0.tgz"
+"cosmiconfig@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "cosmiconfig@npm:7.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcosmiconfig%2Fdownload%2Fcosmiconfig-7.0.0.tgz"
   dependencies:
     "@types/parse-json": ^4.0.0
-    import-fresh: ^3.1.0
+    import-fresh: ^3.2.1
     parse-json: ^5.0.0
     path-type: ^4.0.0
-    yaml: ^1.7.2
-  checksum: bbd6bbaefe15938107da21f2b5f2d5ede75c7ed4bca5af904d91987c59b050ac95f5e786d9021e16959e0119b36174b190f6040a1daf6fddc75361ab123c0d45
+    yaml: ^1.10.0
+  checksum: 151fcb91773c0ae826fc801eab86f8f818605dbf63c8e5515adf0ff0fec5ede8e614f387f93c088d65527a2ea9021f0cd8c6b6e5c7fef2b77480b5e2c33700dc
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:7.0.3, cross-spawn@npm:^7.0.0":
+"cross-spawn@npm:7.0.3, cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcross-spawn%2Fdownload%2Fcross-spawn-7.0.3.tgz"
   dependencies:
@@ -2589,7 +2602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^6.0.0, cross-spawn@npm:^6.0.5":
+"cross-spawn@npm:^6.0.0":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcross-spawn%2Fdownload%2Fcross-spawn-6.0.5.tgz"
   dependencies:
@@ -2738,7 +2751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deep-is@npm:~0.1.3":
+"deep-is@npm:^0.1.3, deep-is@npm:~0.1.3":
   version: 0.1.3
   resolution: "deep-is@npm:0.1.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeep-is%2Fdownload%2Fdeep-is-0.1.3.tgz"
   checksum: 3de58f86af4dec86c8be531a5abaf2e6d8ea98fa2f1d81a3a778d0d8df920ee282043a6ef05bfb4eb699c8551df9ac1b808d4dc71d54cc40ab1efa5ce8792943
@@ -2966,7 +2979,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enquirer@npm:^2.3.5":
+"enquirer@npm:^2.3.5, enquirer@npm:^2.3.6":
   version: 2.3.6
   resolution: "enquirer@npm:2.3.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fenquirer%2Fdownload%2Fenquirer-2.3.6.tgz"
   dependencies:
@@ -3054,7 +3067,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:14.1.1":
+"eslint-config-prettier@npm:^6.11.0":
+  version: 6.11.0
+  resolution: "eslint-config-prettier@npm:6.11.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-prettier%2Fdownload%2Feslint-config-prettier-6.11.0.tgz"
+  dependencies:
+    get-stdin: ^6.0.0
+  peerDependencies:
+    eslint: ">=3.14.1"
+  bin:
+    eslint-config-prettier-check: bin/cli.js
+  checksum: 59efd906c78d47753a673c205ef515fdab19cd6ea0fd992c9cb2366804861746238244526ab565ccc7448569f5472ce7646a77d0c9998787192e4ebae95df71d
+  languageName: node
+  linkType: hard
+
+"eslint-config-standard@npm:^14.1.1":
   version: 14.1.1
   resolution: "eslint-config-standard@npm:14.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard%2Fdownload%2Feslint-config-standard-14.1.1.tgz"
   peerDependencies:
@@ -3067,7 +3093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:0.3.4, eslint-import-resolver-node@npm:^0.3.3":
+"eslint-import-resolver-node@npm:^0.3.3, eslint-import-resolver-node@npm:^0.3.4":
   version: 0.3.4
   resolution: "eslint-import-resolver-node@npm:0.3.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-import-resolver-node%2Fdownload%2Feslint-import-resolver-node-0.3.4.tgz"
   dependencies:
@@ -3099,16 +3125,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-html@npm:6.0.2":
-  version: 6.0.2
-  resolution: "eslint-plugin-html@npm:6.0.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.0.2.tgz"
+"eslint-plugin-html@npm:^6.0.2":
+  version: 6.1.0
+  resolution: "eslint-plugin-html@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.1.0.tgz"
   dependencies:
     htmlparser2: ^4.1.0
-  checksum: 3f5419393cd165e32ce814043916b5b9acf01330c2384d2a876d99fe966565ac71857ed8f6e8ba5e3a01af3bd31367ad8e1a8b3d7143751242f6ccff42896554
+  checksum: 4360f514beed14f75ad35f2043c1c12cf4b5bcaf78ab474018f1a20e359976511c393bf989e31f65f00452d472404e90f608606c16ce5d1684d5c129b0b04dbe
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:2.22.0":
+"eslint-plugin-import@npm:^2.22.0":
   version: 2.22.0
   resolution: "eslint-plugin-import@npm:2.22.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-import%2Fdownload%2Feslint-plugin-import-2.22.0.tgz"
   dependencies:
@@ -3131,7 +3157,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-node@npm:11.1.0":
+"eslint-plugin-node@npm:^11.1.0":
   version: 11.1.0
   resolution: "eslint-plugin-node@npm:11.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-node%2Fdownload%2Feslint-plugin-node-11.1.0.tgz"
   dependencies:
@@ -3147,14 +3173,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:4.2.1":
+"eslint-plugin-prettier@npm:^3.1.4":
+  version: 3.1.4
+  resolution: "eslint-plugin-prettier@npm:3.1.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-prettier%2Fdownload%2Feslint-plugin-prettier-3.1.4.tgz"
+  dependencies:
+    prettier-linter-helpers: ^1.0.0
+  peerDependencies:
+    eslint: ">=5.0.0"
+    prettier: ">=1.13.0"
+  checksum: 4e4df155790a20a7ceef9008bbc22a677a8f7e790e9ef613a049a78dfe0b5dc3726afcd4bfd2a8ce41abc88c9a11db029819a722f70b940da32a03629e7f7832
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-promise@npm:^4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-promise@npm:4.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-promise%2Fdownload%2Feslint-plugin-promise-4.2.1.tgz"
   checksum: 8c233a0b5f5646e08709e999aa75973481ee46c45255ec4b4d1577915f68d79ae52f6f84e361af5b761971294bdb38ec86021515fa4cff178f57c989226dd671
   languageName: node
   linkType: hard
 
-"eslint-plugin-standard@npm:4.0.1":
+"eslint-plugin-standard@npm:^4.0.1":
   version: 4.0.1
   resolution: "eslint-plugin-standard@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-standard%2Fdownload%2Feslint-plugin-standard-4.0.1.tgz"
   peerDependencies:
@@ -3163,7 +3201,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-scope@npm:^5.0.0":
+"eslint-scope@npm:^5.0.0, eslint-scope@npm:^5.1.0":
   version: 5.1.0
   resolution: "eslint-scope@npm:5.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-scope%2Fdownload%2Feslint-scope-5.1.0.tgz"
   dependencies:
@@ -3173,16 +3211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-utils@npm:^1.4.3":
-  version: 1.4.3
-  resolution: "eslint-utils@npm:1.4.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-utils%2Fdownload%2Feslint-utils-1.4.3.tgz"
-  dependencies:
-    eslint-visitor-keys: ^1.1.0
-  checksum: 4a7ede9e723a859a8805bd1ae73681c99323be0da90d37799796ec564cc6c3326d57ac80f91667737abc45383170a3a90653e13c00c7368b3af9be0cec662b4c
-  languageName: node
-  linkType: hard
-
-"eslint-utils@npm:^2.0.0":
+"eslint-utils@npm:^2.0.0, eslint-utils@npm:^2.1.0":
   version: 2.1.0
   resolution: "eslint-utils@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-utils%2Fdownload%2Feslint-utils-2.1.0.tgz"
   dependencies:
@@ -3191,28 +3220,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^1.1.0":
+"eslint-visitor-keys@npm:^1.1.0, eslint-visitor-keys@npm:^1.3.0":
   version: 1.3.0
   resolution: "eslint-visitor-keys@npm:1.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-visitor-keys%2Fdownload%2Feslint-visitor-keys-1.3.0.tgz"
   checksum: 58ab7a0107621d8a0fe19142a5e1306fd527c0f36b65d5c79033639e80278d8060264804f42c56f68e5541c4cc83d9175f9143083774cec8222f6cd5a695306e
   languageName: node
   linkType: hard
 
-"eslint@npm:6.8.0":
-  version: 6.8.0
-  resolution: "eslint@npm:6.8.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-6.8.0.tgz"
+"eslint-visitor-keys@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "eslint-visitor-keys@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-visitor-keys%2Fdownload%2Feslint-visitor-keys-2.0.0.tgz"
+  checksum: 429dabdcab3c1cf5e65d44843afc513398d4ee32a37f93edc93bb5ba59a12b78fa67d87ff23c752c170b5e4f9085050f45b3c036cdfb23d40a724f2614048140
+  languageName: node
+  linkType: hard
+
+"eslint@npm:^7.8.1":
+  version: 7.8.1
+  resolution: "eslint@npm:7.8.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-7.8.1.tgz"
   dependencies:
     "@babel/code-frame": ^7.0.0
+    "@eslint/eslintrc": ^0.1.3
     ajv: ^6.10.0
-    chalk: ^2.1.0
-    cross-spawn: ^6.0.5
+    chalk: ^4.0.0
+    cross-spawn: ^7.0.2
     debug: ^4.0.1
     doctrine: ^3.0.0
-    eslint-scope: ^5.0.0
-    eslint-utils: ^1.4.3
-    eslint-visitor-keys: ^1.1.0
-    espree: ^6.1.2
-    esquery: ^1.0.1
+    enquirer: ^2.3.5
+    eslint-scope: ^5.1.0
+    eslint-utils: ^2.1.0
+    eslint-visitor-keys: ^1.3.0
+    espree: ^7.3.0
+    esquery: ^1.2.0
     esutils: ^2.0.2
     file-entry-cache: ^5.0.1
     functional-red-black-tree: ^1.0.1
@@ -3221,38 +3259,36 @@ __metadata:
     ignore: ^4.0.6
     import-fresh: ^3.0.0
     imurmurhash: ^0.1.4
-    inquirer: ^7.0.0
     is-glob: ^4.0.0
     js-yaml: ^3.13.1
     json-stable-stringify-without-jsonify: ^1.0.1
-    levn: ^0.3.0
-    lodash: ^4.17.14
+    levn: ^0.4.1
+    lodash: ^4.17.19
     minimatch: ^3.0.4
-    mkdirp: ^0.5.1
     natural-compare: ^1.4.0
-    optionator: ^0.8.3
+    optionator: ^0.9.1
     progress: ^2.0.0
-    regexpp: ^2.0.1
-    semver: ^6.1.2
-    strip-ansi: ^5.2.0
-    strip-json-comments: ^3.0.1
+    regexpp: ^3.1.0
+    semver: ^7.2.1
+    strip-ansi: ^6.0.0
+    strip-json-comments: ^3.1.0
     table: ^5.2.3
     text-table: ^0.2.0
     v8-compile-cache: ^2.0.3
   bin:
-    eslint: ./bin/eslint.js
-  checksum: 796be0e038188d4cd8062541394d29f35606a7cee00cead5f6c8e3f9db932f0d19ee946df16fd593e0bcd614f896a416afa916bf82d9420576537ac349f2a06d
+    eslint: bin/eslint.js
+  checksum: 0168d826ab2ae1fd04b9da8e457268f37d3ce7d0d83cc8a5cc659c8091673a112c356a6261ab178964291e7babd6ff4cf1011a15c70eb4f03a493ed5681206f9
   languageName: node
   linkType: hard
 
-"espree@npm:^6.1.2":
-  version: 6.2.1
-  resolution: "espree@npm:6.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fespree%2Fdownload%2Fespree-6.2.1.tgz"
+"espree@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "espree@npm:7.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fespree%2Fdownload%2Fespree-7.3.0.tgz"
   dependencies:
-    acorn: ^7.1.1
+    acorn: ^7.4.0
     acorn-jsx: ^5.2.0
-    eslint-visitor-keys: ^1.1.0
-  checksum: 8651a6c1625436a5ff42b0927fb7c9cfa3f87697b9522251b87a343a26655e46d3ce6b03654ac53d4558b41070fef2cdcd1ec4a73cc633661ea40aa1cefdb5e5
+    eslint-visitor-keys: ^1.3.0
+  checksum: dd2543c293e091532f3d6eda4a09ae49039ac65e69bc072aec952a5db6eb23eeee7617e99cde11414367104208c2dec13f709bbede0528d4f6854ce5cb734960
   languageName: node
   linkType: hard
 
@@ -3266,7 +3302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esquery@npm:^1.0.1":
+"esquery@npm:^1.2.0":
   version: 1.3.1
   resolution: "esquery@npm:1.3.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fesquery%2Fdownload%2Fesquery-1.3.1.tgz"
   dependencies:
@@ -3345,7 +3381,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^4.0.1":
+"execa@npm:^4.0.3":
   version: 4.0.3
   resolution: "execa@npm:4.0.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fexeca%2Fdownload%2Fexeca-4.0.3.tgz"
   dependencies:
@@ -3424,17 +3460,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"external-editor@npm:^3.0.3":
-  version: 3.1.0
-  resolution: "external-editor@npm:3.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fexternal-editor%2Fdownload%2Fexternal-editor-3.1.0.tgz"
-  dependencies:
-    chardet: ^0.7.0
-    iconv-lite: ^0.4.24
-    tmp: ^0.0.33
-  checksum: 22163643f9938f4d46bab20ee0417cf1131aaf9ea4c546184d3668f689b8f7fc0d750b5a60857cb8ea09e4651b2c49fe30eb5a0903697e3c2d837da1e90d2d7c
-  languageName: node
-  linkType: hard
-
 "extglob@npm:^2.0.4":
   version: 2.0.4
   resolution: "extglob@npm:2.0.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fextglob%2Fdownload%2Fextglob-2.0.4.tgz"
@@ -3465,6 +3490,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-diff@npm:^1.1.2":
+  version: 1.2.0
+  resolution: "fast-diff@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-diff%2Fdownload%2Ffast-diff-1.2.0.tgz"
+  checksum: 9c5407d9c4869407854fe8838b8d9d26065ca747c9b80697957ae37482e982e880de823efa2c97ea1cba05dc06fce853a005e7557d10550c64c052cf7021ba9e
+  languageName: node
+  linkType: hard
+
 "fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.2":
   version: 3.2.4
   resolution: "fast-glob@npm:3.2.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-glob%2Fdownload%2Ffast-glob-3.2.4.tgz"
@@ -3486,7 +3518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-levenshtein@npm:~2.0.6":
+"fast-levenshtein@npm:^2.0.6, fast-levenshtein@npm:~2.0.6":
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-levenshtein%2Fdownload%2Ffast-levenshtein-2.0.6.tgz"
   checksum: a2d03af3088b0397633e007fb3010ecfa4f91cae2116d2385653c59396a1b31467641afa672a79e6f82218518670dc144128378124e711e35dbf90bc82846f22
@@ -3511,7 +3543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"figures@npm:^3.0.0, figures@npm:^3.2.0":
+"figures@npm:^3.2.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ffigures%2Fdownload%2Ffigures-3.2.0.tgz"
   dependencies:
@@ -3620,7 +3652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:*, form-data@npm:^3.0.0":
+"form-data@npm:^3.0.0":
   version: 3.0.0
   resolution: "form-data@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fform-data%2Fdownload%2Fform-data-3.0.0.tgz"
   dependencies:
@@ -3779,6 +3811,13 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"get-stdin@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "get-stdin@npm:6.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-stdin%2Fdownload%2Fget-stdin-6.0.0.tgz"
+  checksum: b51d664838aef7f8353dc57371ce59cea54d8d584fec015a9d89d24561e95b97806d5b5ba120bc81574c9ed63cb3e210176ffa0ff9263c7e7ba4d56d0fe54913
+  languageName: node
+  linkType: hard
+
 "get-stream@npm:^4.0.0":
   version: 4.1.0
   resolution: "get-stream@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-stream%2Fdownload%2Fget-stream-4.1.0.tgz"
@@ -3883,7 +3922,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
+"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.1.6
   resolution: "glob@npm:7.1.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fglob%2Fdownload%2Fglob-7.1.6.tgz"
   dependencies:
@@ -4171,14 +4210,14 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:4.2.5":
-  version: 4.2.5
-  resolution: "husky@npm:4.2.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhusky%2Fdownload%2Fhusky-4.2.5.tgz"
+"husky@npm:^4.2.5":
+  version: 4.3.0
+  resolution: "husky@npm:4.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhusky%2Fdownload%2Fhusky-4.3.0.tgz"
   dependencies:
     chalk: ^4.0.0
     ci-info: ^2.0.0
     compare-versions: ^3.6.0
-    cosmiconfig: ^6.0.0
+    cosmiconfig: ^7.0.0
     find-versions: ^3.2.0
     opencollective-postinstall: ^2.0.2
     pkg-dir: ^4.2.0
@@ -4188,11 +4227,11 @@ fsevents@^2.1.2:
   bin:
     husky-run: bin/run.js
     husky-upgrade: lib/upgrader/bin.js
-  checksum: 9d03d38c66688ab61166b425aa70229665c93a2a6fbd0d7388923205622fe34c6cc4c251777337b0813a40891750a18d603eff8451a58d06953807535a8908ed
+  checksum: c212d9732de84cbd7c25d907b874f7844503f85e28c0512518cddbac9854c54f1c569e81c5b70387f1e3c27d35c2b43256c811cf06fdad066565c5fc178f33f7
   languageName: node
   linkType: hard
 
-"iconv-lite@npm:0.4.24, iconv-lite@npm:^0.4.24":
+"iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ficonv-lite%2Fdownload%2Ficonv-lite-0.4.24.tgz"
   dependencies:
@@ -4232,7 +4271,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0":
+"import-fresh@npm:^3.0.0, import-fresh@npm:^3.2.1":
   version: 3.2.1
   resolution: "import-fresh@npm:3.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fimport-fresh%2Fdownload%2Fimport-fresh-3.2.1.tgz"
   dependencies:
@@ -4305,27 +4344,6 @@ fsevents@^2.1.2:
   version: 1.3.5
   resolution: "ini@npm:1.3.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fini%2Fdownload%2Fini-1.3.5.tgz"
   checksum: 304a78d1e0ec49c6dc316b6a21bee5340ba85159c6581235b26a4cf27e2bac5f66f2c8f0e074ceaf3c48085f89fb974691cbf812df2128d2d74c5ef726d1b19a
-  languageName: node
-  linkType: hard
-
-"inquirer@npm:^7.0.0":
-  version: 7.3.3
-  resolution: "inquirer@npm:7.3.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Finquirer%2Fdownload%2Finquirer-7.3.3.tgz"
-  dependencies:
-    ansi-escapes: ^4.2.1
-    chalk: ^4.1.0
-    cli-cursor: ^3.1.0
-    cli-width: ^3.0.0
-    external-editor: ^3.0.3
-    figures: ^3.0.0
-    lodash: ^4.17.19
-    mute-stream: 0.0.8
-    run-async: ^2.4.0
-    rxjs: ^6.6.0
-    string-width: ^4.1.0
-    strip-ansi: ^6.0.0
-    through: ^2.3.6
-  checksum: fa0cbd9594a04e04c5c10a806e9a86b23986acdc7d07c75afdbc03412ff03b1d201efa83d9d64929afe99a901a093bfc9ae7ab13560f8e557cb98eddbe5bf37d
   languageName: node
   linkType: hard
 
@@ -4786,7 +4804,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest-config@npm:25.5.4, jest-config@npm:^25.5.4":
+"jest-config@npm:^25.5.4":
   version: 25.5.4
   resolution: "jest-config@npm:25.5.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-config%2Fdownload%2Fjest-config-25.5.4.tgz"
   dependencies:
@@ -4978,7 +4996,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest-pnp-resolver@npm:1.2.2, jest-pnp-resolver@npm:^1.2.1":
+"jest-pnp-resolver@npm:^1.2.1, jest-pnp-resolver@npm:^1.2.2":
   version: 1.2.2
   resolution: "jest-pnp-resolver@npm:1.2.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-pnp-resolver%2Fdownload%2Fjest-pnp-resolver-1.2.2.tgz"
   peerDependencies:
@@ -5171,7 +5189,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest@npm:25.5.4":
+"jest@npm:^25.5.4":
   version: 25.5.4
   resolution: "jest@npm:25.5.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest%2Fdownload%2Fjest-25.5.4.tgz"
   dependencies:
@@ -5416,7 +5434,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"levn@npm:^0.3.0, levn@npm:~0.3.0":
+"levn@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "levn@npm:0.4.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Flevn%2Fdownload%2Flevn-0.4.1.tgz"
+  dependencies:
+    prelude-ls: ^1.2.1
+    type-check: ~0.4.0
+  checksum: 2f6ddfb0b956f2cb6b1608253a62b0c30e7392dd3c7b4cf284dfe2889b44d8385eaa81597646e253752c312a960ccb5e4d596968e476d5f6614f4ca60e5218e9
+  languageName: node
+  linkType: hard
+
+"levn@npm:~0.3.0":
   version: 0.3.0
   resolution: "levn@npm:0.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Flevn%2Fdownload%2Flevn-0.3.0.tgz"
   dependencies:
@@ -5433,19 +5461,19 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:10.2.11":
-  version: 10.2.11
-  resolution: "lint-staged@npm:10.2.11::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Flint-staged%2Fdownload%2Flint-staged-10.2.11.tgz"
+"lint-staged@npm:^10.2.11":
+  version: 10.3.0
+  resolution: "lint-staged@npm:10.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Flint-staged%2Fdownload%2Flint-staged-10.3.0.tgz"
   dependencies:
-    chalk: ^4.0.0
-    cli-truncate: 2.1.0
-    commander: ^5.1.0
-    cosmiconfig: ^6.0.0
+    chalk: ^4.1.0
+    cli-truncate: ^2.1.0
+    commander: ^6.0.0
+    cosmiconfig: ^7.0.0
     debug: ^4.1.1
     dedent: ^0.7.0
-    enquirer: ^2.3.5
-    execa: ^4.0.1
-    listr2: ^2.1.0
+    enquirer: ^2.3.6
+    execa: ^4.0.3
+    listr2: ^2.6.0
     log-symbols: ^4.0.0
     micromatch: ^4.0.2
     normalize-path: ^3.0.0
@@ -5454,11 +5482,11 @@ fsevents@^2.1.2:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 0d1c408dfea1173b6a691b223228db5a617365bd3ee6b7151fc3cd0b69ecbc1a48ced6675163baa67851c1492ab9025490932d9bf0597dc496638c5a1b4b68ab
+  checksum: 1e8bfa56f4aa817892032fd42cd47dd554121c4f22643a1f11e1879c638784664d83600f2f2304123b89354e8a3365f28435cbe654f92aaa0b6186df99355a00
   languageName: node
   linkType: hard
 
-"listr2@npm:^2.1.0":
+"listr2@npm:^2.6.0":
   version: 2.6.2
   resolution: "listr2@npm:2.6.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Flistr2%2Fdownload%2Flistr2-2.6.2.tgz"
   dependencies:
@@ -5978,13 +6006,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"mute-stream@npm:0.0.8":
-  version: 0.0.8
-  resolution: "mute-stream@npm:0.0.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fmute-stream%2Fdownload%2Fmute-stream-0.0.8.tgz"
-  checksum: 315c40f463ec31deee54c5b8779207feb6b63dd4c58fe0f84ad46abdd6dac1ada578d53efde4a47b0ae4d29d453d35bb39ecdd98ee9ebf538929039a3a9945df
-  languageName: node
-  linkType: hard
-
 "nanomatch@npm:^1.2.9":
   version: 1.2.13
   resolution: "nanomatch@npm:1.2.13::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fnanomatch%2Fdownload%2Fnanomatch-1.2.13.tgz"
@@ -6297,7 +6318,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"optionator@npm:^0.8.1, optionator@npm:^0.8.3":
+"optionator@npm:^0.8.1":
   version: 0.8.3
   resolution: "optionator@npm:0.8.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Foptionator%2Fdownload%2Foptionator-0.8.3.tgz"
   dependencies:
@@ -6311,6 +6332,20 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"optionator@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "optionator@npm:0.9.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Foptionator%2Fdownload%2Foptionator-0.9.1.tgz"
+  dependencies:
+    deep-is: ^0.1.3
+    fast-levenshtein: ^2.0.6
+    levn: ^0.4.1
+    prelude-ls: ^1.2.1
+    type-check: ^0.4.0
+    word-wrap: ^1.2.3
+  checksum: bdf5683f986d00e173e6034837b7b6a9e68c7e1a37d7684b240adf1758db9076cfb04c9f64be29327881bb06c5017afb8b65012c5f02d07b180e9f6f42595ffd
+  languageName: node
+  linkType: hard
+
 "os-homedir@npm:^1.0.0":
   version: 1.0.2
   resolution: "os-homedir@npm:1.0.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fos-homedir%2Fdownload%2Fos-homedir-1.0.2.tgz"
@@ -6318,7 +6353,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"os-tmpdir@npm:^1.0.0, os-tmpdir@npm:~1.0.2":
+"os-tmpdir@npm:^1.0.0":
   version: 1.0.2
   resolution: "os-tmpdir@npm:1.0.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fos-tmpdir%2Fdownload%2Fos-tmpdir-1.0.2.tgz"
   checksum: ca158a3c2e48748adc7736cdbe4c593723f8ed8581d2aae2f2a30fdb9417d4ba14bed1cd487d47561898a7b1ece88bce69745e9ce0303e1dea9ea7d22d1f1082
@@ -6671,10 +6706,35 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"prelude-ls@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "prelude-ls@npm:1.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fprelude-ls%2Fdownload%2Fprelude-ls-1.2.1.tgz"
+  checksum: bc1649f521e8928cde0e1b349b224de2e6f00b71361a4a44f2e4a615342b6e1ae30366c32d26412dabe74d999a40f79c0ae044ae6b17cf19af935e74d12ea4fa
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:~1.1.2":
   version: 1.1.2
   resolution: "prelude-ls@npm:1.1.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fprelude-ls%2Fdownload%2Fprelude-ls-1.1.2.tgz"
   checksum: 189c969c92151b0de7a6e5d2ae0c4e50bbec5675cdd9fee3b7509d9d74b6416787ee36a8c12a07e8afb01454a8185b695b3395912484fa118e071fea45223b9b
+  languageName: node
+  linkType: hard
+
+"prettier-linter-helpers@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "prettier-linter-helpers@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fprettier-linter-helpers%2Fdownload%2Fprettier-linter-helpers-1.0.0.tgz"
+  dependencies:
+    fast-diff: ^1.1.2
+  checksum: 6d698b9c8dc28e52c8d69df520cde3410cc06cc40471acf81b4b7c18ca08e73d0efb0f878654985bb02fce4f8d3d64cdf64fe9f3ffad3e1dc7e17b837d4ddcb2
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "prettier@npm:2.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fprettier%2Fdownload%2Fprettier-2.1.1.tgz"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 420a807cda2d482388daa42379a7aaa1be629cb71f5792362a971a5ed1c6ff377d2e311818d24e9390a4a8a6eac3fda9ebe6975f2168efec893790c0497d8a93
   languageName: node
   linkType: hard
 
@@ -6787,7 +6847,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"query-string@npm:*, query-string@npm:^6.11.0":
+"query-string@npm:^6.11.0":
   version: 6.13.1
   resolution: "query-string@npm:6.13.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fquery-string%2Fdownload%2Fquery-string-6.13.1.tgz"
   dependencies:
@@ -7008,14 +7068,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"regexpp@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "regexpp@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fregexpp%2Fdownload%2Fregexpp-2.0.1.tgz"
-  checksum: e537f6c1b59f31a8d6381c64408d7a852aa98794896702fdadef2fa8b049f7d876da30cd0c6f6a64488aa58ad3b225d606cc689059628056b5a593e5422c38d6
-  languageName: node
-  linkType: hard
-
-"regexpp@npm:^3.0.0":
+"regexpp@npm:^3.0.0, regexpp@npm:^3.1.0":
   version: 3.1.0
   resolution: "regexpp@npm:3.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fregexpp%2Fdownload%2Fregexpp-3.1.0.tgz"
   checksum: 69d0ce6b449cf35d3732d6341a1e70850360ffc619f8eef10629871c462e614853fffb80d3f00fc17cd0bb5b8f34b0cde5be4b434e72c0eb3fbba2360c8b5ac4
@@ -7276,13 +7329,6 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"run-async@npm:^2.4.0":
-  version: 2.4.1
-  resolution: "run-async@npm:2.4.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Frun-async%2Fdownload%2Frun-async-2.4.1.tgz"
-  checksum: b1f06da336029be9c08312309ccdda107558ebf3e1212e960d7a54020f888a449ade2cb8b432a9a6750537ed80119a3c798f7592e8f8518f193ff4c50c13d4a3
-  languageName: node
-  linkType: hard
-
 "run-parallel@npm:^1.1.9":
   version: 1.1.9
   resolution: "run-parallel@npm:1.1.9::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Frun-parallel%2Fdownload%2Frun-parallel-1.1.9.tgz"
@@ -7290,7 +7336,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^6.6.0, rxjs@npm:^6.6.2":
+"rxjs@npm:^6.6.2":
   version: 6.6.3
   resolution: "rxjs@npm:6.6.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Frxjs%2Fdownload%2Frxjs-6.6.3.tgz"
   dependencies:
@@ -7380,7 +7426,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"semver@npm:6.3.0, semver@npm:6.x, semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.1.2, semver@npm:^6.3.0":
+"semver@npm:6.3.0, semver@npm:6.x, semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-6.3.0.tgz"
   bin:
@@ -7389,7 +7435,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.1.2, semver@npm:^7.3.2":
+"semver@npm:^7.1.2, semver@npm:^7.2.1, semver@npm:^7.3.2":
   version: 7.3.2
   resolution: "semver@npm:7.3.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-7.3.2.tgz"
   bin:
@@ -7954,7 +8000,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"strip-json-comments@npm:^3.0.1":
+"strip-json-comments@npm:^3.1.0, strip-json-comments@npm:^3.1.1":
   version: 3.1.1
   resolution: "strip-json-comments@npm:3.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-json-comments%2Fdownload%2Fstrip-json-comments-3.1.1.tgz"
   checksum: f16719ce25abc58a55ef82b1c27f541dcfa5d544f17158f62d10be21ff9bd22fde45a53c592b29d80ad3c97ccb67b7451c4833913fdaeadb508a40f5e0a9c206
@@ -8114,19 +8160,10 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"through@npm:2, through@npm:>=2.2.7 <3, through@npm:^2.3.6, through@npm:^2.3.8":
+"through@npm:2, through@npm:>=2.2.7 <3, through@npm:^2.3.8":
   version: 2.3.8
   resolution: "through@npm:2.3.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fthrough%2Fdownload%2Fthrough-2.3.8.tgz"
   checksum: 918d9151680b5355990011eb8c4b02e8cb8cf6e9fb6ea3d3e5a1faa688343789e261634ae35de4ea9167ab029d1e7bac6af2fe61b843931768d405fdc3e8897c
-  languageName: node
-  linkType: hard
-
-"tmp@npm:^0.0.33":
-  version: 0.0.33
-  resolution: "tmp@npm:0.0.33::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftmp%2Fdownload%2Ftmp-0.0.33.tgz"
-  dependencies:
-    os-tmpdir: ~1.0.2
-  checksum: 77666ca424a78fcfcc27a6576f24f01aa1300b10d22e4f1808809e560777672dd2d4a112604ab2ad86ec7cafd24472b9ccc41373c2b5b83797f27e6aff06cbe5
   languageName: node
   linkType: hard
 
@@ -8242,7 +8279,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:25.5.1":
+"ts-jest@npm:^25.5.1":
   version: 25.5.1
   resolution: "ts-jest@npm:25.5.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-jest%2Fdownload%2Fts-jest-25.5.1.tgz"
   dependencies:
@@ -8265,7 +8302,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"ts-node@npm:8.10.2":
+"ts-node@npm:^8.10.2":
   version: 8.10.2
   resolution: "ts-node@npm:8.10.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-node%2Fdownload%2Fts-node-8.10.2.tgz"
   dependencies:
@@ -8338,6 +8375,15 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
+"type-check@npm:^0.4.0, type-check@npm:~0.4.0":
+  version: 0.4.0
+  resolution: "type-check@npm:0.4.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftype-check%2Fdownload%2Ftype-check-0.4.0.tgz"
+  dependencies:
+    prelude-ls: ^1.2.1
+  checksum: 6c2e1ce339567e122504f0c729cfa35d877fb2da293b99110f0819eca81e6ed8d3ba9bb36c0bc0ee4904d5340dbe678f8642a395c1c67b1d0f69f081efb47f4a
+  languageName: node
+  linkType: hard
+
 "type-check@npm:~0.3.2":
   version: 0.3.2
   resolution: "type-check@npm:0.3.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftype-check%2Fdownload%2Ftype-check-0.3.2.tgz"
@@ -8391,7 +8437,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-typescript@3.9.7:
+typescript@^3.9.7:
   version: 3.9.7
   resolution: "typescript@npm:3.9.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.7.tgz"
   bin:
@@ -8401,7 +8447,7 @@ typescript@3.9.7:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@3.9.7#builtin<compat/typescript>":
+"typescript@patch:typescript@^3.9.7#builtin<compat/typescript>":
   version: 3.9.7
   resolution: "typescript@patch:typescript@npm%3A3.9.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npm.taobao.org%252Ftypescript%252Fdownload%252Ftypescript-3.9.7.tgz#builtin<compat/typescript>::version=3.9.7&hash=5b02a2"
   bin:
@@ -8635,7 +8681,7 @@ typescript@3.9.7:
   languageName: node
   linkType: hard
 
-"word-wrap@npm:~1.2.3":
+"word-wrap@npm:^1.2.3, word-wrap@npm:~1.2.3":
   version: 1.2.3
   resolution: "word-wrap@npm:1.2.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fword-wrap%2Fdownload%2Fword-wrap-1.2.3.tgz"
   checksum: 6526abd75d4409c76d1989cf2fbf6080b903db29824be3d17d0a0b8f6221486c76a021174eda2616cf311199787983c34bae3c5e7b51d2ad7476f2066cddb75a
@@ -8738,7 +8784,7 @@ typescript@3.9.7:
   languageName: node
   linkType: hard
 
-"yaml@npm:^1.7.2":
+"yaml@npm:^1.10.0":
   version: 1.10.0
   resolution: "yaml@npm:1.10.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fyaml%2Fdownload%2Fyaml-1.10.0.tgz"
   checksum: d4cc9f9724f8d0aebc2cf52e4e6aa7059f12d50deb54b5225d103462fb2af36e5c0bb419101ca4b1f0cd3b4db9e4139cf2c690e863ac6227648d39d6f4e2522c
