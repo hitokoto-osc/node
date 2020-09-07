@@ -375,7 +375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^8.3.5":
+"@commitlint/cli@npm:8.3.5":
   version: 8.3.5
   resolution: "@commitlint/cli@npm:8.3.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40commitlint%2Fcli%2Fdownload%2F%40commitlint%2Fcli-8.3.5.tgz"
   dependencies:
@@ -396,7 +396,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^8.3.4":
+"@commitlint/config-conventional@npm:8.3.4":
   version: 8.3.4
   resolution: "@commitlint/config-conventional@npm:8.3.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40commitlint%2Fconfig-conventional%2Fdownload%2F%40commitlint%2Fconfig-conventional-8.3.4.tgz"
   dependencies:
@@ -559,37 +559,37 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hitokoto/node-sdk@workspace:."
   dependencies:
-    "@commitlint/cli": ^8.3.5
-    "@commitlint/config-conventional": ^8.3.4
-    "@types/jest": ^25.2.3
-    "@types/node": ^13.13.15
-    "@types/node-fetch": ^2.5.7
-    "@typescript-eslint/eslint-plugin": ^4.0.1
-    "@typescript-eslint/parser": ^4.0.1
-    "@yarnpkg/pnpify": ^2.1.0
-    conventional-changelog-cli: ^2.0.34
-    eslint: ^7.8.1
-    eslint-config-prettier: ^6.11.0
-    eslint-config-standard: ^14.1.1
-    eslint-import-resolver-node: ^0.3.4
-    eslint-plugin-html: ^6.0.2
-    eslint-plugin-import: ^2.22.0
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-prettier: ^3.1.4
-    eslint-plugin-promise: ^4.2.1
-    eslint-plugin-standard: ^4.0.1
+    "@commitlint/cli": 8.3.5
+    "@commitlint/config-conventional": 8.3.4
+    "@types/jest": 25.2.3
+    "@types/node": 13.13.16
+    "@types/node-fetch": 2.5.7
+    "@typescript-eslint/eslint-plugin": 4.0.1
+    "@typescript-eslint/parser": 4.0.1
+    "@yarnpkg/pnpify": 2.2.1
+    conventional-changelog-cli: 2.1.0
+    eslint: 7.8.1
+    eslint-config-prettier: 6.11.0
+    eslint-config-standard: 14.1.1
+    eslint-import-resolver-node: 0.3.4
+    eslint-plugin-html: 6.1.0
+    eslint-plugin-import: 2.22.0
+    eslint-plugin-node: 11.1.0
+    eslint-plugin-prettier: 3.1.4
+    eslint-plugin-promise: 4.2.1
+    eslint-plugin-standard: 4.0.1
     form-data: ^3.0.0
-    husky: ^4.2.5
-    jest: ^25.5.4
-    jest-config: ^25.5.4
-    jest-pnp-resolver: ^1.2.2
-    lint-staged: ^10.2.11
+    husky: 4.3.0
+    jest: 25.5.4
+    jest-config: 25.5.4
+    jest-pnp-resolver: 1.2.2
+    lint-staged: 10.3.0
     node-fetch: ^2.6.0
-    prettier: ^2.1.1
+    prettier: 2.1.1
     query-string: ^6.11.0
-    ts-jest: ^25.5.1
-    ts-node: ^8.10.2
-    typescript: ^3.9.7
+    ts-jest: 25.5.1
+    ts-node: 8.10.2
+    typescript: 3.9.7
   languageName: unknown
   linkType: soft
 
@@ -977,7 +977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^25.2.3":
+"@types/jest@npm:25.2.3":
   version: 25.2.3
   resolution: "@types/jest@npm:25.2.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-25.2.3.tgz"
   dependencies:
@@ -1017,7 +1017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.7":
+"@types/node-fetch@npm:2.5.7":
   version: 2.5.7
   resolution: "@types/node-fetch@npm:2.5.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode-fetch%2Fdownload%2F%40types%2Fnode-fetch-2.5.7.tgz"
   dependencies:
@@ -1027,7 +1027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^13.13.15, @types/node@npm:^13.7.0":
+"@types/node@npm:*, @types/node@npm:13.13.16, @types/node@npm:^13.7.0":
   version: 13.13.16
   resolution: "@types/node@npm:13.13.16::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.13.16.tgz"
   checksum: a56b4666f3bc3408185ca8c32d939297bebed949efde4bf304542f445453b7dfb15c82367a3383b4619a982e639b58b09de453e982217cf9d6ae81292c4d3379
@@ -1087,7 +1087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.0.1":
+"@typescript-eslint/eslint-plugin@npm:4.0.1":
   version: 4.0.1
   resolution: "@typescript-eslint/eslint-plugin@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-4.0.1.tgz"
   dependencies:
@@ -1124,7 +1124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.0.1":
+"@typescript-eslint/parser@npm:4.0.1":
   version: 4.0.1
   resolution: "@typescript-eslint/parser@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-4.0.1.tgz"
   dependencies:
@@ -1274,7 +1274,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnpify@npm:^2.1.0":
+"@yarnpkg/pnpify@npm:2.2.1":
   version: 2.2.1
   resolution: "@yarnpkg/pnpify@npm:2.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40yarnpkg%2Fpnpify%2Fdownload%2F%40yarnpkg%2Fpnpify-2.2.1.tgz"
   dependencies:
@@ -2348,7 +2348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-cli@npm:^2.0.34":
+"conventional-changelog-cli@npm:2.1.0":
   version: 2.1.0
   resolution: "conventional-changelog-cli@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-cli%2Fdownload%2Fconventional-changelog-cli-2.1.0.tgz"
   dependencies:
@@ -3067,7 +3067,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.11.0":
+"eslint-config-prettier@npm:6.11.0":
   version: 6.11.0
   resolution: "eslint-config-prettier@npm:6.11.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-prettier%2Fdownload%2Feslint-config-prettier-6.11.0.tgz"
   dependencies:
@@ -3080,7 +3080,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:^14.1.1":
+"eslint-config-standard@npm:14.1.1":
   version: 14.1.1
   resolution: "eslint-config-standard@npm:14.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard%2Fdownload%2Feslint-config-standard-14.1.1.tgz"
   peerDependencies:
@@ -3093,7 +3093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:^0.3.3, eslint-import-resolver-node@npm:^0.3.4":
+"eslint-import-resolver-node@npm:0.3.4, eslint-import-resolver-node@npm:^0.3.3":
   version: 0.3.4
   resolution: "eslint-import-resolver-node@npm:0.3.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-import-resolver-node%2Fdownload%2Feslint-import-resolver-node-0.3.4.tgz"
   dependencies:
@@ -3125,7 +3125,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-html@npm:^6.0.2":
+"eslint-plugin-html@npm:6.1.0":
   version: 6.1.0
   resolution: "eslint-plugin-html@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.1.0.tgz"
   dependencies:
@@ -3134,7 +3134,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.0":
+"eslint-plugin-import@npm:2.22.0":
   version: 2.22.0
   resolution: "eslint-plugin-import@npm:2.22.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-import%2Fdownload%2Feslint-plugin-import-2.22.0.tgz"
   dependencies:
@@ -3157,7 +3157,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-node@npm:^11.1.0":
+"eslint-plugin-node@npm:11.1.0":
   version: 11.1.0
   resolution: "eslint-plugin-node@npm:11.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-node%2Fdownload%2Feslint-plugin-node-11.1.0.tgz"
   dependencies:
@@ -3173,7 +3173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.1.4":
+"eslint-plugin-prettier@npm:3.1.4":
   version: 3.1.4
   resolution: "eslint-plugin-prettier@npm:3.1.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-prettier%2Fdownload%2Feslint-plugin-prettier-3.1.4.tgz"
   dependencies:
@@ -3185,14 +3185,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:^4.2.1":
+"eslint-plugin-promise@npm:4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-promise@npm:4.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-promise%2Fdownload%2Feslint-plugin-promise-4.2.1.tgz"
   checksum: 8c233a0b5f5646e08709e999aa75973481ee46c45255ec4b4d1577915f68d79ae52f6f84e361af5b761971294bdb38ec86021515fa4cff178f57c989226dd671
   languageName: node
   linkType: hard
 
-"eslint-plugin-standard@npm:^4.0.1":
+"eslint-plugin-standard@npm:4.0.1":
   version: 4.0.1
   resolution: "eslint-plugin-standard@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-standard%2Fdownload%2Feslint-plugin-standard-4.0.1.tgz"
   peerDependencies:
@@ -3234,7 +3234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.8.1":
+"eslint@npm:7.8.1":
   version: 7.8.1
   resolution: "eslint@npm:7.8.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-7.8.1.tgz"
   dependencies:
@@ -4210,7 +4210,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:^4.2.5":
+"husky@npm:4.3.0":
   version: 4.3.0
   resolution: "husky@npm:4.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhusky%2Fdownload%2Fhusky-4.3.0.tgz"
   dependencies:
@@ -4804,7 +4804,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest-config@npm:^25.5.4":
+"jest-config@npm:25.5.4, jest-config@npm:^25.5.4":
   version: 25.5.4
   resolution: "jest-config@npm:25.5.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-config%2Fdownload%2Fjest-config-25.5.4.tgz"
   dependencies:
@@ -4996,7 +4996,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest-pnp-resolver@npm:^1.2.1, jest-pnp-resolver@npm:^1.2.2":
+"jest-pnp-resolver@npm:1.2.2, jest-pnp-resolver@npm:^1.2.1":
   version: 1.2.2
   resolution: "jest-pnp-resolver@npm:1.2.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-pnp-resolver%2Fdownload%2Fjest-pnp-resolver-1.2.2.tgz"
   peerDependencies:
@@ -5189,7 +5189,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest@npm:^25.5.4":
+"jest@npm:25.5.4":
   version: 25.5.4
   resolution: "jest@npm:25.5.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest%2Fdownload%2Fjest-25.5.4.tgz"
   dependencies:
@@ -5461,7 +5461,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.11":
+"lint-staged@npm:10.3.0":
   version: 10.3.0
   resolution: "lint-staged@npm:10.3.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Flint-staged%2Fdownload%2Flint-staged-10.3.0.tgz"
   dependencies:
@@ -6729,7 +6729,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.1.1":
+"prettier@npm:2.1.1":
   version: 2.1.1
   resolution: "prettier@npm:2.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fprettier%2Fdownload%2Fprettier-2.1.1.tgz"
   bin:
@@ -8279,7 +8279,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^25.5.1":
+"ts-jest@npm:25.5.1":
   version: 25.5.1
   resolution: "ts-jest@npm:25.5.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-jest%2Fdownload%2Fts-jest-25.5.1.tgz"
   dependencies:
@@ -8302,7 +8302,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^8.10.2":
+"ts-node@npm:8.10.2":
   version: 8.10.2
   resolution: "ts-node@npm:8.10.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-node%2Fdownload%2Fts-node-8.10.2.tgz"
   dependencies:
@@ -8437,7 +8437,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-typescript@^3.9.7:
+typescript@3.9.7:
   version: 3.9.7
   resolution: "typescript@npm:3.9.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.7.tgz"
   bin:
@@ -8447,7 +8447,7 @@ typescript@^3.9.7:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.9.7#builtin<compat/typescript>":
+"typescript@patch:typescript@3.9.7#builtin<compat/typescript>":
   version: 3.9.7
   resolution: "typescript@patch:typescript@npm%3A3.9.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npm.taobao.org%252Ftypescript%252Fdownload%252Ftypescript-3.9.7.tgz#builtin<compat/typescript>::version=3.9.7&hash=5b02a2"
   bin:
