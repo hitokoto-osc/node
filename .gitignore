@@ -71,6 +71,6 @@ build/config.json
 .yarn/unplugged
 .yarn/build-state.yml
 .pnp.*
-.yarn/sdk
+.yarn/sdks/
 # vscode
 .vscode
