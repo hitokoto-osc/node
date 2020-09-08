@@ -33,6 +33,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - run: yarn npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_RELEASE_TOKEN }}
+      - name: Publish
+        run: |
+          yarn config set npmAuthToken ${{ secrets.NPM_RELEASE_TOKEN }}
+          yarn npm publish
