@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,10 +18,12 @@ jobs:
           node-version: 12
           scope: '@hitokoto'
       - run: yarn install
-      - run: yarn style
+      - run: yarn lint
       - run: yarn test
+      - run: yarn build
 
   publish-npm:
+    name: Publish Package
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -30,8 +33,6 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - run: yarn style
-      - run: yarn test
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_RELEASE_TOKEN }}
