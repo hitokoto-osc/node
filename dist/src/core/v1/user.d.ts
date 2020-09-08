@@ -1,5 +1,6 @@
+import { BaseData } from './request';
 import { CommonSentence } from './sentence';
-export interface GetUserInformationApi {
+export interface GetUserInformationApi extends BaseData {
     id: number;
     name: string;
     email: string;
@@ -11,16 +12,15 @@ export interface GetUserInformationApi {
     created_at: string;
     updated_at: string;
 }
-export interface UserTokenApi {
-    user: TokenUser;
+export interface UserTokenApi extends BaseData {
+    user: {
+        id: number;
+        name: string;
+        email: string;
+        token: string;
+    };
 }
-interface TokenUser {
-    id: number;
-    name: string;
-    email: string;
-    token: string;
-}
-export interface NotificationSettingsApi {
+export interface NotificationSettingsApi extends BaseData {
     id: number;
     user_id: number;
     email_notification_global: number;
@@ -32,8 +32,10 @@ export interface NotificationSettingsApi {
     updated_at: string;
     created_at: string;
 }
-export interface UserHitokotoLikeApi {
-    statistics: UserHitokotoLikeStatistics;
+export interface UserHitokotoLikeApi extends BaseData {
+    statistics: {
+        total: number;
+    };
     collection: Sentence[];
 }
 interface Sentence {
@@ -48,10 +50,7 @@ interface Sentence {
     commit_from: string;
     created_at: string;
 }
-interface UserHitokotoLikeStatistics {
-    total: number;
-}
-export interface UserHitokotoHistoryOrSummary {
+export interface UserHitokotoHistoryOrSummary extends BaseData {
     statistics: HitokotoStatistics;
     collections: CommonSentence[];
 }
@@ -68,6 +67,7 @@ export interface NotificationSettingsParams {
     email_poll_created: boolean;
     email_poll_result: boolean;
     email_poll_report_daily: boolean;
+    [index: string]: boolean;
 }
 export declare class UserApi {
     getUserInformation(): Promise<GetUserInformationApi>;

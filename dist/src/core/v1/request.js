@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.checkStatusCode = exports.ApiRequest = exports.IsValid = exports.Token = void 0;
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const query_string_1 = __importDefault(require("query-string"));
 const form_data_1 = __importDefault(require("form-data"));
@@ -21,13 +22,13 @@ class ApiRequest {
      */
     async get(path, query) {
         const headers = {
-            Accept: 'application/json' // 要求接口一定返回 JSON 对象
+            Accept: 'application/json',
         };
         if (this.token) {
             headers.Authorization = 'Bearer ' + this.token;
         }
         const response = await node_fetch_1.default(this.endpoint + path + '?' + (query ? query_string_1.default.stringify(query) : ''), {
-            headers
+            headers,
         });
         if (response.status !== 200) {
             throw new Error('无法成功请求，HTTP 状态码: ' + response.status);
@@ -49,7 +50,7 @@ class ApiRequest {
      */
     async post(path, formParams, query) {
         const headers = {
-            Accept: 'application/json' // 要求接口一定要返回 JSON
+            Accept: 'application/json',
         };
         if (this.token) {
             headers.Authorization = 'Bearer ' + this.token;
@@ -64,7 +65,7 @@ class ApiRequest {
         const response = await node_fetch_1.default(this.endpoint + path + '?' + (query ? query_string_1.default.stringify(query) : ''), {
             headers,
             body: formData,
-            method: 'POST'
+            method: 'POST',
         });
         if (response.status !== 200) {
             throw new Error('无法成功请求，HTTP 状态码: ' + status);
@@ -86,7 +87,7 @@ class ApiRequest {
      */
     async put(path, formParams, query) {
         const headers = {
-            Accept: 'application/json' // 要求接口一定要返回 JSON
+            Accept: 'application/json',
         };
         if (this.token) {
             headers.Authorization = 'Bearer ' + this.token;
@@ -102,7 +103,7 @@ class ApiRequest {
         const response = await node_fetch_1.default(this.endpoint + path + '?' + (query ? query_string_1.default.stringify(query) : ''), {
             headers,
             body: formData,
-            method: 'POST'
+            method: 'POST',
         });
         if (response.status !== 200) {
             throw new Error('无法成功请求，HTTP 状态码: ' + response.status);
@@ -152,7 +153,10 @@ function checkStatusCode(responseData) {
         if (responseData.status === 400) {
             console.error(responseData.data[0].validator);
         }
-        throw new Error('请求时发生错误，错误代码：' + responseData.status + '，错误信息：' + responseData.message);
+        throw new Error('请求时发生错误，错误代码：' +
+            responseData.status +
+            '，错误信息：' +
+            responseData.message);
     }
 }
 exports.checkStatusCode = checkStatusCode;

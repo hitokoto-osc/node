@@ -1,1 +1,1 @@
-export declare function checkValid(): (target: any, name: string, descriptor: PropertyDescriptor) => void;
+export declare function checkValid(): (target: unknown, name: string, descriptor: PropertyDescriptor) => void;

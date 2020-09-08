@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthApi = void 0;
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 const request_1 = require("./request");
@@ -8,7 +9,7 @@ class AuthApi {
     async login(email, password) {
         const data = await request.post('/auth/login', {
             email,
-            password
+            password,
         });
         request_1.checkStatusCode(data);
         request.isValid = true;
@@ -18,14 +19,14 @@ class AuthApi {
         const data = await request.post('/auth/register', {
             name,
             email,
-            password
+            password,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async passwordReset(email) {
         const data = await request.post('/auth/password/reset', {
-            email
+            email,
         });
         request_1.checkStatusCode(data);
     }

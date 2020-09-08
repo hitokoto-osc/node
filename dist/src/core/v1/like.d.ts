@@ -1,4 +1,5 @@
-export interface GetSentenceLikeApi {
+import { BaseData } from './request';
+export interface GetSentenceLikeApi extends BaseData {
     sets: Set[];
     total: number;
 }
@@ -6,7 +7,7 @@ interface Set {
     user_id: number;
     created_time: string;
 }
-export interface LikeSentenceApi {
+export interface LikeSentenceApi extends BaseData {
     ip: string;
     user_id: number;
 }

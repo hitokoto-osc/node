@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserApi = void 0;
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 const request_1 = require("./request");
@@ -32,14 +33,14 @@ class UserApi {
     async changeUserPassword(password, newPassword) {
         const data = await request.put('/user/password', {
             password,
-            new_password: newPassword
+            new_password: newPassword,
         });
         request_1.checkStatusCode(data);
     }
     async changeUserEmail(password, email) {
         const data = await request.put('/user/email', {
             email,
-            password
+            password,
         });
         request_1.checkStatusCode(data);
     }
@@ -66,7 +67,7 @@ class UserApi {
     async getUserHitokotoHistory(offset, limit) {
         const data = await request.get('/user/hitokoto/history', {
             limit,
-            offset
+            offset,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
@@ -74,7 +75,7 @@ class UserApi {
     async getUserHitokotoHistoryRufuse(offset, limit) {
         const data = await request.get('/user/hitokoto/history/refuse', {
             limit,
-            offset
+            offset,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
@@ -82,7 +83,7 @@ class UserApi {
     async getUserHitokotoHistoryPending(offset, limit) {
         const data = await request.get('/user/hitokoto/history/pending', {
             limit,
-            offset
+            offset,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
@@ -90,7 +91,7 @@ class UserApi {
     async getUserHitokotoHistoryAccept(offset, limit) {
         const data = await request.get('/user/hitokoto/history/accept', {
             limit,
-            offset
+            offset,
         });
         request_1.checkStatusCode(data);
         return data.data[0];

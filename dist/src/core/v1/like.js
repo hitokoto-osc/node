@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LikeApi = void 0;
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 const request_1 = require("./request");
@@ -17,21 +18,21 @@ const request = new request_1.ApiRequest();
 class LikeApi {
     async getSentenceLike(sentenceUuid) {
         const data = await request.get('/like', {
-            sentence_uuid: sentenceUuid
+            sentence_uuid: sentenceUuid,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async likeSentence(sentenceUuid) {
         const data = await request.post('/like', {
-            sentence_uuid: sentenceUuid
+            sentence_uuid: sentenceUuid,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
     }
     async cancalSentenceLike(sentenceUuid) {
         const data = await request.post('/like', {
-            sentence_uuid: sentenceUuid
+            sentence_uuid: sentenceUuid,
         });
         request_1.checkStatusCode(data);
     }

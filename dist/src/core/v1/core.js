@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CoreApi = void 0;
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
 const request_1 = require("./request");
@@ -67,9 +68,10 @@ applyMixins(CoreApi, [auth_1.AuthApi, user_1.UserApi, like_1.LikeApi, sentence_1
  * @param derivedCtor
  * @param baseCtors
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function applyMixins(derivedCtor, baseCtors) {
-    baseCtors.forEach(baseCtor => {
-        Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {
+    baseCtors.forEach((baseCtor) => {
+        Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) => {
             const value = Object.getOwnPropertyDescriptor(baseCtor.prototype, name);
             if (value) {
                 Object.defineProperty(derivedCtor.prototype, name, value);

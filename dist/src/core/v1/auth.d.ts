@@ -1,4 +1,5 @@
-export interface LoginApi {
+import { BaseData } from './request';
+export interface LoginApi extends BaseData {
     id: number;
     name: string;
     email: string;
@@ -11,12 +12,12 @@ export interface LoginApi {
     updated_at: string;
     token: string;
 }
-export interface RegisterApi {
+export interface RegisterApi extends BaseData {
     id: number;
     name: string;
     email: string;
     token: string;
-    email_verified_at?: any;
+    email_verified_at?: number;
     created_at: string;
     updated_at: string;
 }

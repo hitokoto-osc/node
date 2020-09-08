@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SentenceApi = void 0;
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 const request_1 = require("./request");
@@ -28,7 +29,7 @@ class SentenceApi {
     async submitSentenceScore(sentenceUuid, score, comment) {
         const data = await request.post('/hitokoto/' + sentenceUuid + '/score', {
             score,
-            comment
+            comment,
         });
         request_1.checkStatusCode(data);
         return data.data[0];
@@ -40,7 +41,7 @@ class SentenceApi {
     }
     async reportSentence(sentenceUuid, comment) {
         const data = await request.post('/hitokoto/' + sentenceUuid + '/report', {
-            comment
+            comment,
         });
         request_1.checkStatusCode(data);
         return data.data[0];

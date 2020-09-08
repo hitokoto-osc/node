@@ -4,6 +4,12 @@ export interface ResponseStruct<T> {
     data: T[];
     ts: number;
 }
+export interface BaseData {
+    validator?: {
+        [index: string]: string[];
+    };
+    [index: string]: unknown;
+}
 export declare let Token: string;
 export declare let IsValid: boolean;
 export interface Params<T> {
@@ -17,7 +23,7 @@ export declare class ApiRequest {
      * @param {object} [query] 请求参数
      * @returns {Promise<ResponseStruct<any>>}
      */
-    get(path: string, query?: Params<any>): Promise<ResponseStruct<any>>;
+    get(path: string, query?: Params<unknown>): Promise<ResponseStruct<never>>;
     /**
      * 发起 POST 请求
      * @param {string} path API 路径
@@ -25,7 +31,7 @@ export declare class ApiRequest {
      * @param {object} [query] 请求参数
      * @returns {Promise<ResponseStruct<any>>}
      */
-    post(path: string, formParams?: Params<any>, query?: Params<any>): Promise<ResponseStruct<any>>;
+    post(path: string, formParams?: Params<unknown>, query?: Params<unknown>): Promise<ResponseStruct<never>>;
     /**
      * 发起 PUT 请求
      * @param {string} path API 路径
@@ -33,7 +39,7 @@ export declare class ApiRequest {
      * @param {object} [query] 请求参数
      * @returns {Promise<ResponseStruct<any>>}
      */
-    put(path: string, formParams?: Params<any>, query?: Params<any>): Promise<ResponseStruct<any>>;
+    put(path: string, formParams?: Params<unknown>, query?: Params<unknown>): Promise<ResponseStruct<never>>;
     /**
      * 获得令牌
      * @returns {string} 令牌
@@ -55,4 +61,4 @@ export declare class ApiRequest {
      */
     set isValid(isValid: boolean);
 }
-export declare function checkStatusCode(responseData: ResponseStruct<any>): void;
+export declare function checkStatusCode(responseData: ResponseStruct<BaseData>): void;

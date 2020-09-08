@@ -1,4 +1,5 @@
-export interface AppendSentenceApi {
+import { BaseData } from './request';
+export interface AppendSentenceApi extends BaseData {
     uuid: string;
     hitokoto: string;
     type: string;
@@ -10,7 +11,7 @@ export interface AppendSentenceApi {
     created_at: string;
     id: number;
 }
-export interface CommonSentence {
+export interface CommonSentence extends BaseData {
     hitokoto: string;
     uuid: string;
     type: string;
@@ -23,7 +24,7 @@ export interface CommonSentence {
     created_at: string;
     status: string;
 }
-export interface SubmitSentenceScoreApi {
+export interface SubmitSentenceScoreApi extends BaseData {
     score: string;
     comment: string;
     sentence_uuid: string;
@@ -34,7 +35,7 @@ interface Sentencescore {
     participants: number;
     average: number;
 }
-export interface GetSentenceScoreApi {
+export interface GetSentenceScoreApi extends BaseData {
     id: number;
     sentence_uuid: string;
     score: Score;
@@ -56,7 +57,7 @@ interface Score {
     participants: number;
     average: number;
 }
-export interface ReportSentenceApi {
+export interface ReportSentenceApi extends BaseData {
     sentence_uuid: string;
     user_id: number;
     comment: string;
@@ -69,6 +70,7 @@ export interface AppendSentenceParams {
     from: string;
     fromWho?: string;
     type: string;
+    [index: string]: unknown;
 }
 export declare class SentenceApi {
     getSentence(sentenceUuid: string): Promise<CommonSentence>;

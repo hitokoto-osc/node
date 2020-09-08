@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.checkValid = void 0;
 const request_1 = require("./request");
 function checkValid() {
     return function (target, name, descriptor) {
