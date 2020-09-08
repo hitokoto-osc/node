@@ -1,10 +1,15 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
-import { ApiRequest, ResponseStruct, checkStatusCode } from './request'
+import {
+  ApiRequest,
+  ResponseStruct,
+  checkStatusCode,
+  BaseData,
+} from './request'
 import { checkValid } from './decorator'
 import { CommonSentence } from './sentence'
 
-export interface GetUserInformationApi {
+export interface GetUserInformationApi extends BaseData {
   id: number
   name: string
   email: string
@@ -17,18 +22,16 @@ export interface GetUserInformationApi {
   updated_at: string
 }
 
-export interface UserTokenApi {
-  user: TokenUser
+export interface UserTokenApi extends BaseData {
+  user: {
+    id: number
+    name: string
+    email: string
+    token: string
+  }
 }
 
-interface TokenUser {
-  id: number
-  name: string
-  email: string
-  token: string
-}
-
-export interface NotificationSettingsApi {
+export interface NotificationSettingsApi extends BaseData {
   id: number
   user_id: number
   email_notification_global: number
@@ -41,8 +44,11 @@ export interface NotificationSettingsApi {
   created_at: string
 }
 
-export interface UserHitokotoLikeApi {
-  statistics: UserHitokotoLikeStatistics
+export interface UserHitokotoLikeApi extends BaseData {
+  statistics: {
+    total: number
+  }
+
   collection: Sentence[]
 }
 
@@ -59,11 +65,7 @@ interface Sentence {
   created_at: string
 }
 
-interface UserHitokotoLikeStatistics {
-  total: number
-}
-
-export interface UserHitokotoHistoryOrSummary {
+export interface UserHitokotoHistoryOrSummary extends BaseData {
   statistics: HitokotoStatistics
   collections: CommonSentence[]
 }
@@ -82,113 +84,162 @@ export interface NotificationSettingsParams {
   email_poll_created: boolean
   email_poll_result: boolean
   email_poll_report_daily: boolean
+  [index: string]: boolean
 }
 
 const request = new ApiRequest()
 
 export class UserApi {
   @checkValid()
-  async getUserInformation (): Promise<GetUserInformationApi> {
-    const data: ResponseStruct<GetUserInformationApi> = await request.get('/user')
+  async getUserInformation(): Promise<GetUserInformationApi> {
+    const data: ResponseStruct<GetUserInformationApi> = await request.get(
+      '/user',
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async getUserToken (): Promise<UserTokenApi> {
+  async getUserToken(): Promise<UserTokenApi> {
     const data: ResponseStruct<UserTokenApi> = await request.get('/user/token')
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async sendVerifyEmail (): Promise<void> {
-    const data: ResponseStruct<void> = await request.post('/user/email/verify')
+  async sendVerifyEmail(): Promise<void> {
+    const data: ResponseStruct<Record<string, unknown>> = await request.post(
+      '/user/email/verify',
+    )
     checkStatusCode(data)
   }
 
   @checkValid()
-  async changeUserPassword (password: string, newPassword: string): Promise<void> {
-    const data: ResponseStruct<void> = await request.put('/user/password', {
-      password,
-      new_password: newPassword
-    })
+  async changeUserPassword(
+    password: string,
+    newPassword: string,
+  ): Promise<void> {
+    const data: ResponseStruct<Record<string, unknown>> = await request.put(
+      '/user/password',
+      {
+        password,
+        new_password: newPassword,
+      },
+    )
     checkStatusCode(data)
   }
 
   @checkValid()
-  async changeUserEmail (password: string, email: string): Promise<void> {
-    const data: ResponseStruct<UserTokenApi> = await request.put('/user/email', {
-      email,
-      password
-    })
+  async changeUserEmail(password: string, email: string): Promise<void> {
+    const data: ResponseStruct<UserTokenApi> = await request.put(
+      '/user/email',
+      {
+        email,
+        password,
+      },
+    )
     checkStatusCode(data)
   }
 
   @checkValid()
-  async getUserNotificationSettings (): Promise<NotificationSettingsApi> {
-    const data: ResponseStruct<NotificationSettingsApi> = await request.get('/user/notification/settings')
-    checkStatusCode(data)
-    return data.data[0]
-  }
-
-  @checkValid()
-  async setUserNotificationSettings (settings: NotificationSettingsParams): Promise<NotificationSettingsApi> {
-    const data: ResponseStruct<NotificationSettingsApi> = await request.put('/user/notification/settings', settings)
-    checkStatusCode(data)
-    return data.data[0]
-  }
-
-  @checkValid()
-  async getUserLikedSentences (): Promise<UserHitokotoLikeApi> {
-    const data: ResponseStruct<UserHitokotoLikeApi> = await request.get('/user/hitokoto/like')
-    checkStatusCode(data)
-    return data.data[0]
-  }
-
-  @checkValid()
-  async getUserHitokotoSummary (): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/summary')
+  async getUserNotificationSettings(): Promise<NotificationSettingsApi> {
+    const data: ResponseStruct<NotificationSettingsApi> = await request.get(
+      '/user/notification/settings',
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async getUserHitokotoHistory (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history', {
-      limit,
-      offset
-    })
+  async setUserNotificationSettings(
+    settings: NotificationSettingsParams,
+  ): Promise<NotificationSettingsApi> {
+    const data: ResponseStruct<NotificationSettingsApi> = await request.put(
+      '/user/notification/settings',
+      settings,
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async getUserHitokotoHistoryRufuse (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history/refuse', {
-      limit,
-      offset
-    })
+  async getUserLikedSentences(): Promise<UserHitokotoLikeApi> {
+    const data: ResponseStruct<UserHitokotoLikeApi> = await request.get(
+      '/user/hitokoto/like',
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async getUserHitokotoHistoryPending (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history/pending', {
-      limit,
-      offset
-    })
+  async getUserHitokotoSummary(): Promise<UserHitokotoHistoryOrSummary> {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get(
+      '/user/hitokoto/summary',
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async getUserHitokotoHistoryAccept (offset: 0, limit: 20): Promise<UserHitokotoHistoryOrSummary> {
-    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get('/user/hitokoto/history/accept', {
-      limit,
-      offset
-    })
+  async getUserHitokotoHistory(
+    offset: 0,
+    limit: 20,
+  ): Promise<UserHitokotoHistoryOrSummary> {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get(
+      '/user/hitokoto/history',
+      {
+        limit,
+        offset,
+      },
+    )
+    checkStatusCode(data)
+    return data.data[0]
+  }
+
+  @checkValid()
+  async getUserHitokotoHistoryRufuse(
+    offset: 0,
+    limit: 20,
+  ): Promise<UserHitokotoHistoryOrSummary> {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get(
+      '/user/hitokoto/history/refuse',
+      {
+        limit,
+        offset,
+      },
+    )
+    checkStatusCode(data)
+    return data.data[0]
+  }
+
+  @checkValid()
+  async getUserHitokotoHistoryPending(
+    offset: 0,
+    limit: 20,
+  ): Promise<UserHitokotoHistoryOrSummary> {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get(
+      '/user/hitokoto/history/pending',
+      {
+        limit,
+        offset,
+      },
+    )
+    checkStatusCode(data)
+    return data.data[0]
+  }
+
+  @checkValid()
+  async getUserHitokotoHistoryAccept(
+    offset: 0,
+    limit: 20,
+  ): Promise<UserHitokotoHistoryOrSummary> {
+    const data: ResponseStruct<UserHitokotoHistoryOrSummary> = await request.get(
+      '/user/hitokoto/history/accept',
+      {
+        limit,
+        offset,
+      },
+    )
     checkStatusCode(data)
     return data.data[0]
   }

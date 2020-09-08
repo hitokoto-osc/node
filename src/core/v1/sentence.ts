@@ -1,9 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
-import { ApiRequest, ResponseStruct, checkStatusCode } from './request'
+import {
+  ApiRequest,
+  BaseData,
+  ResponseStruct,
+  checkStatusCode,
+} from './request'
 import { checkValid } from './decorator'
 
-export interface AppendSentenceApi {
+export interface AppendSentenceApi extends BaseData {
   uuid: string
   hitokoto: string
   type: string
@@ -16,7 +21,7 @@ export interface AppendSentenceApi {
   id: number
 }
 
-export interface CommonSentence {
+export interface CommonSentence extends BaseData {
   hitokoto: string
   uuid: string
   type: string
@@ -30,7 +35,7 @@ export interface CommonSentence {
   status: string
 }
 
-export interface SubmitSentenceScoreApi {
+export interface SubmitSentenceScoreApi extends BaseData {
   score: string
   comment: string
   sentence_uuid: string
@@ -43,7 +48,7 @@ interface Sentencescore {
   average: number
 }
 
-export interface GetSentenceScoreApi {
+export interface GetSentenceScoreApi extends BaseData {
   id: number
   sentence_uuid: string
   score: Score
@@ -68,7 +73,7 @@ interface Score {
   average: number
 }
 
-export interface ReportSentenceApi {
+export interface ReportSentenceApi extends BaseData {
   sentence_uuid: string
   user_id: number
   comment: string
@@ -82,47 +87,70 @@ export interface AppendSentenceParams {
   from: string
   fromWho?: string
   type: string
+  [index: string]: unknown
 }
 
 const request = new ApiRequest()
 
 export class SentenceApi {
   @checkValid()
-  async getSentence (sentenceUuid: string): Promise<CommonSentence> {
-    const data: ResponseStruct<CommonSentence> = await request.get('/hitokoto/' + sentenceUuid)
+  async getSentence(sentenceUuid: string): Promise<CommonSentence> {
+    const data: ResponseStruct<CommonSentence> = await request.get(
+      '/hitokoto/' + sentenceUuid,
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async appendSentence (params: AppendSentenceParams): Promise<AppendSentenceApi> {
-    const data: ResponseStruct<AppendSentenceApi> = await request.post('/hitokoto/append', params)
+  async appendSentence(
+    params: AppendSentenceParams,
+  ): Promise<AppendSentenceApi> {
+    const data: ResponseStruct<AppendSentenceApi> = await request.post(
+      '/hitokoto/append',
+      params,
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async submitSentenceScore (sentenceUuid: string, score: number, comment?: string): Promise<SubmitSentenceScoreApi> {
-    const data: ResponseStruct<SubmitSentenceScoreApi> = await request.post('/hitokoto/' + sentenceUuid + '/score', {
-      score,
-      comment
-    })
+  async submitSentenceScore(
+    sentenceUuid: string,
+    score: number,
+    comment?: string,
+  ): Promise<SubmitSentenceScoreApi> {
+    const data: ResponseStruct<SubmitSentenceScoreApi> = await request.post(
+      '/hitokoto/' + sentenceUuid + '/score',
+      {
+        score,
+        comment,
+      },
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async getSentenceScore (sentenceUuid: string): Promise<GetSentenceScoreApi> {
-    const data: ResponseStruct<GetSentenceScoreApi> = await request.get('/hitokoto/' + sentenceUuid + '/score')
+  async getSentenceScore(sentenceUuid: string): Promise<GetSentenceScoreApi> {
+    const data: ResponseStruct<GetSentenceScoreApi> = await request.get(
+      '/hitokoto/' + sentenceUuid + '/score',
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async reportSentence (sentenceUuid: string, comment: string): Promise<ReportSentenceApi> {
-    const data: ResponseStruct<ReportSentenceApi> = await request.post('/hitokoto/' + sentenceUuid + '/report', {
-      comment
-    })
+  async reportSentence(
+    sentenceUuid: string,
+    comment: string,
+  ): Promise<ReportSentenceApi> {
+    const data: ResponseStruct<ReportSentenceApi> = await request.post(
+      '/hitokoto/' + sentenceUuid + '/report',
+      {
+        comment,
+      },
+    )
     checkStatusCode(data)
     return data.data[0]
   }

@@ -1,9 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
-import { ApiRequest, ResponseStruct, checkStatusCode } from './request'
+import {
+  ApiRequest,
+  BaseData,
+  ResponseStruct,
+  checkStatusCode,
+} from './request'
 import { checkValid } from './decorator'
 
-export interface GetSentenceLikeApi {
+export interface GetSentenceLikeApi extends BaseData {
   sets: Set[]
   total: number
 }
@@ -13,7 +18,7 @@ interface Set {
   created_time: string
 }
 
-export interface LikeSentenceApi {
+export interface LikeSentenceApi extends BaseData {
   ip: string
   user_id: number
 }
@@ -21,27 +26,33 @@ export interface LikeSentenceApi {
 const request = new ApiRequest()
 
 export class LikeApi {
-  async getSentenceLike (sentenceUuid: string): Promise<GetSentenceLikeApi> {
-    const data: ResponseStruct<GetSentenceLikeApi> = await request.get('/like', {
-      sentence_uuid: sentenceUuid
-    })
+  async getSentenceLike(sentenceUuid: string): Promise<GetSentenceLikeApi> {
+    const data: ResponseStruct<GetSentenceLikeApi> = await request.get(
+      '/like',
+      {
+        sentence_uuid: sentenceUuid,
+      },
+    )
     checkStatusCode(data)
     return data.data[0]
   }
 
-  async likeSentence (sentenceUuid: string): Promise<LikeSentenceApi> {
+  async likeSentence(sentenceUuid: string): Promise<LikeSentenceApi> {
     const data: ResponseStruct<LikeSentenceApi> = await request.post('/like', {
-      sentence_uuid: sentenceUuid
+      sentence_uuid: sentenceUuid,
     })
     checkStatusCode(data)
     return data.data[0]
   }
 
   @checkValid()
-  async cancalSentenceLike (sentenceUuid: string): Promise<void> {
-    const data: ResponseStruct<void> = await request.post('/like', {
-      sentence_uuid: sentenceUuid
-    })
+  async cancalSentenceLike(sentenceUuid: string): Promise<void> {
+    const data: ResponseStruct<Record<string, unknown>> = await request.post(
+      '/like',
+      {
+        sentence_uuid: sentenceUuid,
+      },
+    )
     checkStatusCode(data)
   }
 }

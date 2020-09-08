@@ -14,7 +14,9 @@ export interface sentenceApiResponse {
   created_at: number
 }
 
-export async function getSentence (categroy?: string[] | string): Promise<sentenceApiResponse> {
+export async function getSentence(
+  categroy?: string[] | string,
+): Promise<sentenceApiResponse> {
   let qs = ''
   if (!categroy) {
     qs = ''
