@@ -7,8 +7,7 @@
     "watch": "tsc -w",
     "build": "tsc",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "lint": "yarn run lint-eslint",
-    "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js {src,scripts}/**/*.{ts,tsx,js}",
+    "lint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js {src,scripts}/**/*.{ts,tsx,js}",
     "test": "jest"
   },
   "repository": {
