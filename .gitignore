@@ -72,5 +72,7 @@ build/config.json
 .yarn/build-state.yml
 .pnp.*
 .yarn/sdks/
+.yarn/install-state.gz
+
 # vscode
 .vscode
