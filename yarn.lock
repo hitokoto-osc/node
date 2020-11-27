@@ -577,7 +577,7 @@ __metadata:
     eslint-plugin-node: 11.1.0
     eslint-plugin-prettier: 3.1.4
     eslint-plugin-promise: 4.2.1
-    eslint-plugin-standard: 4.0.1
+    eslint-plugin-standard: 4.1.0
     form-data: ^3.0.0
     husky: 4.3.0
     jest: 26.4.2
@@ -3253,12 +3253,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-standard@npm:4.0.1":
-  version: 4.0.1
-  resolution: "eslint-plugin-standard@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-standard%2Fdownload%2Feslint-plugin-standard-4.0.1.tgz"
+"eslint-plugin-standard@npm:4.1.0":
+  version: 4.1.0
+  resolution: "eslint-plugin-standard@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-standard%2Fdownload%2Feslint-plugin-standard-4.1.0.tgz"
   peerDependencies:
     eslint: ">=5.0.0"
-  checksum: f08e162e5826c376b39dde8c015c32389e2a8430525ec645e16d8f0be141d9e1b8377c1f0af020db962ec07b8e9341519d07f1ca79a7e8ab6a6481a217c37be4
+  checksum: 4cafe7ac512ffb15bf1020e2ede3fd59cfbef9601b7cbf05e155eca9f10c2eaeb96932effb477eb57fca4fa7b3b2a3469e165ede73a888036ffa5cf6c83a5af2
   languageName: node
   linkType: hard
 
