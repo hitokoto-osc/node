@@ -569,7 +569,7 @@ __metadata:
     "@yarnpkg/pnpify": 2.2.1
     conventional-changelog-cli: 2.1.0
     eslint: 7.8.1
-    eslint-config-prettier: 6.11.0
+    eslint-config-prettier: 7.2.0
     eslint-config-standard: 14.1.1
     eslint-import-resolver-node: 0.3.4
     eslint-plugin-html: 6.1.0
@@ -3128,16 +3128,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:6.11.0":
-  version: 6.11.0
-  resolution: "eslint-config-prettier@npm:6.11.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-prettier%2Fdownload%2Feslint-config-prettier-6.11.0.tgz"
-  dependencies:
-    get-stdin: ^6.0.0
+"eslint-config-prettier@npm:7.2.0":
+  version: 7.2.0
+  resolution: "eslint-config-prettier@npm:7.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-prettier%2Fdownload%2Feslint-config-prettier-7.2.0.tgz"
   peerDependencies:
-    eslint: ">=3.14.1"
+    eslint: ">=7.0.0"
   bin:
-    eslint-config-prettier-check: bin/cli.js
-  checksum: 59efd906c78d47753a673c205ef515fdab19cd6ea0fd992c9cb2366804861746238244526ab565ccc7448569f5472ce7646a77d0c9998787192e4ebae95df71d
+    eslint-config-prettier: bin/cli.js
+  checksum: 6812150ea49703cd64035527205b4905bc1edcd34646e71f71665e1acff9ab4648f872598389bdb209964093ad73993830a2c821ba12642764a5293513b92a58
   languageName: node
   linkType: hard
 
@@ -3851,13 +3849,6 @@ fsevents@^2.1.2:
   version: 4.0.1
   resolution: "get-stdin@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-stdin%2Fdownload%2Fget-stdin-4.0.1.tgz"
   checksum: ba122b05691e29aa1c93f9dfe76671c23b311e5f299c4205c030c00a656045fcf56d2bb5a924b6cd576f278563643b6689b50aa54fc87abcdc2e6e8eda09920e
-  languageName: node
-  linkType: hard
-
-"get-stdin@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "get-stdin@npm:6.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-stdin%2Fdownload%2Fget-stdin-6.0.0.tgz"
-  checksum: b51d664838aef7f8353dc57371ce59cea54d8d584fec015a9d89d24561e95b97806d5b5ba120bc81574c9ed63cb3e210176ffa0ff9263c7e7ba4d56d0fe54913
   languageName: node
   linkType: hard
 
