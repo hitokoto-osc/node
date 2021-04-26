@@ -572,7 +572,7 @@ __metadata:
     eslint-config-prettier: 6.11.0
     eslint-config-standard: 14.1.1
     eslint-import-resolver-node: 0.3.4
-    eslint-plugin-html: 6.1.0
+    eslint-plugin-html: 6.1.2
     eslint-plugin-import: 2.22.0
     eslint-plugin-node: 11.1.0
     eslint-plugin-prettier: 3.1.4
@@ -2937,6 +2937,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domelementtype@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "domelementtype@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomelementtype%2Fdownload%2Fdomelementtype-2.2.0.tgz"
+  checksum: 70af22cd69a8e0c0cd4fbbba0459991aacb015f60765050b4a6d1750fd201b4bd4fd1e6922e945200f9cc725cd61be1cd393a3b9b576187759e3b046f33a4a30
+  languageName: node
+  linkType: hard
+
 "domexception@npm:^2.0.1":
   version: 2.0.1
   resolution: "domexception@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomexception%2Fdownload%2Fdomexception-2.0.1.tgz"
@@ -2955,14 +2962,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:^2.0.0":
-  version: 2.2.0
-  resolution: "domutils@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomutils%2Fdownload%2Fdomutils-2.2.0.tgz"
+"domhandler@npm:^4.0.0, domhandler@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "domhandler@npm:4.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomhandler%2Fdownload%2Fdomhandler-4.2.0.tgz"
+  dependencies:
+    domelementtype: ^2.2.0
+  checksum: 1bdb0ae6b9a93f4a2e8a77da304a435bfd35af0e52c5208f24277093b7fa2e6084cdbd4eb7fdd5c0ca5bf2c67736a19b258fe9e61588f4c49eaa0abde8d3595d
+  languageName: node
+  linkType: hard
+
+"domutils@npm:^2.5.2":
+  version: 2.6.0
+  resolution: "domutils@npm:2.6.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomutils%2Fdownload%2Fdomutils-2.6.0.tgz"
   dependencies:
     dom-serializer: ^1.0.1
-    domelementtype: ^2.0.1
-    domhandler: ^3.0.0
-  checksum: 2a8aed430713f544b9a780c07407259292e8c519fa9249bf34b0a87e492616846812cfe8cb623f03e9d6de8c5215f7242714ab480a3355ed48daebd303da4f41
+    domelementtype: ^2.2.0
+    domhandler: ^4.2.0
+  checksum: 9da918510929e787d029034986287760f304ce089bdc3538482a3eee3e50abe9c055fa0c44f4366117efb8323615bd0228bdcbb0ca9799f80f7d3c2fc4df20ba
   languageName: node
   linkType: hard
 
@@ -3186,12 +3202,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-html@npm:6.1.0":
-  version: 6.1.0
-  resolution: "eslint-plugin-html@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.1.0.tgz"
+"eslint-plugin-html@npm:6.1.2":
+  version: 6.1.2
+  resolution: "eslint-plugin-html@npm:6.1.2::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.1.2.tgz"
   dependencies:
-    htmlparser2: ^4.1.0
-  checksum: 4360f514beed14f75ad35f2043c1c12cf4b5bcaf78ab474018f1a20e359976511c393bf989e31f65f00452d472404e90f608606c16ce5d1684d5c129b0b04dbe
+    htmlparser2: ^6.0.1
+  checksum: 00b68d8843d2811aedca1f8cf3bf03c6f422c30f2bf49ebf7edec89e3591f6302d962b5a0da4938d6dbd957b9306afd9bb6c98007782bd2dfcd7f52baa1c73c3
   languageName: node
   linkType: hard
 
@@ -4206,15 +4222,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"htmlparser2@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "htmlparser2@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-4.1.0.tgz"
+"htmlparser2@npm:^6.0.1":
+  version: 6.1.0
+  resolution: "htmlparser2@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-6.1.0.tgz"
   dependencies:
     domelementtype: ^2.0.1
-    domhandler: ^3.0.0
-    domutils: ^2.0.0
+    domhandler: ^4.0.0
+    domutils: ^2.5.2
     entities: ^2.0.0
-  checksum: 4a5d9ecbe339a500c23187740836c94a3b9edba6348995c5359bc832addcc8027633cb98bd5f715b96eb48caefeb5a38a1d6187522f45c1dc2b2be45a2f807ed
+  checksum: 37b0b2c0ae99aed0537f6373a6ad3dc6f19fddfd10799a75e76213458a0f754bbd3a829f075d175c9f5e3c70c7e354cb5a1dd1b582cee90e28a0845a96d524dc
   languageName: node
   linkType: hard
 
