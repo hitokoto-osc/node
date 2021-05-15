@@ -562,7 +562,7 @@ __metadata:
     "@commitlint/cli": 8.3.5
     "@commitlint/config-conventional": 8.3.4
     "@types/jest": 25.2.3
-    "@types/node": 13.13.17
+    "@types/node": 13.13.52
     "@types/node-fetch": 2.5.7
     "@typescript-eslint/eslint-plugin": 4.1.0
     "@typescript-eslint/parser": 4.1.0
@@ -1070,10 +1070,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:13.13.17, @types/node@npm:^13.7.0":
+"@types/node@npm:*, @types/node@npm:^13.7.0":
   version: 13.13.17
   resolution: "@types/node@npm:13.13.17::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.13.17.tgz"
   checksum: 4d00434d1ca6c457ace6a65c672eee8ed16cb519102b92baca8190ada87664b4c90e89e06d0b51b19dc9c19916bc3326424983becc5f151facbf6fd41262393f
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:13.13.52":
+  version: 13.13.52
+  resolution: "@types/node@npm:13.13.52::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.13.52.tgz"
+  checksum: 702db7930d333cc56e38d1ffb0ac394c2ccaae3be41ad6d92d84e5225f2ccf7a69fc19bd9eceafd0c00189876add6464460c5fd47ce4bdc14f6f9b0a7212aee0
   languageName: node
   linkType: hard
 
