@@ -572,7 +572,7 @@ __metadata:
     eslint-config-prettier: 6.11.0
     eslint-config-standard: 14.1.1
     eslint-import-resolver-node: 0.3.4
-    eslint-plugin-html: 6.1.0
+    eslint-plugin-html: 6.2.0
     eslint-plugin-import: 2.22.0
     eslint-plugin-node: 11.1.0
     eslint-plugin-prettier: 3.1.4
@@ -2937,6 +2937,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domelementtype@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "domelementtype@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomelementtype%2Fdownload%2Fdomelementtype-2.2.0.tgz"
+  checksum: 70af22cd69a8e0c0cd4fbbba0459991aacb015f60765050b4a6d1750fd201b4bd4fd1e6922e945200f9cc725cd61be1cd393a3b9b576187759e3b046f33a4a30
+  languageName: node
+  linkType: hard
+
 "domexception@npm:^2.0.1":
   version: 2.0.1
   resolution: "domexception@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomexception%2Fdownload%2Fdomexception-2.0.1.tgz"
@@ -2955,14 +2962,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:^2.0.0":
-  version: 2.2.0
-  resolution: "domutils@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomutils%2Fdownload%2Fdomutils-2.2.0.tgz"
+"domhandler@npm:^4.2.0, domhandler@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "domhandler@npm:4.2.2::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Fdomhandler%2Fdownload%2Fdomhandler-4.2.2.tgz"
+  dependencies:
+    domelementtype: ^2.2.0
+  checksum: bc4dd6f6a1b99514d8c94fd599c8e33879d9403e9f6f79e137aa7fc9d195574647601694b7e693a917251dffff1218259f0fa1f8327f051645c2d8582ac65741
+  languageName: node
+  linkType: hard
+
+"domutils@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "domutils@npm:2.8.0::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Fdomutils%2Fdownload%2Fdomutils-2.8.0.tgz"
   dependencies:
     dom-serializer: ^1.0.1
-    domelementtype: ^2.0.1
-    domhandler: ^3.0.0
-  checksum: 2a8aed430713f544b9a780c07407259292e8c519fa9249bf34b0a87e492616846812cfe8cb623f03e9d6de8c5215f7242714ab480a3355ed48daebd303da4f41
+    domelementtype: ^2.2.0
+    domhandler: ^4.2.0
+  checksum: f1d0cfab0649e530a26ac23a636ab6574302b9c4bb271acb08fdcb84dd3957d5340670bf5eb587871585813c0b3727c33e50be7389e317cd758d837e5442f971
   languageName: node
   linkType: hard
 
@@ -3046,6 +3062,13 @@ __metadata:
   version: 2.0.3
   resolution: "entities@npm:2.0.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fentities%2Fdownload%2Fentities-2.0.3.tgz"
   checksum: 02dfe1fbf531dd667420ff4e963ddc049203471ba8ad2873655303aff4cf65f27823effb397521af4d58b5609d33fc0492b0cc073c8374f3bbe6d3b5bcec1a42
+  languageName: node
+  linkType: hard
+
+"entities@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "entities@npm:3.0.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Fentities%2Fdownload%2Fentities-3.0.1.tgz"
+  checksum: 563426e9abc2f697c42c57f69f4321d407f11dfa0066d975e2e9288b504ddfc874aac045565f3774dcf4755a3b415f35b6ef84278e27f9e4329b761e2232a228
   languageName: node
   linkType: hard
 
@@ -3186,12 +3209,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-html@npm:6.1.0":
-  version: 6.1.0
-  resolution: "eslint-plugin-html@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.1.0.tgz"
+"eslint-plugin-html@npm:6.2.0":
+  version: 6.2.0
+  resolution: "eslint-plugin-html@npm:6.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-html%2Fdownload%2Feslint-plugin-html-6.2.0.tgz"
   dependencies:
-    htmlparser2: ^4.1.0
-  checksum: 4360f514beed14f75ad35f2043c1c12cf4b5bcaf78ab474018f1a20e359976511c393bf989e31f65f00452d472404e90f608606c16ce5d1684d5c129b0b04dbe
+    htmlparser2: ^7.1.2
+  checksum: 4b5778b6b6e9c521e1418d9a0d39e44c85fe64a1091ee5a68050319a0ab9c6a8e5a0dd965d48355a722a58726a68a92cc144a037dabcd484fb1685d8a73b0605
   languageName: node
   linkType: hard
 
@@ -4206,15 +4229,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"htmlparser2@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "htmlparser2@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-4.1.0.tgz"
+"htmlparser2@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "htmlparser2@npm:7.1.2::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-7.1.2.tgz"
   dependencies:
     domelementtype: ^2.0.1
-    domhandler: ^3.0.0
-    domutils: ^2.0.0
-    entities: ^2.0.0
-  checksum: 4a5d9ecbe339a500c23187740836c94a3b9edba6348995c5359bc832addcc8027633cb98bd5f715b96eb48caefeb5a38a1d6187522f45c1dc2b2be45a2f807ed
+    domhandler: ^4.2.2
+    domutils: ^2.8.0
+    entities: ^3.0.1
+  checksum: 8c561e55628a51f3089c7f511d5f4e85ddf0d6382eefc56bea988ad7aeec0c8435c5c30ea9e33d17952fc6ce95137ae735034a8de33b458acfdb973d09595ec3
   languageName: node
   linkType: hard
 
