@@ -567,7 +567,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 4.1.0
     "@typescript-eslint/parser": 4.1.0
     "@yarnpkg/pnpify": 2.2.1
-    conventional-changelog-cli: 2.1.0
+    conventional-changelog-cli: 2.2.2
     eslint: 7.8.1
     eslint-config-prettier: 6.11.0
     eslint-config-standard: 14.1.1
@@ -592,6 +592,13 @@ __metadata:
     typescript: 4.0.2
   languageName: unknown
   linkType: soft
+
+"@hutson/parse-repository-url@npm:^3.0.0":
+  version: 3.0.2
+  resolution: "@hutson/parse-repository-url@npm:3.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40hutson%2Fparse-repository-url%2F-%2Fparse-repository-url-3.0.2.tgz"
+  checksum: ce8a3085c6e13d346be7eaadc9faab8838fe2282f8a93ceb5dc3fc82969522eb06b6f3e01da220f296d1bb2b2f4d24c05f3da209aa2c3d4620a6eab9b365fa8e
+  languageName: node
+  linkType: hard
 
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
@@ -2013,16 +2020,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camelcase-keys@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "camelcase-keys@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcamelcase-keys%2Fdownload%2Fcamelcase-keys-2.1.0.tgz"
-  dependencies:
-    camelcase: ^2.0.0
-    map-obj: ^1.0.0
-  checksum: 74eff079c8e6335aee88e3e950a138a293cd97055520a404d51eb5caad36af2bca92efcf4f78a5f319d41fcb146d46630fef380daf897a7ce38711ed66c52849
-  languageName: node
-  linkType: hard
-
 "camelcase-keys@npm:^4.0.0":
   version: 4.2.0
   resolution: "camelcase-keys@npm:4.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcamelcase-keys%2Fdownload%2Fcamelcase-keys-4.2.0.tgz"
@@ -2042,13 +2039,6 @@ __metadata:
     map-obj: ^4.0.0
     quick-lru: ^4.0.1
   checksum: d4bd5fa5249127be0f5b1aa961da3a9de7d0a578d9524c5013f21c0ed345637eaa1e42bab28a75bbfc8511911ffb30fec4191a9efcec52741c1a3402dc38dd53
-  languageName: node
-  linkType: hard
-
-"camelcase@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "camelcase@npm:2.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcamelcase%2Fdownload%2Fcamelcase-2.1.1.tgz"
-  checksum: 311182686b3b87ac07851d6bc8c1327d55ef5fe95403bce97e21696dfe666dec70cf2b008593c00ae69a2b84e0074e4c130157a41db1d237f6fe5686cbf870b3
   languageName: node
   linkType: hard
 
@@ -2194,6 +2184,17 @@ __metadata:
     strip-ansi: ^6.0.0
     wrap-ansi: ^6.2.0
   checksum: e59d0642946dd300b1b002e69f43b32d55e682c84f6f2073705ffe77477b400aeabd4f4795467db0771a21d35ee070071f6a31925e4f83b52a7fe1f5c8e6e860
+  languageName: node
+  linkType: hard
+
+"cliui@npm:^7.0.2":
+  version: 7.0.4
+  resolution: "cliui@npm:7.0.4::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fcliui%2F-%2Fcliui-7.0.4.tgz"
+  dependencies:
+    string-width: ^4.2.0
+    strip-ansi: ^6.0.0
+    wrap-ansi: ^7.0.0
+  checksum: c49ac1d13f6dda4beaa11b26f62867e0e9892eb985951187d7c691793e0fe08b9bc15cedfaf4dc6d2e9a4d1516704c0c9dcb671ebcd758dbabb18b5d757fbdb5
   languageName: node
   linkType: hard
 
@@ -2362,46 +2363,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-angular@npm:^5.0.11":
-  version: 5.0.11
-  resolution: "conventional-changelog-angular@npm:5.0.11::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-angular%2Fdownload%2Fconventional-changelog-angular-5.0.11.tgz"
+"conventional-changelog-angular@npm:^5.0.12":
+  version: 5.0.13
+  resolution: "conventional-changelog-angular@npm:5.0.13::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-angular%2F-%2Fconventional-changelog-angular-5.0.13.tgz"
   dependencies:
     compare-func: ^2.0.0
     q: ^1.5.1
-  checksum: aecf4183da548e678341c2ff77e48b9d523e9c43a99522dc36f0b8a58fdf34bd4959f4ce341bb220634ee9f5af450d64b11b3ae743fbde2537be686b6615f7c6
+  checksum: c35fc766bb10626c6fdcdda312bd1ed8ef7e746a8fec96e695a860fa851869b6b902c284d6d1cb9c253ec34ca1f3db34d29e2cd7d75cd2bceb36e05a076a9da0
   languageName: node
   linkType: hard
 
-"conventional-changelog-atom@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "conventional-changelog-atom@npm:2.0.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-atom%2Fdownload%2Fconventional-changelog-atom-2.0.7.tgz"
+"conventional-changelog-atom@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "conventional-changelog-atom@npm:2.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-atom%2F-%2Fconventional-changelog-atom-2.0.8.tgz"
   dependencies:
     q: ^1.5.1
-  checksum: 6a7df60b8a6e814d57d394b752a9972ebb3fd7494c7a2a8ff8b282b8dc1d40c0df14b2115c9524560a6e1d27a5eb8d0ff2b52fa3a0817abf72479be1a06040dd
+  checksum: ac0528755b2c2690502dc4757cbb57002d2a2b0880575df168235a0c3891187412d1e2074f41accc2c47b3ed8b19fe05398d23edba08cc0a692eee9220295179
   languageName: node
   linkType: hard
 
-"conventional-changelog-cli@npm:2.1.0":
-  version: 2.1.0
-  resolution: "conventional-changelog-cli@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-cli%2Fdownload%2Fconventional-changelog-cli-2.1.0.tgz"
+"conventional-changelog-cli@npm:2.2.2":
+  version: 2.2.2
+  resolution: "conventional-changelog-cli@npm:2.2.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-cli%2F-%2Fconventional-changelog-cli-2.2.2.tgz"
   dependencies:
     add-stream: ^1.0.0
-    conventional-changelog: ^3.1.23
+    conventional-changelog: ^3.1.24
     lodash: ^4.17.15
-    meow: ^7.0.0
+    meow: ^8.0.0
     tempfile: ^3.0.0
   bin:
     conventional-changelog: cli.js
-  checksum: 864599e276294aab4fbeaaf3ac000dac49cd4b0f2bc241dd7fafcce14a925ef0279d62d743390c95608c63486d80412a712949126fcbeb5e3f78943ae00a92b4
+  checksum: 92e2b9e2babeabdbcaad5da161dd0f7a1095d37981fa99b5f26dd7ca66b44e6c167d8e1ce589481adfbc8f5aa32cef389d416d818cbcec8ec06913e2298aefe9
   languageName: node
   linkType: hard
 
-"conventional-changelog-codemirror@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "conventional-changelog-codemirror@npm:2.0.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-codemirror%2Fdownload%2Fconventional-changelog-codemirror-2.0.7.tgz"
+"conventional-changelog-codemirror@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "conventional-changelog-codemirror@npm:2.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-codemirror%2F-%2Fconventional-changelog-codemirror-2.0.8.tgz"
   dependencies:
     q: ^1.5.1
-  checksum: 14450d537ffd9f3095715d6aea997ac9ff3f3ac38e776ab40ce42f55bd00280ce06051276dc007c1b51cb933d52df5c96e9e08db9369967ae1aeef8b06e625ef
+  checksum: 7e462736a910b9a5b6978e22451e2891b3559a2405487f16c2460637566ec162f9ef46690584f2fae3826544abfc6de6d8e92801c6656dc90deef91e1e42d664
   languageName: node
   linkType: hard
 
@@ -2416,83 +2417,82 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "conventional-changelog-conventionalcommits@npm:4.4.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-conventionalcommits%2Fdownload%2Fconventional-changelog-conventionalcommits-4.4.0.tgz"
+"conventional-changelog-conventionalcommits@npm:^4.5.0":
+  version: 4.6.3
+  resolution: "conventional-changelog-conventionalcommits@npm:4.6.3::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-conventionalcommits%2F-%2Fconventional-changelog-conventionalcommits-4.6.3.tgz"
   dependencies:
     compare-func: ^2.0.0
     lodash: ^4.17.15
     q: ^1.5.1
-  checksum: ceafd0f505b7e1ec1c090c5f0bcd36a44aa53dcb8979667b24aa7aeada5a81585c088a11a1227b50ea1f3717e18f5aede3318ae8ebff9daed6af9a7c4b5f0aaf
+  checksum: 6436c2e28dbc012c4412cc5a9aafad618500bd4988a0fe30e50c4ac4c16758e9464d35a3b03d48f3002039ca239df56a1f5fa75bc24b4ee9c9c4ea2b3d6374ef
   languageName: node
   linkType: hard
 
-"conventional-changelog-core@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "conventional-changelog-core@npm:4.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-core%2Fdownload%2Fconventional-changelog-core-4.2.0.tgz"
+"conventional-changelog-core@npm:^4.2.1":
+  version: 4.2.4
+  resolution: "conventional-changelog-core@npm:4.2.4::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-core%2F-%2Fconventional-changelog-core-4.2.4.tgz"
   dependencies:
     add-stream: ^1.0.0
-    conventional-changelog-writer: ^4.0.17
-    conventional-commits-parser: ^3.1.0
+    conventional-changelog-writer: ^5.0.0
+    conventional-commits-parser: ^3.2.0
     dateformat: ^3.0.0
-    get-pkg-repo: ^1.0.0
-    git-raw-commits: 2.0.0
+    get-pkg-repo: ^4.0.0
+    git-raw-commits: ^2.0.8
     git-remote-origin-url: ^2.0.0
-    git-semver-tags: ^4.1.0
+    git-semver-tags: ^4.1.1
     lodash: ^4.17.15
-    normalize-package-data: ^2.3.5
+    normalize-package-data: ^3.0.0
     q: ^1.5.1
     read-pkg: ^3.0.0
     read-pkg-up: ^3.0.0
-    shelljs: ^0.8.3
-    through2: ^3.0.0
-  checksum: 30b4b195822fd58f82da9e270dc64dac47d38dabd4c97917c5a17b242878d1345f3a55ae24a265e82ddb29b236a6975dbb360ad2200de5ba85e3276ec85a1130
+    through2: ^4.0.0
+  checksum: b8b5557e87ecca1625c30e82a3364f3a356f3b981e6167f94d7cf634be64ebb5b342a6b4ccb01189cd903bb7d7f1dc508052de308ea672323d22e245525fa4dc
   languageName: node
   linkType: hard
 
-"conventional-changelog-ember@npm:^2.0.8":
-  version: 2.0.8
-  resolution: "conventional-changelog-ember@npm:2.0.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-ember%2Fdownload%2Fconventional-changelog-ember-2.0.8.tgz"
+"conventional-changelog-ember@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "conventional-changelog-ember@npm:2.0.9::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-ember%2F-%2Fconventional-changelog-ember-2.0.9.tgz"
   dependencies:
     q: ^1.5.1
-  checksum: f9196de4d1138e5b50fad537afffec3e1c25dd408535bb6e6fdd325743cac9ced76e09f950f107668ce40dad8ea9cb114ab1d3660227841cfe552609ab98229c
+  checksum: 8cee3be6ae92847365588724d65a38915ea2001f8e67fe980cdcc032ba223ba02c6c32e88d403fea7be09beb1f50fb7960a365934c695425e54f6433540eb38f
   languageName: node
   linkType: hard
 
-"conventional-changelog-eslint@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "conventional-changelog-eslint@npm:3.0.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-eslint%2Fdownload%2Fconventional-changelog-eslint-3.0.8.tgz"
+"conventional-changelog-eslint@npm:^3.0.9":
+  version: 3.0.9
+  resolution: "conventional-changelog-eslint@npm:3.0.9::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-eslint%2F-%2Fconventional-changelog-eslint-3.0.9.tgz"
   dependencies:
     q: ^1.5.1
-  checksum: dcc9c3259009272344b7c7a233cb672bc569067b2ecd3af12ca66e8689735a83c8c90ccc7dfdd0597196de6bb55ef7468e83d3afd287b230006b68ac658fba74
+  checksum: de3a50184239b43fc1ce4873556a0018fdc690b3b1f9117a10f6d1803cf965d54c151ad5e09f5ddf566ceb2156dc5c49e7375c793bd72414953ba64cb956c67e
   languageName: node
   linkType: hard
 
-"conventional-changelog-express@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "conventional-changelog-express@npm:2.0.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-express%2Fdownload%2Fconventional-changelog-express-2.0.5.tgz"
+"conventional-changelog-express@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "conventional-changelog-express@npm:2.0.6::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-express%2F-%2Fconventional-changelog-express-2.0.6.tgz"
   dependencies:
     q: ^1.5.1
-  checksum: c4b59e16be4c0cbc14211db40251592df7ed3bcf6c4904ed87c8ab258541e2d5d386910ade2d31b0610401348ab6d874f011ed6977048bffac4deba8b9d9f794
+  checksum: 98e065eb5e8e59abbac332adb70425507fa0a988e355eceb763640b15727d286aa5655e9fa7927a260c0f7156e0d21030a4ab568e150eca602de507f861ff55e
   languageName: node
   linkType: hard
 
-"conventional-changelog-jquery@npm:^3.0.10":
-  version: 3.0.10
-  resolution: "conventional-changelog-jquery@npm:3.0.10::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-jquery%2Fdownload%2Fconventional-changelog-jquery-3.0.10.tgz"
+"conventional-changelog-jquery@npm:^3.0.11":
+  version: 3.0.11
+  resolution: "conventional-changelog-jquery@npm:3.0.11::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-jquery%2F-%2Fconventional-changelog-jquery-3.0.11.tgz"
   dependencies:
     q: ^1.5.1
-  checksum: 94c8a71463a992ef771d8e027f02f13af5ae318ff6d8e1a3e91140449206845086a2ce6eb8869d0126d8435bca88a60209466d829b4f352f06854848fca907ad
+  checksum: c11b414db8b35c2d450a4072158e3d2af1c151ab826795ed77474f280615e84b67f02f993b584cfe9ab39741f76d2d8e19c812752a896604758c72be09a63f60
   languageName: node
   linkType: hard
 
-"conventional-changelog-jshint@npm:^2.0.8":
-  version: 2.0.8
-  resolution: "conventional-changelog-jshint@npm:2.0.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-jshint%2Fdownload%2Fconventional-changelog-jshint-2.0.8.tgz"
+"conventional-changelog-jshint@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "conventional-changelog-jshint@npm:2.0.9::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-jshint%2F-%2Fconventional-changelog-jshint-2.0.9.tgz"
   dependencies:
     compare-func: ^2.0.0
     q: ^1.5.1
-  checksum: d19a0aed5a3b2346b98ec3ab1c17fc35d83f9cc915b8c206684cf37a2975d2ed20633ed209e5310f43a03c7e20265c665820cc1727113870b703c8829d696832
+  checksum: d98f58017be938cd0af772a0c30cc2f4a678838545e749214ba07158929c48964373e7f6172e19eacf1821cba8fc2e0a826475988fa618f9eaa73cbf8c4f90dc
   languageName: node
   linkType: hard
 
@@ -2503,56 +2503,55 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-writer@npm:^4.0.17":
-  version: 4.0.17
-  resolution: "conventional-changelog-writer@npm:4.0.17::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-writer%2Fdownload%2Fconventional-changelog-writer-4.0.17.tgz"
+"conventional-changelog-writer@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "conventional-changelog-writer@npm:5.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog-writer%2F-%2Fconventional-changelog-writer-5.0.1.tgz"
   dependencies:
-    compare-func: ^2.0.0
-    conventional-commits-filter: ^2.0.6
+    conventional-commits-filter: ^2.0.7
     dateformat: ^3.0.0
-    handlebars: ^4.7.6
+    handlebars: ^4.7.7
     json-stringify-safe: ^5.0.1
     lodash: ^4.17.15
-    meow: ^7.0.0
+    meow: ^8.0.0
     semver: ^6.0.0
     split: ^1.0.0
-    through2: ^3.0.0
+    through2: ^4.0.0
   bin:
     conventional-changelog-writer: cli.js
-  checksum: 652012a1ddb10c88a33a03c474a6694d7d63faf55898ede957fe6edaff301219b461bac00e5f4f5ef6cfb9b5226384ec7d0faf9bf580b6693975be916b51118d
+  checksum: 68c7ceaa03276c5c8aec9b9f6d490ce5eb968de0904cfff731e717e02729df5553115cf66d76f326ffd9c51b0cd2a16625f8ba83bad82d4a03c7fb3ad4995170
   languageName: node
   linkType: hard
 
-"conventional-changelog@npm:^3.1.23":
-  version: 3.1.23
-  resolution: "conventional-changelog@npm:3.1.23::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog%2Fdownload%2Fconventional-changelog-3.1.23.tgz"
+"conventional-changelog@npm:^3.1.24":
+  version: 3.1.25
+  resolution: "conventional-changelog@npm:3.1.25::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-changelog%2F-%2Fconventional-changelog-3.1.25.tgz"
   dependencies:
-    conventional-changelog-angular: ^5.0.11
-    conventional-changelog-atom: ^2.0.7
-    conventional-changelog-codemirror: ^2.0.7
-    conventional-changelog-conventionalcommits: ^4.4.0
-    conventional-changelog-core: ^4.2.0
-    conventional-changelog-ember: ^2.0.8
-    conventional-changelog-eslint: ^3.0.8
-    conventional-changelog-express: ^2.0.5
-    conventional-changelog-jquery: ^3.0.10
-    conventional-changelog-jshint: ^2.0.8
+    conventional-changelog-angular: ^5.0.12
+    conventional-changelog-atom: ^2.0.8
+    conventional-changelog-codemirror: ^2.0.8
+    conventional-changelog-conventionalcommits: ^4.5.0
+    conventional-changelog-core: ^4.2.1
+    conventional-changelog-ember: ^2.0.9
+    conventional-changelog-eslint: ^3.0.9
+    conventional-changelog-express: ^2.0.6
+    conventional-changelog-jquery: ^3.0.11
+    conventional-changelog-jshint: ^2.0.9
     conventional-changelog-preset-loader: ^2.3.4
-  checksum: f8b91f6d367b46a92d0eb96d8b80995e843591b11f80e13d33a00fdcfd7e1fe56739791af081cc24ec76754af3a2a12215754008a0a24aa2166048aea1e5c24d
+  checksum: 3d8875f8a6c755715122a064ef868f1e73892828d33316b14a6ac148b74a4c55137da55eba491d87768725de3381d6bdf3ae36f30bba3a0b11b1471054324e2c
   languageName: node
   linkType: hard
 
-"conventional-commits-filter@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "conventional-commits-filter@npm:2.0.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-commits-filter%2Fdownload%2Fconventional-commits-filter-2.0.6.tgz"
+"conventional-commits-filter@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "conventional-commits-filter@npm:2.0.7::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-commits-filter%2F-%2Fconventional-commits-filter-2.0.7.tgz"
   dependencies:
     lodash.ismatch: ^4.4.0
     modify-values: ^1.0.0
-  checksum: a8c80a3698b3b44e092c8fef589bee5391d38cb10b9e5689d029078e7096081d664685d6dc890efc0a717ffd4a3a6742e35a7933012834d6a6b68277896ea54d
+  checksum: 24e4e69c264e6bd56133a30619f4e3493ae49a4ba907e4f3dbf0719892c0aeed1e76a494e5059f8caf889c589e4d302a3cd5d12112b42b9d65771a8d5f163150
   languageName: node
   linkType: hard
 
-"conventional-commits-parser@npm:^3.0.0, conventional-commits-parser@npm:^3.1.0":
+"conventional-commits-parser@npm:^3.0.0":
   version: 3.1.0
   resolution: "conventional-commits-parser@npm:3.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-commits-parser%2Fdownload%2Fconventional-commits-parser-3.1.0.tgz"
   dependencies:
@@ -2566,6 +2565,22 @@ __metadata:
   bin:
     conventional-commits-parser: cli.js
   checksum: 4ffefd705767cb683cca2e733efe55148ae74623221e57bd5e600e68ed4a31beec83695249fcb583fe58da35280aac7cc08789225bd968027f6eb08d75312cb7
+  languageName: node
+  linkType: hard
+
+"conventional-commits-parser@npm:^3.2.0":
+  version: 3.2.4
+  resolution: "conventional-commits-parser@npm:3.2.4::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fconventional-commits-parser%2F-%2Fconventional-commits-parser-3.2.4.tgz"
+  dependencies:
+    JSONStream: ^1.0.4
+    is-text-path: ^1.0.1
+    lodash: ^4.17.15
+    meow: ^8.0.0
+    split2: ^3.0.0
+    through2: ^4.0.0
+  bin:
+    conventional-commits-parser: cli.js
+  checksum: f3fe9cacdbd6f93030bf96847b45d2529e2db3fd91ee5df5065dafc02fd0e7c58e757104f0d7ac954ebb259782fdd3ab8f98bc8f20929d3b48bca53710013d8f
   languageName: node
   linkType: hard
 
@@ -2680,15 +2695,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dargs@npm:^4.0.1":
-  version: 4.1.0
-  resolution: "dargs@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdargs%2Fdownload%2Fdargs-4.1.0.tgz"
-  dependencies:
-    number-is-nan: ^1.0.0
-  checksum: 27345b5881a0a56d46ca627e15966683e3fae1dc1a455315942f533756202ec0a2860e4bdced675bacff249866bf14424184d6d751f6d7bbd0e9798afc576ab4
-  languageName: node
-  linkType: hard
-
 "dargs@npm:^7.0.0":
   version: 7.0.0
   resolution: "dargs@npm:7.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdargs%2Fdownload%2Fdargs-7.0.0.tgz"
@@ -2754,7 +2760,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decamelize@npm:^1.1.0, decamelize@npm:^1.1.2, decamelize@npm:^1.2.0":
+"decamelize@npm:^1.1.0, decamelize@npm:^1.2.0":
   version: 1.2.0
   resolution: "decamelize@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fdecamelize%2Fdownload%2Fdecamelize-1.2.0.tgz"
   checksum: 8ca9d03ea8ac07920f4504e219d18edff2491bdd0a3e05a1e5ca2e9a0bf6333564231de3528b01d5e76c40a38c37bbc1e09cb5a0424714f53dd615ed78ced464
@@ -3092,6 +3098,13 @@ __metadata:
     is-date-object: ^1.0.1
     is-symbol: ^1.0.2
   checksum: d20b7be268b84662469972ec7265a57d4d6a65b9bf2b73f040d75e14f9f6dbe266a1a88579162e11349f9cb70eaa17640efb515c90dab19745a904b680b14be3
+  languageName: node
+  linkType: hard
+
+"escalade@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "escalade@npm:3.1.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fescalade%2F-%2Fescalade-3.1.1.tgz"
+  checksum: 1e31ff50d66f47cd0dfffa702061127116ccf9886d1f54a802a7b3bc95b94cab0cbf5b145cc5ac199036df6fd9d1bb24af1fa1bfed87c94879e950fbee5f86d1
   languageName: node
   linkType: hard
 
@@ -3625,16 +3638,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-up@npm:^1.0.0":
-  version: 1.1.2
-  resolution: "find-up@npm:1.1.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ffind-up%2Fdownload%2Ffind-up-1.1.2.tgz"
-  dependencies:
-    path-exists: ^2.0.0
-    pinkie-promise: ^2.0.0
-  checksum: cc15a62434c3f7f499d2f8c956aeeace97a8e87ad52ad78e156bd52e9c2acafcaad729356b564d0d57150b48017d0d3165ba2e790546550b3de8b7db256b883b
-  languageName: node
-  linkType: hard
-
 "find-up@npm:^2.0.0, find-up@npm:^2.1.0":
   version: 2.1.0
   resolution: "find-up@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ffind-up%2Fdownload%2Ffind-up-2.1.0.tgz"
@@ -3811,6 +3814,13 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"get-caller-file@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "get-caller-file@npm:2.0.5::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fget-caller-file%2F-%2Fget-caller-file-2.0.5.tgz"
+  checksum: 9dd9e1e2591039ee4c38c897365b904f66f1e650a8c1cb7b7db8ce667fa63e88cc8b13282b74df9d93de481114b3304a0487880d31cd926dfda6efe71455855d
+  languageName: node
+  linkType: hard
+
 "get-own-enumerable-property-symbols@npm:^3.0.0":
   version: 3.0.2
   resolution: "get-own-enumerable-property-symbols@npm:3.0.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-own-enumerable-property-symbols%2Fdownload%2Fget-own-enumerable-property-symbols-3.0.2.tgz"
@@ -3825,18 +3835,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"get-pkg-repo@npm:^1.0.0":
-  version: 1.4.0
-  resolution: "get-pkg-repo@npm:1.4.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-pkg-repo%2Fdownload%2Fget-pkg-repo-1.4.0.tgz"
+"get-pkg-repo@npm:^4.0.0":
+  version: 4.2.1
+  resolution: "get-pkg-repo@npm:4.2.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fget-pkg-repo%2F-%2Fget-pkg-repo-4.2.1.tgz"
   dependencies:
-    hosted-git-info: ^2.1.4
-    meow: ^3.3.0
-    normalize-package-data: ^2.3.0
-    parse-github-repo-url: ^1.3.0
+    "@hutson/parse-repository-url": ^3.0.0
+    hosted-git-info: ^4.0.0
     through2: ^2.0.0
+    yargs: ^16.2.0
   bin:
-    get-pkg-repo: cli.js
-  checksum: e3f47ce2079263f7d6901c166b934f186c286e1ea4a196acdd0f6b7e5420d7a4955f1f5032d735b124025a8b49db301907433b82a467c9b24e2df7265d4b003e
+    get-pkg-repo: src/cli.js
+  checksum: bf503a8b15227209ecc27b96e1919202caeb15437ab77a7d8dbb675257d837137b73316d45fc1b9943171992652a6bc9497f49e42a27cddd6a4692cd01838002
   languageName: node
   linkType: hard
 
@@ -3844,13 +3853,6 @@ fsevents@^2.1.2:
   version: 7.0.0
   resolution: "get-stdin@npm:7.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-stdin%2Fdownload%2Fget-stdin-7.0.0.tgz"
   checksum: fff64f163097fa3a2ba40b1e3105125f422554485b43694ab3176e37d775052489f0ad31b1d5f59d3fea6054c917779c2c0346f44f4a44f43d4679a638d52283
-  languageName: node
-  linkType: hard
-
-"get-stdin@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "get-stdin@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fget-stdin%2Fdownload%2Fget-stdin-4.0.1.tgz"
-  checksum: ba122b05691e29aa1c93f9dfe76671c23b311e5f299c4205c030c00a656045fcf56d2bb5a924b6cd576f278563643b6689b50aa54fc87abcdc2e6e8eda09920e
   languageName: node
   linkType: hard
 
@@ -3895,21 +3897,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"git-raw-commits@npm:2.0.0":
-  version: 2.0.0
-  resolution: "git-raw-commits@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fgit-raw-commits%2Fdownload%2Fgit-raw-commits-2.0.0.tgz"
-  dependencies:
-    dargs: ^4.0.1
-    lodash.template: ^4.0.2
-    meow: ^4.0.0
-    split2: ^2.0.0
-    through2: ^2.0.0
-  bin:
-    git-raw-commits: cli.js
-  checksum: ea32f86d3e0f6be83a1f53c86b9c2fa63a996193f6bc396f1dd91e0a89fb2f95d356c7207755d5d3d56a932e243f2478da21a16d1269806de468d60888e800d1
-  languageName: node
-  linkType: hard
-
 "git-raw-commits@npm:^2.0.0":
   version: 2.0.7
   resolution: "git-raw-commits@npm:2.0.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fgit-raw-commits%2Fdownload%2Fgit-raw-commits-2.0.7.tgz"
@@ -3925,6 +3912,21 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"git-raw-commits@npm:^2.0.8":
+  version: 2.0.11
+  resolution: "git-raw-commits@npm:2.0.11::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fgit-raw-commits%2F-%2Fgit-raw-commits-2.0.11.tgz"
+  dependencies:
+    dargs: ^7.0.0
+    lodash: ^4.17.15
+    meow: ^8.0.0
+    split2: ^3.0.0
+    through2: ^4.0.0
+  bin:
+    git-raw-commits: cli.js
+  checksum: e3e3298a9a25caf0eea4a6e5e046743632c0a80e7b9ea323245eb553f15beddb62d33b254dfa5bf3bf805269e0b778155a539e61125ed6213f0a1c49ba54e687
+  languageName: node
+  linkType: hard
+
 "git-remote-origin-url@npm:^2.0.0":
   version: 2.0.0
   resolution: "git-remote-origin-url@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fgit-remote-origin-url%2Fdownload%2Fgit-remote-origin-url-2.0.0.tgz"
@@ -3935,15 +3937,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"git-semver-tags@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "git-semver-tags@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fgit-semver-tags%2Fdownload%2Fgit-semver-tags-4.1.0.tgz"
+"git-semver-tags@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "git-semver-tags@npm:4.1.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fgit-semver-tags%2F-%2Fgit-semver-tags-4.1.1.tgz"
   dependencies:
-    meow: ^7.0.0
+    meow: ^8.0.0
     semver: ^6.0.0
   bin:
     git-semver-tags: cli.js
-  checksum: 70f182a374374155592b854a4af3b1ecfc8e9ecca179579fa2206fb7b390ca2aa144e24291faba9a0b04394a22bb090f57c3d3cba15cdcf50632f23de6205c42
+  checksum: 8e8aec9f6bcffed1fbf13860da556f95cc156e96e652aaa8970a2abb7fe3ff441f9617850fbd8ab610febe60a3c4d7401b4a00f648174532591f446db5f59d8c
   languageName: node
   linkType: hard
 
@@ -3965,7 +3967,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.1.6
   resolution: "glob@npm:7.1.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fglob%2Fdownload%2Fglob-7.1.6.tgz"
   dependencies:
@@ -4058,9 +4060,9 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"handlebars@npm:^4.7.6":
-  version: 4.7.6
-  resolution: "handlebars@npm:4.7.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhandlebars%2Fdownload%2Fhandlebars-4.7.6.tgz"
+"handlebars@npm:^4.7.7":
+  version: 4.7.7
+  resolution: "handlebars@npm:4.7.7::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fhandlebars%2F-%2Fhandlebars-4.7.7.tgz"
   dependencies:
     minimist: ^1.2.5
     neo-async: ^2.6.0
@@ -4072,7 +4074,7 @@ fsevents@^2.1.2:
       optional: true
   bin:
     handlebars: bin/handlebars
-  checksum: 50276715da3e410f1d485635029b77e09b8c9244d9e49119d5f39ed978a3d44ce94f5d6120efeb707da0ba9dd0cddf140d8d2ac160721d93aa9f4234474ad318
+  checksum: 2df9a6b422e2ccc0b7ca53f7a1f9915b47d19bf3fd372824a87e2a28b7952fa2cb3348cbe33a87ef49ee04f42d10359aab44819ca8d680ee3a5b53d48bd062a1
   languageName: node
   linkType: hard
 
@@ -4187,6 +4189,15 @@ fsevents@^2.1.2:
   version: 2.8.8
   resolution: "hosted-git-info@npm:2.8.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fhosted-git-info%2Fdownload%2Fhosted-git-info-2.8.8.tgz"
   checksum: 3ecc389dc6ecbd5463fada7e04461e96f3c817fe2f989ca41e9dd3b503745a0bfa26fba405861b2831ca64edc1abc5d2fbc97ee977303f89650dac4fbfdc2d7a
+  languageName: node
+  linkType: hard
+
+"hosted-git-info@npm:^4.0.0, hosted-git-info@npm:^4.0.1":
+  version: 4.1.0
+  resolution: "hosted-git-info@npm:4.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fhosted-git-info%2F-%2Fhosted-git-info-4.1.0.tgz"
+  dependencies:
+    lru-cache: ^6.0.0
+  checksum: e72632623d2fd9e7b4da0d3eeedd20ab07d11d11c7ed4d1b23b784a30af2068d711f743236ca6040bee9873c66a58dbec7112924f0ca519d803c0c29a76b65b0
   languageName: node
   linkType: hard
 
@@ -4343,15 +4354,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"indent-string@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "indent-string@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Findent-string%2Fdownload%2Findent-string-2.1.0.tgz"
-  dependencies:
-    repeating: ^2.0.0
-  checksum: 5c6bc6548e7c65c6f69c50a6cee286c4093e0d5a43cebaf4dae5b2acc321455dde8d80c421c9a14920ad44743a56bbe87082b1a619cd829477ab8da34dec1b59
-  languageName: node
-  linkType: hard
-
 "indent-string@npm:^3.0.0":
   version: 3.2.0
   resolution: "indent-string@npm:3.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Findent-string%2Fdownload%2Findent-string-3.2.0.tgz"
@@ -4387,13 +4389,6 @@ fsevents@^2.1.2:
   version: 1.3.5
   resolution: "ini@npm:1.3.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fini%2Fdownload%2Fini-1.3.5.tgz"
   checksum: 304a78d1e0ec49c6dc316b6a21bee5340ba85159c6581235b26a4cf27e2bac5f66f2c8f0e074ceaf3c48085f89fb974691cbf812df2128d2d74c5ef726d1b19a
-  languageName: node
-  linkType: hard
-
-"interpret@npm:^1.0.0":
-  version: 1.4.0
-  resolution: "interpret@npm:1.4.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Finterpret%2Fdownload%2Finterpret-1.4.0.tgz"
-  checksum: f15725d76206525546f559030ddc967db025c6db904eb8798a70ec3c07e42c5537c5cbc73a15eafd4ae5cdabad35601abf8878261c03dcc8217747e8037575fe
   languageName: node
   linkType: hard
 
@@ -4451,6 +4446,15 @@ fsevents@^2.1.2:
   bin:
     is-ci: bin.js
   checksum: 09083018edafd63221ff0506356f13c0aaf4b75a6435ea648bc67d07ddab199b2d5b9297de43d0821df1a14c18cd9f1edd1775a0166abfe37390843e79137213
+  languageName: node
+  linkType: hard
+
+"is-core-module@npm:^2.5.0":
+  version: 2.8.1
+  resolution: "is-core-module@npm:2.8.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fis-core-module%2F-%2Fis-core-module-2.8.1.tgz"
+  dependencies:
+    has: ^1.0.3
+  checksum: 4b4a6a69fac9833327a48850d5833eb442e60c1fb732f605bcee55208e0b962dd0a1b6d74b4697fb8a9d362a9aea4c21e947e215915f9b43c152ae5099f6f605
   languageName: node
   linkType: hard
 
@@ -4537,13 +4541,6 @@ fsevents@^2.1.2:
   version: 2.1.1
   resolution: "is-extglob@npm:2.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-extglob%2Fdownload%2Fis-extglob-2.1.1.tgz"
   checksum: ca623e2c56c893714a237aff645ec7caa8fea4d78868682af8d6803d7f0780323f8d566311e0dc6f942c886e81cbfa517597e48fcada7f3bf78a4d099eeecdd3
-  languageName: node
-  linkType: hard
-
-"is-finite@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "is-finite@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-finite%2Fdownload%2Fis-finite-1.1.0.tgz"
-  checksum: d2ea9746ecc273e50183f56a51073862ff9f39bb1e63f6e2830da6be77d0d17c78e5ad1f8573d26c2a23457ab4a1b444472a46d64ba6f73824435cd734517ad4
   languageName: node
   linkType: hard
 
@@ -4698,13 +4695,6 @@ fsevents@^2.1.2:
   version: 1.0.0
   resolution: "is-typedarray@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-typedarray%2Fdownload%2Fis-typedarray-1.0.0.tgz"
   checksum: 4e21156e7360a5916eded35c5938adf6278299a8055640864eebb251e4351cd605beccddf9af27477e19f753d453412fe0c21379bb54b55cfdf5add263076959
-  languageName: node
-  linkType: hard
-
-"is-utf8@npm:^0.2.0":
-  version: 0.2.1
-  resolution: "is-utf8@npm:0.2.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-utf8%2Fdownload%2Fis-utf8-0.2.1.tgz"
-  checksum: c72f604d72b72f6a57f9b2e22c9b6f480e869b3f0efe141bd1dfbc36655225043ca8c1316ff8e343ef641cf80868c9e4a37345492f31402abd5ab68e09367977
   languageName: node
   linkType: hard
 
@@ -5579,19 +5569,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"load-json-file@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "load-json-file@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fload-json-file%2Fdownload%2Fload-json-file-1.1.0.tgz"
-  dependencies:
-    graceful-fs: ^4.1.2
-    parse-json: ^2.2.0
-    pify: ^2.0.0
-    pinkie-promise: ^2.0.0
-    strip-bom: ^2.0.0
-  checksum: 3966dbc0c48f14df4091d89f4daf1e44b156f2c4e0870bf737b99e5925e0179277fc34226f03b7137a2e277d4e641cf626c6108c28910bbdce01e3d85e0d70b9
-  languageName: node
-  linkType: hard
-
 "load-json-file@npm:^2.0.0":
   version: 2.0.0
   resolution: "load-json-file@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fload-json-file%2Fdownload%2Fload-json-file-2.0.0.tgz"
@@ -5743,6 +5720,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "lru-cache@npm:6.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Flru-cache%2F-%2Flru-cache-6.0.0.tgz"
+  dependencies:
+    yallist: ^4.0.0
+  checksum: b8b78353d2391c0f135cdc245c4744ad41c2efb1a6d98f31bc57a2cf48ebf02de96e4876657c3026673576bf1f1f61fc3fdd77ab00ad1ead737537bf17d8019d
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^3.0.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fmake-dir%2Fdownload%2Fmake-dir-3.1.0.tgz"
@@ -5775,7 +5761,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"map-obj@npm:^1.0.0, map-obj@npm:^1.0.1":
+"map-obj@npm:^1.0.0":
   version: 1.0.1
   resolution: "map-obj@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fmap-obj%2Fdownload%2Fmap-obj-1.0.1.tgz"
   checksum: e68b20e4fa76efdbba9a7af05b879eb7a6c5ccb7a9d813796de825da4c182fc3dab66f4b2a32a9aefae83db152a0172deb1e19a9c2322c6d412b8f9f81ca51a4
@@ -5822,41 +5808,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"meow@npm:^3.3.0":
-  version: 3.7.0
-  resolution: "meow@npm:3.7.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fmeow%2Fdownload%2Fmeow-3.7.0.tgz"
-  dependencies:
-    camelcase-keys: ^2.0.0
-    decamelize: ^1.1.2
-    loud-rejection: ^1.0.0
-    map-obj: ^1.0.1
-    minimist: ^1.1.3
-    normalize-package-data: ^2.3.4
-    object-assign: ^4.0.1
-    read-pkg-up: ^1.0.1
-    redent: ^1.0.0
-    trim-newlines: ^1.0.0
-  checksum: f0d4feec4052507e9be2902a89143f92c19925130655aa83fc5c5fd51b80c58e140a6d127dae596d8723cc614f31575a49408f70bef7c638f6989276be01d301
-  languageName: node
-  linkType: hard
-
-"meow@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "meow@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fmeow%2Fdownload%2Fmeow-4.0.1.tgz"
-  dependencies:
-    camelcase-keys: ^4.0.0
-    decamelize-keys: ^1.0.0
-    loud-rejection: ^1.0.0
-    minimist: ^1.1.3
-    minimist-options: ^3.0.1
-    normalize-package-data: ^2.3.4
-    read-pkg-up: ^3.0.0
-    redent: ^2.0.0
-    trim-newlines: ^2.0.0
-  checksum: 41a411d7ffe7f5d157856050a43ced7b486a8f5e5fce0abc9d0818325e20d100a0df7e2bb033780e98905353a632700a7045b9f32ce33d2b273385b27d7d1b84
-  languageName: node
-  linkType: hard
-
 "meow@npm:^7.0.0":
   version: 7.1.1
   resolution: "meow@npm:7.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fmeow%2Fdownload%2Fmeow-7.1.1.tgz"
@@ -5873,6 +5824,25 @@ fsevents@^2.1.2:
     type-fest: ^0.13.1
     yargs-parser: ^18.1.3
   checksum: de6d2f15332a18da5e13bb3f935f9718cf7ae697d121009adee7a3410bfc63f6b7896476bb0e1ef101faacea4d4a4dc95108e3c9eab0e336b990a115646b72e8
+  languageName: node
+  linkType: hard
+
+"meow@npm:^8.0.0":
+  version: 8.1.2
+  resolution: "meow@npm:8.1.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fmeow%2F-%2Fmeow-8.1.2.tgz"
+  dependencies:
+    "@types/minimist": ^1.2.0
+    camelcase-keys: ^6.2.2
+    decamelize-keys: ^1.1.0
+    hard-rejection: ^2.1.0
+    minimist-options: 4.1.0
+    normalize-package-data: ^3.0.0
+    read-pkg-up: ^7.0.1
+    redent: ^3.0.0
+    trim-newlines: ^3.0.0
+    type-fest: ^0.18.0
+    yargs-parser: ^20.2.3
+  checksum: 7246c3e824298dc1ceddc4b9930bf6a04df8f240d09e76ee180c4f9168df3d6a7d27593a5a3ef7005efbc1557780981e169a7acac56120c7bf2f99f5f54563aa
   languageName: node
   linkType: hard
 
@@ -5995,7 +5965,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.1.1, minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.5":
+"minimist@npm:^1.1.1, minimist@npm:^1.2.0, minimist@npm:^1.2.5":
   version: 1.2.5
   resolution: "minimist@npm:1.2.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fminimist%2Fdownload%2Fminimist-1.2.5.tgz"
   checksum: b77b8590147a4e217ff34266236bc39de23b52e6e33054076991ff674c7397a1380a7bde11111916f16f003a94aaa7e4f3d92595a32189644ff607fabc65a5b6
@@ -6189,7 +6159,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"normalize-package-data@npm:^2.3.0, normalize-package-data@npm:^2.3.2, normalize-package-data@npm:^2.3.4, normalize-package-data@npm:^2.3.5, normalize-package-data@npm:^2.5.0":
+"normalize-package-data@npm:^2.3.2, normalize-package-data@npm:^2.3.4, normalize-package-data@npm:^2.5.0":
   version: 2.5.0
   resolution: "normalize-package-data@npm:2.5.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fnormalize-package-data%2Fdownload%2Fnormalize-package-data-2.5.0.tgz"
   dependencies:
@@ -6198,6 +6168,18 @@ fsevents@^2.1.2:
     semver: 2 || 3 || 4 || 5
     validate-npm-package-license: ^3.0.1
   checksum: 97d4d6b061cab51425ddb05c38d126d7a1a2a6f2c9949bef2b5ad7ef19c005df12099ea442e4cb09190929b7770008f94f87b10342a66f739acf92a7ebb9d9f2
+  languageName: node
+  linkType: hard
+
+"normalize-package-data@npm:^3.0.0":
+  version: 3.0.3
+  resolution: "normalize-package-data@npm:3.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fnormalize-package-data%2F-%2Fnormalize-package-data-3.0.3.tgz"
+  dependencies:
+    hosted-git-info: ^4.0.1
+    is-core-module: ^2.5.0
+    semver: ^7.3.4
+    validate-npm-package-license: ^3.0.1
+  checksum: dbe6efe1eee60f09e4c74ccac874779291d7c54c5682f2b81c866b7d42cfca04049b922ac9d8ced63338323bef939d3f968d9b33671fb6178c24d1d4e48ca7dd
   languageName: node
   linkType: hard
 
@@ -6275,7 +6257,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.0.1, object-assign@npm:^4.1.0":
+"object-assign@npm:^4.1.0":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fobject-assign%2Fdownload%2Fobject-assign-4.1.1.tgz"
   checksum: 66cf021898fc1b13ea573ea8635fbd5a76533f50cecbc2fcd5eee1e8029af41bcebe7023788b6d0e06cbe4401ecea075d972f78ec74467cdc571a0f1a4d1a081
@@ -6526,13 +6508,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"parse-github-repo-url@npm:^1.3.0":
-  version: 1.4.1
-  resolution: "parse-github-repo-url@npm:1.4.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fparse-github-repo-url%2Fdownload%2Fparse-github-repo-url-1.4.1.tgz"
-  checksum: 9ee4bc572bda5da4f4112153f0b34800c3e67f666b9dcffb8049de5fd073e4becf99dccdcdb1eff00e4a146ce280eb09eee96bca1362bf3345065a472965ece2
-  languageName: node
-  linkType: hard
-
 "parse-json@npm:^2.2.0":
   version: 2.2.0
   resolution: "parse-json@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fparse-json%2Fdownload%2Fparse-json-2.2.0.tgz"
@@ -6578,15 +6553,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"path-exists@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "path-exists@npm:2.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-exists%2Fdownload%2Fpath-exists-2.1.0.tgz"
-  dependencies:
-    pinkie-promise: ^2.0.0
-  checksum: 71664885c56b48b543b0ccf2fca9d06c022ad88b6431a8d7c32ad8cba94a8e457b31cfc0ceeee7417be31d8e59574b1cb4a4551cb1efffb91f64f74034daea3d
-  languageName: node
-  linkType: hard
-
 "path-exists@npm:^3.0.0":
   version: 3.0.0
   resolution: "path-exists@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-exists%2Fdownload%2Fpath-exists-3.0.0.tgz"
@@ -6626,17 +6592,6 @@ fsevents@^2.1.2:
   version: 1.0.6
   resolution: "path-parse@npm:1.0.6::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-parse%2Fdownload%2Fpath-parse-1.0.6.tgz"
   checksum: 2eee4b93fb3ae13600e3fca18390d9933bbbcf725a624f6b8df020d87515a74872ff6c58072190d6dc75a5584a683dc6ae5c385ad4e4f4efb6e66af040d56c67
-  languageName: node
-  linkType: hard
-
-"path-type@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "path-type@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-type%2Fdownload%2Fpath-type-1.1.0.tgz"
-  dependencies:
-    graceful-fs: ^4.1.2
-    pify: ^2.0.0
-    pinkie-promise: ^2.0.0
-  checksum: c6ac7d4c7d613331ae1837a10c96a0f4fe76dc9273f98e37ce589c06b7ea6f811479ac735dbae06327d93cc6340d0cba944e9d38b0365b7b0bc0438f3fb242e0
   languageName: node
   linkType: hard
 
@@ -6690,22 +6645,6 @@ fsevents@^2.1.2:
   version: 3.0.0
   resolution: "pify@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpify%2Fdownload%2Fpify-3.0.0.tgz"
   checksum: 18af2b29148c4d6fd4c7741dbd953ff76beea17d1b4a6d5792d7ff1d7202f43671c3f29313aa5ec01a66d050dbdbb0cf23f17de69531da8dc8bda42d327cf960
-  languageName: node
-  linkType: hard
-
-"pinkie-promise@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "pinkie-promise@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpinkie-promise%2Fdownload%2Fpinkie-promise-2.0.1.tgz"
-  dependencies:
-    pinkie: ^2.0.0
-  checksum: 1e32e05ffdfb691b04a42d05d5452698853099efe1bab70bfa538e9a793e609b66cc59180cc5fc2158062a2fc5991c9c268a82b2b655247aa005020167e31d75
-  languageName: node
-  linkType: hard
-
-"pinkie@npm:^2.0.0":
-  version: 2.0.4
-  resolution: "pinkie@npm:2.0.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fpinkie%2Fdownload%2Fpinkie-2.0.4.tgz"
-  checksum: 2cb484c9da47b2f420fddffe7cbfeac950106a848343d147c2b2668d12b71aa3d09297bfe37ec32539a27c6dc7db414414f5ee166d6b2ca0d95f6dfe9dde60d7
   languageName: node
   linkType: hard
 
@@ -6951,16 +6890,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"read-pkg-up@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "read-pkg-up@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fread-pkg-up%2Fdownload%2Fread-pkg-up-1.0.1.tgz"
-  dependencies:
-    find-up: ^1.0.0
-    read-pkg: ^1.0.0
-  checksum: 05a0d7fd655c650b11c86abfb5fc37d6ad2df7392965b3be09271414c30adadaaa37bb9f016b30f5972607d1e2d98626749f01ca602c75256ab8358394447aa7
-  languageName: node
-  linkType: hard
-
 "read-pkg-up@npm:^2.0.0":
   version: 2.0.0
   resolution: "read-pkg-up@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fread-pkg-up%2Fdownload%2Fread-pkg-up-2.0.0.tgz"
@@ -6989,17 +6918,6 @@ fsevents@^2.1.2:
     read-pkg: ^5.2.0
     type-fest: ^0.8.1
   checksum: b8f97cc1f8235ce752b10b7b6423b0460411b4a6046186de8980429bbad8709537a4d6fac6e35a97c8630d19bab29d9013644cc5296be2d5043db3e40094b0cc
-  languageName: node
-  linkType: hard
-
-"read-pkg@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "read-pkg@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fread-pkg%2Fdownload%2Fread-pkg-1.1.0.tgz"
-  dependencies:
-    load-json-file: ^1.0.0
-    normalize-package-data: ^2.3.2
-    path-type: ^1.0.0
-  checksum: 01fdadf10e5643baffe30c294d06d8cb6dab9724f2cff0cdccbadcfab74a0050c968a0faa7a1d5191fc89eb27ab9dbec1f90ff9ac489cb77b9c0f81c630720ec
   languageName: node
   linkType: hard
 
@@ -7048,6 +6966,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"readable-stream@npm:3, readable-stream@npm:^3.0.0":
+  version: 3.6.0
+  resolution: "readable-stream@npm:3.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Freadable-stream%2F-%2Freadable-stream-3.6.0.tgz"
+  dependencies:
+    inherits: ^2.0.3
+    string_decoder: ^1.1.1
+    util-deprecate: ^1.0.1
+  checksum: f178b1daa80d9e58ebba71dbb08486430aa6f0dea3a22a1b7401f3f6983077d0bc0edea43099db06b8d006c9ad48d6383e8fb72c05d5b187670aeaf1b9b44f00
+  languageName: node
+  linkType: hard
+
 "readable-stream@npm:^2.0.6, readable-stream@npm:~2.3.6":
   version: 2.3.7
   resolution: "readable-stream@npm:2.3.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Freadable-stream%2Fdownload%2Freadable-stream-2.3.7.tgz"
@@ -7060,25 +6989,6 @@ fsevents@^2.1.2:
     string_decoder: ~1.1.1
     util-deprecate: ~1.0.1
   checksum: 6e3826560627a751feb3a8aec073ef94c6e47b8c8e06eb5d136323b5f09db9d2077c23a42a8d54ed0123695af54b36c1e4271a8ec55112b15f4b89020d8dec72
-  languageName: node
-  linkType: hard
-
-"rechoir@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "rechoir@npm:0.6.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Frechoir%2Fdownload%2Frechoir-0.6.2.tgz"
-  dependencies:
-    resolve: ^1.1.6
-  checksum: 6646a6bce733282d182bf04816b15d4e2d63736b3453cf62a8568aaa1399621a73b3942315161f549e090f9a3c61bc09f4cb674f928c369a40037621e10295bd
-  languageName: node
-  linkType: hard
-
-"redent@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "redent@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fredent%2Fdownload%2Fredent-1.0.0.tgz"
-  dependencies:
-    indent-string: ^2.1.0
-    strip-indent: ^1.0.1
-  checksum: 961d06c069c2a3932e9cde95822eceffa4d09ae01af33c123b0387d67bc976fd895b2012a3b8988c336b6f79cd17a8cc0a4a5f003b1e60cafad0d3b905111527
   languageName: node
   linkType: hard
 
@@ -7151,15 +7061,6 @@ fsevents@^2.1.2:
   version: 1.6.1
   resolution: "repeat-string@npm:1.6.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Frepeat-string%2Fdownload%2Frepeat-string-1.6.1.tgz"
   checksum: 99c431ba7bef7a5d39819d562ebca89206368b45f73213677a3b562e25b5dd272d9e6a2ca8105001df14b6fc8cc71f0b10258c86e16cf8a256318fac1ddc8a77
-  languageName: node
-  linkType: hard
-
-"repeating@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "repeating@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Frepeating%2Fdownload%2Frepeating-2.0.1.tgz"
-  dependencies:
-    is-finite: ^1.0.0
-  checksum: a788561778bfcbe4fc6fd15cb912ed53665933514524e4b5a998934ef20793c0afd21229f411d15bc5b7ab171eca7ac531655070f1dfc427f723bae57b61d55a
   languageName: node
   linkType: hard
 
@@ -7282,7 +7183,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"resolve@^1.1.6, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.13.1, resolve@^1.17.0, resolve@^1.3.2":
+"resolve@^1.10.0, resolve@^1.10.1, resolve@^1.13.1, resolve@^1.17.0, resolve@^1.3.2":
   version: 1.17.0
   resolution: "resolve@npm:1.17.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fresolve%2Fdownload%2Fresolve-1.17.0.tgz"
   dependencies:
@@ -7291,7 +7192,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>":
   version: 1.17.0
   resolution: "resolve@patch:resolve@npm%3A1.17.0%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npm.taobao.org%252Fresolve%252Fdownload%252Fresolve-1.17.0.tgz#builtin<compat/resolve>::version=1.17.0&hash=3388aa"
   dependencies:
@@ -7488,6 +7389,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.3.4":
+  version: 7.3.5
+  resolution: "semver@npm:7.3.5::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fsemver%2F-%2Fsemver-7.3.5.tgz"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: c53624ddf4b9779bcbf55a1eb8b37074cc44bfeca416f3cc263429408202a8a3c59b00eef8c647d697303bc39b95c022a5c61959221d3814bfb1270ff7c14986
+  languageName: node
+  linkType: hard
+
 "set-blocking@npm:^2.0.0, set-blocking@npm:~2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fset-blocking%2Fdownload%2Fset-blocking-2.0.0.tgz"
@@ -7536,19 +7448,6 @@ fsevents@^2.1.2:
   version: 3.0.0
   resolution: "shebang-regex@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fshebang-regex%2Fdownload%2Fshebang-regex-3.0.0.tgz"
   checksum: ea18044ffaf18129ced5a246660a9171a7dff98999aaa9de8abb237d8a7711d8a1f76e16881399994ee429156717ce1c6a50c665bb18a4d55a7f80b9125b1f7d
-  languageName: node
-  linkType: hard
-
-"shelljs@npm:^0.8.3":
-  version: 0.8.4
-  resolution: "shelljs@npm:0.8.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fshelljs%2Fdownload%2Fshelljs-0.8.4.tgz"
-  dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: bin/shjs
-  checksum: bdf68e3c2a8a6d191dde3be2800bfcfd688c126344ccaf6cf7024cdaf824d0d3523b8e514cd52264f739cbabd2b0569637dd5a8183377347225af918e03ff5dc
   languageName: node
   linkType: hard
 
@@ -7756,6 +7655,15 @@ fsevents@^2.1.2:
   dependencies:
     through2: ^2.0.2
   checksum: cf58dc8aa424499cd68a9e7d9ae94441ff972ce0c1f9599bef9d65b3f4384913c557eeec939ea34e2832309d90b6ad6993c5b51b152cba2f72500299464e6a9c
+  languageName: node
+  linkType: hard
+
+"split2@npm:^3.0.0":
+  version: 3.2.2
+  resolution: "split2@npm:3.2.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fsplit2%2F-%2Fsplit2-3.2.2.tgz"
+  dependencies:
+    readable-stream: ^3.0.0
+  checksum: 04bf20af25bfe917edbb7f719cc9dbd2ca16633e4e6a5e343a8c834310aafd802c74b3aceb96acf3571545b0340d55d2d3273dbee8f9bc6a811371dcfbe0c8a7
   languageName: node
   linkType: hard
 
@@ -7982,15 +7890,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"strip-bom@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "strip-bom@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-bom%2Fdownload%2Fstrip-bom-2.0.0.tgz"
-  dependencies:
-    is-utf8: ^0.2.0
-  checksum: d488310c44b2a089d1d2ff54e90198eb8d32e6d2016ae811c732b1a6472dea15ae72dc21ee35ee6729cf71e9b663b3216d3e48cd1e5fba3b6093fd0b19ae7d0b
-  languageName: node
-  linkType: hard
-
 "strip-bom@npm:^3.0.0":
   version: 3.0.0
   resolution: "strip-bom@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-bom%2Fdownload%2Fstrip-bom-3.0.0.tgz"
@@ -8016,17 +7915,6 @@ fsevents@^2.1.2:
   version: 2.0.0
   resolution: "strip-final-newline@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-final-newline%2Fdownload%2Fstrip-final-newline-2.0.0.tgz"
   checksum: 74dbd8a602409706748db730200efab53ba739ed7888310e74e45697efbd760981df6d6f0fa34b23e973135fb07d3b22adae6e6d58898f692a094e49692c6c33
-  languageName: node
-  linkType: hard
-
-"strip-indent@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "strip-indent@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fstrip-indent%2Fdownload%2Fstrip-indent-1.0.1.tgz"
-  dependencies:
-    get-stdin: ^4.0.1
-  bin:
-    strip-indent: cli.js
-  checksum: 9ec818484a53a8f564b7a56148db2883dad4fe665cc76583df5eb5b2e216b5ed48e4d63d1da525e990030c47c41d648e48053a505dd29f7a87568733b147a533
   languageName: node
   linkType: hard
 
@@ -8206,6 +8094,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"through2@npm:^4.0.0":
+  version: 4.0.2
+  resolution: "through2@npm:4.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fthrough2%2F-%2Fthrough2-4.0.2.tgz"
+  dependencies:
+    readable-stream: 3
+  checksum: 5a844792cf4fcdda0640ed3c619498724b2dfacfc24da438e1478bfd8d10a2831bd5824cf4ca8ec28a4fcd569b2acc7e8b0a673d269003009cb90e140e57a0ba
+  languageName: node
+  linkType: hard
+
 "through@npm:2, through@npm:>=2.2.7 <3, through@npm:^2.3.8":
   version: 2.3.8
   resolution: "through@npm:2.3.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fthrough%2Fdownload%2Fthrough-2.3.8.tgz"
@@ -8294,13 +8191,6 @@ fsevents@^2.1.2:
   dependencies:
     punycode: ^2.1.1
   checksum: c8c221907944e8b577c4fff14d180a213c21a29b54a12a031aa6986cbb711a5d470588b556a7be9c7844f09142e12deef6b76fe10f6bd4d274b54f1a7e0aac9e
-  languageName: node
-  linkType: hard
-
-"trim-newlines@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "trim-newlines@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftrim-newlines%2Fdownload%2Ftrim-newlines-1.0.0.tgz"
-  checksum: acc229ae8f6e7615df28a9cdb33a40db3f385afa9076c8b53a0a2d63d49dd646a6a4827ad93e1bc92ef24286121f66042c00da089f1585e473c010ca88309c78
   languageName: node
   linkType: hard
 
@@ -8458,6 +8348,13 @@ fsevents@^2.1.2:
   version: 0.13.1
   resolution: "type-fest@npm:0.13.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftype-fest%2Fdownload%2Ftype-fest-0.13.1.tgz"
   checksum: 11acce4f34c75a838914bdc4a0133d2dd0864e313897471974880df82624159521bae691a6100ff99f93be2d0f8871ecdab18573d2c67e61905cf2f5cbfa52a6
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^0.18.0":
+  version: 0.18.1
+  resolution: "type-fest@npm:0.18.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftype-fest%2F-%2Ftype-fest-0.18.1.tgz"
+  checksum: 0d6d338e72b625a0d2c8fb4c138f5221301e40ac127e1b909bc12890ce358ef9cf11136e13aa0efd82e248bbeefd7148c01985dce2e5ab79d47a2efa75dfe8d2
   languageName: node
   linkType: hard
 
@@ -8767,6 +8664,17 @@ typescript@4.0.2:
   languageName: node
   linkType: hard
 
+"wrap-ansi@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "wrap-ansi@npm:7.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fwrap-ansi%2F-%2Fwrap-ansi-7.0.0.tgz"
+  dependencies:
+    ansi-styles: ^4.0.0
+    string-width: ^4.1.0
+    strip-ansi: ^6.0.0
+  checksum: 09939dd775ae565bb99a25a6c072fe3775a95fa71751b5533c94265fe986ba3e3ab071a027ab76cf26876bd9afd10ac3c2d06d7c4bcce148bf7d2d9514e3a0df
+  languageName: node
+  linkType: hard
+
 "wrappy@npm:1":
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fwrappy%2Fdownload%2Fwrappy-1.0.2.tgz"
@@ -8838,6 +8746,13 @@ typescript@4.0.2:
   languageName: node
   linkType: hard
 
+"y18n@npm:^5.0.5":
+  version: 5.0.8
+  resolution: "y18n@npm:5.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fy18n%2F-%2Fy18n-5.0.8.tgz"
+  checksum: 56275bfa72a8a585c4d2905b086862fb881dfe7871adcefe4ecf4c1a6a78c6389b459b427c0a8672ccdb09731a78143acc71f0bcc8dc8d8427869fafe7f18b95
+  languageName: node
+  linkType: hard
+
 "yallist@npm:^4.0.0":
   version: 4.0.0
   resolution: "yallist@npm:4.0.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fyallist%2Fdownload%2Fyallist-4.0.0.tgz"
@@ -8871,6 +8786,13 @@ typescript@4.0.2:
   languageName: node
   linkType: hard
 
+"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3":
+  version: 20.2.9
+  resolution: "yargs-parser@npm:20.2.9::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fyargs-parser%2F-%2Fyargs-parser-20.2.9.tgz"
+  checksum: 3c58da6f6142f93c5207e309764bd90f723b9d7ed43f2e8aad0da1cefab83ee8ebf311dee2e81102646b74450c899e35b35053800b91fac23e6f433056f4c4cf
+  languageName: node
+  linkType: hard
+
 "yargs@npm:^15.3.1":
   version: 15.4.1
   resolution: "yargs@npm:15.4.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fyargs%2Fdownload%2Fyargs-15.4.1.tgz"
@@ -8887,6 +8809,21 @@ typescript@4.0.2:
     y18n: ^4.0.0
     yargs-parser: ^18.1.2
   checksum: dbf687d6b938f01bbf11e158dde6df906282b70cd9295af0217ee8cefbd83ad09d49fa9458d0d5325b0e66f03df954a38986db96f91e5b46ccdbbaf9a0157b23
+  languageName: node
+  linkType: hard
+
+"yargs@npm:^16.2.0":
+  version: 16.2.0
+  resolution: "yargs@npm:16.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fyargs%2F-%2Fyargs-16.2.0.tgz"
+  dependencies:
+    cliui: ^7.0.2
+    escalade: ^3.1.1
+    get-caller-file: ^2.0.5
+    require-directory: ^2.1.1
+    string-width: ^4.2.0
+    y18n: ^5.0.5
+    yargs-parser: ^20.2.2
+  checksum: a79ce1f043021cd645de1ffebb6149541d382ba68f4a6b5eca5d2ad65af51893371bbd78e240dc3b6cf0cbb419511ba5bda715dec992e4266e6863ea49f14feb
   languageName: node
   linkType: hard
 
