@@ -563,7 +563,7 @@ __metadata:
     "@commitlint/config-conventional": 8.3.4
     "@types/jest": 25.2.3
     "@types/node": 13.13.17
-    "@types/node-fetch": 2.5.7
+    "@types/node-fetch": 2.6.11
     "@typescript-eslint/eslint-plugin": 4.1.0
     "@typescript-eslint/parser": 4.1.0
     "@yarnpkg/pnpify": 2.2.1
@@ -1060,13 +1060,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:2.5.7":
-  version: 2.5.7
-  resolution: "@types/node-fetch@npm:2.5.7::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode-fetch%2Fdownload%2F%40types%2Fnode-fetch-2.5.7.tgz"
+"@types/node-fetch@npm:2.6.11":
+  version: 2.6.11
+  resolution: "@types/node-fetch@npm:2.6.11::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fnode-fetch%2F-%2Fnode-fetch-2.6.11.tgz"
   dependencies:
     "@types/node": "*"
-    form-data: ^3.0.0
-  checksum: 101f6e8474407f957dfe1750d82aa0bcaa56347d09c8ba8634e6a901d07032533c0a578860691d915ff8fa230355700c41c04ae7e505840b5d6ff8cc3ece7741
+    form-data: ^4.0.0
+  checksum: 732308db9b01dc3977b3ad99ce9a7ddb3695335ae631adc25747fe0cf97cfcf36ec387864a3e9df1eec94e5b7ec48f218a946d7ab5d29c6a36bbf6a0fe600cf5
   languageName: node
   linkType: hard
 
@@ -3703,6 +3703,17 @@ __metadata:
     combined-stream: ^1.0.8
     mime-types: ^2.1.12
   checksum: 1af88217b449eda6566a0d95185f2baa403ed2a0e3b11547069f6062be66cbac7c8d7a25f0fc59560702e96526e659b5b9e5a8c6fefe00f06da44338191a9133
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fform-data%2F-%2Fform-data-4.0.0.tgz"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: ecbe8f41bcf5c415f38e39058b34598a9261bb74a3d54b633d0b5dd8b7cf9a30b0626cd06ae8e79874a2ca88c222041142a7893e5afdd35fdfc3272264d03d44
   languageName: node
   linkType: hard
 
